@@ -1,0 +1,57 @@
+<div id="about">
+	<div id="noJS" style="display: none;">We do apologize, you must turn on JavaScript to continue.</div>
+	<script>$('#noJS').hide();</script>
+	<div id="content-wrapper">
+		<div id="content">
+			<h3 style="margin-top: 0">Welcome to Source<span>Moz</span></h3>
+			<p>
+				SourceMoz (pronounced ‘sɔrs-mɒs’/‘sohrs-mahz’) is a simple and functional
+				search engine that does not save, track or share your IP address or usage
+				activity.<br/><br/>
+			</p>
+			<p>
+				Most major search engines collect user information that is automatically sent
+				to them by your computer including IP addresses, user agents, the time/date
+				of the search and of course, what it is you searched for.  Since a search engine
+				is not required by law to collect or save any personal or usage information, at
+				SourceMoz we choose not to do so.
+			</p>
+			<h3>Simplicity <span>+</span> Accessibility</h3>
+			<p>
+				At SourceMoz you’ll find a web search experience that is dedicated to both
+				simplicity and accessibility, creating a dynamic and efficient UX that clearly
+				identifies sponsored listings from organic search results, while minimizing
+				distractions and unnecessary information.<br/><br/>
+			</p>
+			<p>
+				We thank you for visiting and invite your feedback with any comments or
+				suggestions you may have.<br/><br/>
+			</p>
+		</div>
+		<div id="upline">
+			<a ui-sref="frontpage" id="logo"></a>
+			<form id="search"
+				ng-submit="$event.preventDefault(); submit()"
+				ng-controller='searchInputController'>
+				<autocomplete
+					attr-name="search"
+					attr-placeholder=""
+					attr-input-id="q"
+					ng-model="q"
+					attr-input-type="search"
+					data="suggestions"
+					on-select="useSuggestion"
+					on-type="updateSuggestions">
+				</autocomplete>
+				<input id="qs" name="" type="submit" value="" title="Search with SourceMoz" ng-click="submit()">
+			</form>
+		</div>
+		<div id="copyright">
+			<span id="mfCopy">©2016 SourceMoz</span><span id="mfLinks"><a ui-sref="frontpage">Home</a> | <a ui-sref="about">About</a> | <a
+			href="mailto:mreisbeck@gmail.com?subject=Feedback%20on%20sourcemoz.com&body=Hello%21%0D%0A%0D%0AI%20got%20something%20to%20tell%20you%20about%20sourcemoz.com%21">Feedback</a></span>
+		</div>
+	</div>
+	<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0"
+	    style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions"
+	                                      class="ui-helper-hidden-accessible"></span>
+</div>

@@ -1,0 +1,139 @@
+
+.menu_toggler {
+	background-repeat:   no-repeat;
+	background-position: 0 0;
+	display:             block;
+	float:               right;
+	position:            relative;
+	z-index:             9999;
+	cursor:              pointer;
+	margin:              0;
+	background-image:    url("/assets/img/menu_toggler/mobile_passive.png");
+	width:               24px;
+	height:              14px;
+
+	&:hover {
+		background-image: url("/assets/img/menu_toggler/mobile_active.png");
+	}
+}
+
+@media @tabletDesktop {
+	.menu_toggler {
+		margin-top: 24px;
+	}
+}
+
+pageslide {
+	background-color: rgba(13, 61, 110, 0.9);
+
+	.menu_toggler {
+		background-image: url("/assets/img/menu_toggler/mobile_passive.png");
+		margin:           0;
+		top:              18px;
+		left:             14px;
+		position:         absolute;
+		float:            none;
+
+		&:hover {
+			background-image: url("/assets/img/menu_toggler/mobile_passive.png");
+		}
+	}
+
+	#menu_items {
+		padding:    1px 0;
+		margin-top: 55px;
+		list-style: outside none none;
+
+		li {
+			height:  46px;
+			padding: 13px 50px;
+			margin:  6px 0;
+
+			a {
+				display:           block;
+				padding:           4px 8px 4px 25px;
+				font-size:         12px;
+				color:             @colorGraySlideMenu;
+				text-decoration:   none;
+				background-image:    url('/assets/img/slide_menu.png');
+				background-repeat: no-repeat;
+			}
+
+			a#share_about {
+				background-position: 0 3px;
+			}
+
+			a#share_serp_facebook {
+				background-position: 0 -50px;
+			}
+
+			a#share_serp_twitter {
+				background-position: 0 -104px;
+			}
+
+			a#share_serp_email {
+				background-position: 0 -157px;
+			}
+
+			a#share_serp_feedback {
+				background-position: 0 -212px;
+			}
+
+			&:hover {
+				background-color: white;
+
+				a {
+					color: @colorLinkBlue;
+					background-image:    url('/assets/img/slide_menu_hover.png');
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+}
+
+@media @tabletDesktop {
+	pageslide {
+		background: url(/assets/img/gray70opacity.png);
+	}
+}
+
+#menu-container {
+	position: absolute;
+	z-index:  999;
+	right:    16px;
+	top:      4px;
+}
+
+@media @desktop {
+	#menu-popup {
+		right: -25px;
+	}
+}
+
+@media @tabletVertical {
+	#menu-container {
+		right: 9px;
+		top:   14px;
+	}
+}
+
+@media @tabletHorizontal {
+	#menu-container {
+		right: 55px;
+		top:   14px;
+	}
+}
+
+@media @desktop {
+	#menu-container {
+		right: 90px;
+		top:   7px;
+	}
+}
+
+@media @mobile {
+	#menu-container {
+		right: 18px;
+	}
+}

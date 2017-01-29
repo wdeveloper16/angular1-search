@@ -1,0 +1,43 @@
+<div
+	ng-if="!loading && (images.length || wikipedia.extract)">
+
+	<div id="wikipedia_level2">
+		<smooth-slider ng-if="images.length" id="preview_images_mobile">
+			<!--<div class="swiper-wrapper">-->
+
+				<img class="swiper-slide"
+				     ng-repeat="row in images | limitTo:10"
+
+				     ng-dblclick="openImage(row.hostPageUrl)"
+				     src="{{row.thumbnailUrl}}" />
+
+			<!--</div>-->
+		</smooth-slider>
+
+		<div ui-sref="results({tab:'images'})"
+		     ng-if="images.length"
+		     id="preview_images"
+		     ng-class="{multiple:images.length>1}">
+			<div style="cursor: pointer">
+				<img ng-repeat="row in images | limitTo:10" src="{{row.thumbnailUrl}}"
+				     class="previewImage"/>
+
+			</div>
+		</div>
+
+		<div id="wikipedia_level3" ng-if="wikiLoading || wikipedia.extract">
+			<div ng-if="wikiLoading" class="loader"></div>
+			<div ng-class="{
+						'loading':!wikipedia,
+						'loaded':wikipedia
+						}">
+				<h3>{{wikiMatch.wiki_title}}</h3>
+
+				<div id="wiki_place"
+				     ng-bind-html="wikipedia.extract" ddd></div>
+
+				<a id="wiki_link" href="{{wikiMatch.url}}">Wikipedia</a>
+			</div>
+		</div>
+	</div>
+</div>

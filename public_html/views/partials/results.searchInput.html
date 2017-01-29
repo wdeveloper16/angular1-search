@@ -1,0 +1,18 @@
+<!-- Search -->
+<div ng-controller='searchInputController'
+     class="col-xs-12 col-xs-pull-0 col-sm-12 col-sm-pull-0 col-md-7 col-md-pull-2 col-lg-7 col-lg-pull-2">
+	<form id="search" ng-submit="submit()">
+
+		<autocomplete
+			attr-placeholder=""
+			attr-input-id="q"
+			ng-model="q"
+			data="suggestions"
+			on-select="useSuggestion"
+			on-type="updateSuggestions"></autocomplete>
+
+		<!--<input id="q" name="q" type="text" value="tallinn" maxlength="160" data-autofocus="true">-->
+		<input id="qs" name="" type="submit" value="" title="Search with SourceMoz" ng-click="submit()">
+	</form>
+	<!-- #search -->
+</div>

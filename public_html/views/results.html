@@ -1,0 +1,253 @@
+<div id="results-web" ng-init="sideMenuVisible=false;">
+	<!--<nav id="menu-slideout" ng-include="'/views/partials/results.sidemenu.html'"></nav>-->
+
+	<header>
+		<a id="logo" ui-sref="frontpage"></a>
+
+		<div id="menu-container">
+			<a class="menu_toggler"
+			   title="Menu"
+			   ng-click="sideMenuVisible=!sideMenuVisible"></a>
+		</div>
+
+		<form id="search"
+		      ng-submit="$event.preventDefault(); submit()"
+		      ng-controller='searchInputController'>
+
+			<autocomplete
+				attr-name="search"
+				attr-placeholder=""
+				attr-input-id="q"
+				attr-input-type="search"
+				ng-model="q"
+				data="suggestions"
+				on-select="useSuggestion"
+				on-type="updateSuggestions"></autocomplete>
+
+			<input id="qs" name="" type="submit" value="" title="Search with SourceMoz" ng-click="submit()">
+		</form>
+
+		<!--<div id="menu-popup"-->
+		     <!--ng-hide="!$rootScope.popupMenuVisible || $(window).width()<580"-->
+		     <!--ng-include="'/views/partials/slideMenu.html'">-->
+		<!--</div>-->
+
+		<div class="c"></div>
+	</header>
+
+	<pageslide ps-open="sideMenuVisible" ps-container="results-web" ps-size="250px">
+		<a class="menu_toggler"
+		   title="Menu"
+		   ng-click="sideMenuVisible=!sideMenuVisible"></a>
+
+		<div ng-include="'/views/partials/slideMenu.html'"></div>
+	</pageslide>
+
+	<div ng-include="'/views/partials/results.tabs.html'"></div>
+	<!--<div ng-include="'/views/partials/results.yahooad.html'"></div>-->
+
+	<!--<div style="border-bottom:1px solid #E5E5E5;"></div>-->
+
+
+	<div
+		id="wikipedia_level1"
+		ng-if="$state.params.tab=='web' && (wikiLoading || images.length)"
+		ng-include="'/views/partials/results.wikipedia.html'"></div>
+
+	<div ng-if="loading" class="loader"></div>
+
+	<script type="text/ng-template" id="results.socialItem.html">
+		<div class="socialIcon">
+			<span class="socialIconView {{item.class}}"></span>
+		</div>
+		<div class="socialDesc">
+			<div class="socialHeader">
+				<div class="socialItemHead">
+
+					<div class="flex">
+						<div class="flex flex-vertical-center" style="padding-right:7px;" ng-if="item.avatarUrl">
+							<a href="{{item.url}}" class="itemClick" target="_blank">
+								<img
+									on-error
+									ng-model="item"
+									ng-src="{{item.avatarUrl}}"
+									style="height: 32px; width: 32px;border-radius:3px;"/>
+							</a>
+						</div>
+
+						<div style="width: calc(100% - 45px);">
+							<h1 class="itemTitle"><a href="{{item.url}}" class="itemClick" target="_blank">{{item.name}}</a></h1>
+							<a class="itemDispUrl ddd" href="{{item.url}}" target="_blank">{{item.displayUrl}}</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="c"></div>
+			</div>
+			<div class="itemBody">{{item.snippet}}</div>
+		</div>
+	</script>
+
+	<div style="max-width:1130px;">
+		<div ng-if="$state.params.tab=='web'" id="web_tab">
+
+			<!--socials for mobile -->
+
+			<div id="social_swiper" class="swiper-container">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<div ng-repeat="item in socialResults" class="swiper-slide searchItem socialItem">
+
+						<div class="flex flex-vertical-center"
+						     ng-include src="'results.socialItem.html'"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="results-web2">
+				<div id="results-web3">
+					<div ng-if="!loading && !results.length">No results were found</div>
+					<div ng-class="{
+						'loading':!results,
+						'loaded':results
+						}">
+						<div>
+							<div
+								ng-repeat="row in results"
+								id="webItem-{{row.pos}}" class="searchItem webItem">
+								<h1 class="itemTitle"><a href="{{row.url}}" class="itemClick">{{row.name}}</a></h1>
+								<a href="{{row.url}}" class="ddd itemDispUrl">{{row.displayUrl}}</a>
+
+								<div class="itemBody">{{row.snippet}}</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div style="flex:1;"></div>
+
+				<div id="social_place" ng-init="secondOpen=false" ng-show="socialResults">
+					<div id="first_call">
+						<div ng-repeat="item in socialResults"
+						     class="searchItem socialItem flex flex-vertical-center"
+								 ng-include src="'results.socialItem.html'"></div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div ng-if="$state.params.tab=='images'" id="images_tab">
+			<!--<div class="row">-->
+				<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">-->
+
+
+					<div ng-if="!loading && !images.length">No images were found</div>
+
+					<div id="images_place" ng-class="{
+						'loading':loading,
+						'loaded':!loading
+						}">
+
+						<div ng-repeat="item in images" class="searchItem imagesItem col-xs-6 col-sm-4 col-md-4 col-lg-4">
+							<div class="thumbItem">
+								<a style="background:url('{{item.thumbnailUrl}}') center 30% no-repeat; background-size:100%;" class="thumbView"
+								   target="_blank" href="{{item.contentUrl}}"></a>
+							</div>
+
+							<div class="descItem">
+								<h1 class="itemTitle"><a target="_blank" href="{{item.contentUrl}}" class="itemClick">{{item.name}}</a></h1>
+								<a class="itemDispUrl" target="_blank" href="{{item.hostPageUrl}}">{{item.hostPageDisplayUrl}}</a>
+
+								<div class="img_info">
+									<span class="info_dim">{{item.width}}x{{item.height}}</span>
+								</div>
+							</div>
+							<!-- .descItem -->
+						</div>
+
+					<!--</div>-->
+				<!--</div>-->
+			</div>
+		</div>
+
+		<div ng-if="$state.params.tab=='videos'" id="videos_tab">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+					<div ng-if="!loading && !videos.length">No videos were found</div>
+
+					<div id="video_place" ng-class="{
+						'loading':loading,
+						'loaded':!loading
+						}">
+
+						<div ng-repeat="item in videos" class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="col-video-image">
+									<a class="thumb_view" style="background:url('{{item.thumbnailUrl}}') center no-repeat;"
+									   href="{{item.hostPageUrl}}"></a>
+								</div>
+								<div class="col-video-content">
+									<h1><a href="{{item.hostPageUrl}}" class="itemClick">{{item.name}}</a></h1>
+									<a class="itemDispUrl" href="{{item.hostPageUrl}}">{{item.hostPageDisplayUrl}}</a>
+
+									<div class="itemBody">{{item.description}}</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div ng-if="$state.params.tab=='news'" id="news_tab">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div ng-if="!loading && !news.length">No news were found</div>
+
+					<div id="news_place" ng-class="{
+						'loading':loading,
+						'loaded':!loading
+						}">
+
+						<div ng-repeat="item in news" class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="max-height: 90px; overflow: hidden;">
+								<div class="col-video-image" ng-if="item.image.thumbnail" style="width: 125px;">
+									<a class="thumb_view"
+									   style="background:url('{{item.image.thumbnail.contentUrl}}') center no-repeat;"
+									   href="{{item.url}}"></a>
+								</div>
+								<div class="col-video-content">
+									<h1><a href="{{item.url}}" class="itemClick">{{item.name}}</a></h1>
+									<!--<a class="itemDispUrl" href="{{item.hostPageDisplayUrl}}">{{item.hostPageDisplayUrl}}</a>-->
+
+									<div class="itemBody">{{item.description}}</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row" style="clear: both;" ng-if="!loading">
+			<div>
+				<footer>
+					<div id="goup" ng-if="showGoToTop">
+						<a id="scrollTop" ng-click='goToTop()' name="scrollTop" title="Scroll to the top"></a>
+					</div>
+
+					<div id="copyright">
+						<span id="mfCopy">&copy;2016 SourceMoz</span><span id="mfLinks"><a ui-sref="frontpage">Home</a> | <a
+						ui-sref="about" target="_blank">About</a> | <a
+						href="mailto:mreisbeck@gmail.com?subject=Feedback%20on%20sourcemoz.com&body=Hello%21%0D%0A%0D%0AI%20got%20something%20to%20tell%20you%20about%20sourcemoz.com%21">Feedback</a></span>
+					</div>
+
+				</footer>
+			</div>
+		</div>
+	</div>
+</div>

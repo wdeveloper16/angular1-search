@@ -1,0 +1,54 @@
+<div id="page_content" ng-init="sideMenuVisible=false;">
+	<pageslide ps-size="250px" ps-open="sideMenuVisible">
+		<a class="menu_toggler" title="Menu" ng-click="sideMenuVisible=!sideMenuVisible"></a>
+
+		<div ng-include="'/views/partials/slideMenu.html'"></div>
+	</pageslide>
+
+	<div class="flex flex-horizontal-center flex-vertical-center" id="front-row">
+		<div id="front-content" class="container">
+			<div class="row" style="height: 80px;">
+				<div id="logo"></div>
+			</div>
+			<div class="row" ng-controller="searchInputController">
+				<form id="front_query"
+				      class="ui-widget"
+				      name="form"
+				      ng-submit="$event.preventDefault(); submit()">
+
+					<div id="front-search">
+						<span class="fa fa-search fa-flip-horizontal" ng-click="submit()"></span>
+
+						<autocomplete
+							attr-placeholder=""
+							attr-input-id="q"
+							attr-name="search"
+							attr-input-type="search"
+							ng-model="q"
+							data="suggestions"
+							on-select="useSuggestion"
+							on-type="updateSuggestions"></autocomplete>
+
+						<div style="clear: both"></div>
+					</div>
+				</form>
+				<!-- #front_query -->
+			</div>
+			<div class="row" style="height: 80px;">
+				<div >
+					<div id="front_slogan">We don't save, track or share your activity.</div>
+					<!-- #front_slogan -->
+				</div>
+				<div>
+					<div id="front_copyright">&copy; 2016 SourceMoz</div>
+					<!-- #front_copyright -->
+				</div>
+				<div>
+					<div id="front_buttons" ng-init="buttonVisible=false;">
+						<div id="buttons" ng-click="sideMenuVisible=!sideMenuVisible"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

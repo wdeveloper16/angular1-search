@@ -1,0 +1,235 @@
+.c {
+	clear: both;
+}
+
+.searchItem {
+
+	.itemDispUrl {
+		clear:       both;
+		display:     inline-block;
+		overflow:    hidden;
+		white-space: nowrap;
+	}
+
+	.itemClick b {
+		font-weight: normal;
+	}
+
+	.itemClick:link {
+		color:           @colorLinkBlue; //hsla(240, 92%, 41%, 1);
+		text-decoration: none;
+	}
+
+	.itemClick:visited {
+		color: @colorLinkVisitedPurple;
+	}
+
+	.itemDispUrl {
+		display:         block;
+		width:           100%;
+		margin:          0 0 5px;
+		color:           #288A3D;
+		text-decoration: none;
+	}
+
+	.itemDispUrl b {
+		font-weight: normal;
+	}
+}
+
+#results-web {
+	header {
+		position:  relative;
+		max-width: 1100px;
+		padding:   0 10px;
+	}
+
+	@import 'results/wikipediaAndImages';
+	@import 'results/tabMenu';
+
+	#results-web2 {
+		padding: 62px 15px 0 15px;
+		clear:   both;
+
+		@media @tablet{
+			padding: 62px 15px 0 25px;
+		}
+
+		#results-web3 {
+			width:   100%;
+			padding: 0;
+			margin:  0;
+			border:  0 none;
+
+			.searchItem {
+				.itemTitle {
+					font-size:   17px;
+					font-weight: normal;
+
+					a {
+						display:    inline-block;
+						max-height: 37px;
+						overflow:   hidden;
+					}
+				}
+				.itemDispUrl {
+					font-size: 14px;
+				}
+			}
+		}
+
+		@media @desktop {
+			#results-web3 {
+				width: 525px;
+				float: left;
+			}
+		}
+
+		@media @tablet {
+			#results-web3 {
+				width: 60%;
+				float: left;
+			}
+		}
+	}
+
+	#scrollTop {
+		display:             block;
+		width:               72px;
+		height:              23px;
+		margin:              0 auto;
+		background-image:    url("/assets/img/top.png");
+		background-repeat:   no-repeat;
+		background-position: 0 0px;
+		cursor:              pointer;
+	}
+
+	#scrollTop:hover {
+		background-position: 0 -23px;
+	}
+
+	#page_content > footer {
+		width:      910px;
+		display:    none;
+		margin:     60px 0 0 130px;
+		overflow:   auto;
+		text-align: center;
+	}
+
+	#copyright {
+		display:    block;
+		margin:     0;
+		padding:    0 0 30px 0;
+		overflow:   auto;
+		text-align: center;
+	}
+
+	#copyright > span {
+		display: inline-block;
+		margin:  0 .75em;
+	}
+
+	#copyright, #copyright a {
+		color:           @colorGreyFooter;
+		text-decoration: none;
+		font-size:       12px;
+	}
+
+	#copyright a {
+		display:        inline-block;
+		vertical-align: top;
+		margin:         0 .25em;
+	}
+
+	#copyright a:hover {
+		color: @colorGreyFooterHover;
+	}
+
+	.ui-autocomplete {
+		position:         absolute;
+		top:              100%;
+		left:             0;
+		z-index:          9999;
+		float:            left;
+		display:          block;
+		min-width:        160px;
+		padding:          4px 0;
+		margin:           2px 0 0 0;
+		list-style:       outside none none;
+		background-color: hsla(0, 0%, 90%, 1);
+	}
+
+	.ui-helper-hidden-accessible {
+		display: none;
+	}
+
+	.ui-autocomplete .ui-menu-item {
+		display:     block;
+		padding:     2px 8px;
+		clear:       both;
+		font-weight: normal;
+		color:       hsla(0, 0%, 25%, 1);
+		white-space: nowrap;
+	}
+
+	.ui-state-focus {
+		background-color: #00ccff;
+		outline:          none;
+	}
+
+	.ui-state-focus {
+		background-color: #00ccff;
+		color:            #fff !important;
+		outline:          none;
+	}
+
+	#content {
+		width:    calc(~"100% - 130px");
+		display:  block;
+		margin:   43px 0 0 130px;
+		overflow: auto;
+		padding:  0 0 0 10px;
+	}
+
+	.searchItem {
+		width:  100%;
+		margin: 0 0 38px;
+
+		.itemTitle {
+			display: block;
+			width:   100%;
+			margin:  0; //0 0 6px;
+		}
+	}
+
+	.webAd .itemTitle {
+		font-weight: normal;
+	}
+
+	.webAd .itemDispUrl {
+		background-image:    url('/assets/img/adicon.png');
+		background-position: left center;
+		background-repeat:   no-repeat;
+		padding-left:        32px;
+	}
+
+	.searchItem .itemBody {
+		display:   block;
+		overflow:  hidden;
+		width:     100%;
+		font-size: 13px;
+		color:     @colorGreyWeb;
+	}
+
+	#side_upper_images, #side_lower_images {
+		width:    1200px;
+		overflow: hidden;
+	}
+
+	#nd_call {
+		margin: 28px 0 0 0;
+	}
+}
+
+@import 'results/social';
+@import 'results/social_swiper';

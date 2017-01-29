@@ -1,0 +1,132 @@
+#about {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	#content-wrapper {
+		margin: auto;
+		width: 628px;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+	}
+	#content {
+		font-family: Arial, sans-serif;
+		font-size: 18px;
+		color: #999999;
+	}
+	#content h3 {
+		font-family: "Century Gothic", CenturyGothic, AppleGothic, "Didact Gothic", sans-serif;
+		font-size: 36px;
+		font-weight: lighter;
+		color: #cccccc;
+		text-align: center;
+	}
+	#content p {
+		line-height: 24px;
+		margin: 0;
+	}
+	#content h3 span {
+		color: #0099ff;
+	}
+	#copyright {
+		width: 100%;
+		position: absolute;
+		bottom: 15px;
+		text-align: center;
+	}
+
+	#copyright > span {
+		display: inline-block;
+		margin:  0 .75em;
+	}
+
+	#copyright, #copyright a {
+		color:           hsla(0, 0%, 60%, 1);
+		text-decoration: none;
+		font-size:       12px;
+	}
+
+	#copyright a {
+		display:        inline-block;
+		vertical-align: top;
+		margin:         0 .25em;
+	}
+
+	#copyright a:hover {
+		color: hsla(0, 0%, 10%, 1);
+	}
+
+	#upline {
+		width:      100%;
+		margin:     0 auto;
+	}
+
+	@media @tabletDesktop {
+		#upline {
+			.flex;
+		}
+	}
+
+	.autocomplete ul {
+		margin-top: 2px;
+	}
+
+	.ui-autocomplete {
+		position:         absolute;
+		top:              100%;
+		left:             0;
+		z-index:          9999;
+		float:            left;
+		display:          block;
+		min-width:        160px;
+		padding:          4px 0;
+		margin:           2px 0 0 0;
+		list-style:       outside none none;
+		background-color: hsla(0, 0%, 90%, 1);
+	}
+
+	.ui-helper-hidden-accessible {
+		display: none;
+	}
+
+	.ui-autocomplete .ui-menu-item {
+		display:     block;
+		padding:     2px 8px;
+		clear:       both;
+		font-weight: normal;
+		color:       hsla(0, 0%, 25%, 1);
+		white-space: nowrap;
+	}
+
+	.ui-state-focus {
+		background-color: #00ccff;
+		outline:          none;
+	}
+
+	.ui-state-focus {
+		background-color: #00ccff;
+		color:            #fff !important;
+		outline:          none;
+	}
+
+	@media @mobile {
+		#content-wrapper {
+			width: auto;
+			padding: 70px 15px;
+		}
+		#content {
+			font-size: 12px;
+		}
+		#content h3 {
+			font-size: 20px;
+		}
+		#copyright {
+			margin-left: -15px;
+			font-size: 11px !important;
+		}
+	}
+}

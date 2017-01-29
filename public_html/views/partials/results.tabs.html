@@ -1,0 +1,23 @@
+<div id="tab_menu">
+	<ul id="tab_menu_items">
+		<li><a id="tab_web"
+		       class="tab_item"
+		       ng-class="{tab_active:$state.params.tab=='web'}"
+		       ui-sref="results({q:$state.params.q, tab:'web'})">Web</a></li>
+
+		<li><a id="tab_images"
+		       class="tab_item"
+		       ng-class="{tab_active:$state.params.tab=='images'}"
+		       ui-sref="results({q:$state.params.q, tab:'images'})">Images</a></li>
+
+		<li><a id="tab_video"
+		       class="tab_item"
+		       ng-class="{tab_active:$state.params.tab=='videos'}"
+		       ui-sref="results({q:$state.params.q, tab:'videos'})">Videos</a></li>
+
+		<li><a id="tab_news"
+		       class="tab_item"
+		       ng-class="{tab_active:$state.params.tab=='news'}"
+		       ui-sref="results({q:$state.params.q, tab:'news'})">News</a></li>
+	</ul>
+</div>

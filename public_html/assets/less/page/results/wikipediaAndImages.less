@@ -1,0 +1,245 @@
+#wikipedia_level1 {
+	padding: 0 10px;
+
+	#wikipedia_level2 {
+		padding:  0 0 10px 0;
+		overflow: hidden;
+
+		#wikipedia_level3 {
+			min-width: "~calc(45% - 15px)";
+
+			h3 {
+				font-size:     13px;
+				font-weight:   400;
+				margin-top:    17px;
+				margin-bottom: 8px;
+			}
+
+			#wiki_place {
+				overflow:      hidden;
+				height:        65px;
+				margin:        0;
+				border-bottom: 0;
+
+				line-height:   13px;
+				font-size:     12px;
+			}
+
+			#wiki_link {
+				color:           @colorLinkBlue;
+				font-size:       10px;
+				margin-top:      10px;
+				display:         block;
+
+				text-decoration: none;
+			}
+		}
+
+		@media @tabletVertical{
+			min-width: 35%;
+		}
+
+		#preview_images_mobile {
+			.flex;
+			overflow: hidden;
+			height:   160px;
+
+			.swiper-slide {
+				width:               auto;
+				height:              160px;
+
+				background-size:     auto 160px;
+				background-position: center;
+				background-repeat:   no-repeat;
+			}
+		}
+
+		#preview_images {
+			.flex;
+
+			display:      none;
+			margin-right: 15px;
+
+			&.multiple {
+				overflow-y: hidden;
+				overflow-x: auto;
+				min-width:  55%;
+			}
+
+			@media @tabletVertical{
+				&.multiple {
+					min-width:  55%;
+				}
+			}
+
+			.previewImage {
+				height:       60px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	@media @desktop {
+		#wikipedia_level2 {
+			margin-left: 151px;
+		}
+	}
+}
+
+@media @tabletDesktop {
+	#wikipedia_level1 {
+		border-bottom: 1px solid #E5E5E5;
+
+		#wikipedia_level2 {
+			.flex;
+
+			height:    234px; //override default mobile
+			padding:   28px 0;
+			max-width: 860px;
+
+			#wikipedia_level3 {
+				height:        135px;
+				padding:       0;
+				margin-bottom: 8px;
+
+				h3 {
+					font-size:     17px;
+					font-weight:   400;
+					margin-top:    12px;
+					margin-bottom: 0;
+				}
+
+				#wiki_link {
+					margin-top: 4px;
+					font-size:  12px;
+				}
+
+				#wiki_place {
+					height:      93px;
+					line-height: 18px;
+					font-size:   12px;
+					margin-top:  8px;
+				}
+			}
+
+			#preview_images_mobile {
+				display: none;
+			}
+
+			#preview_images {
+				display:    block;
+				max-height: 184px;
+				min-width: 150px;
+				overflow: hidden; //if image is bigger by width, hide it
+
+				&.multiple {
+					overflow: hidden;
+					flex:     1;
+				}
+
+				.previewImage {
+					height:       60px;
+					float:        left;
+					margin-right: 0;
+				}
+
+				.previewImage:first-child {
+					height: 184px;
+				}
+			}
+		}
+	}
+}
+
+@media @tabletVertical{
+	#wikipedia_level1 {
+		padding-left: 25px;
+	}
+}
+@media @tabletHorizontal{
+	#wikipedia_level1 {
+		padding-left: 66px;
+	}
+}
+
+@media @mobile {
+	#wiki_place {
+		font-size: 13px !important;
+		line-height: 15px !important;
+	}
+	#wiki_link {
+		font-size: 12px !important;
+	}
+}
+
+#wiki_place {
+	padding:     0;
+	overflow:    hidden;
+	line-height: 18px;
+	font-size:   12px;
+}
+
+#main_image {
+	display:             block;
+	margin:              0;
+	padding:             0;
+	border:              0;
+	float:               left;
+	background-repeat:   no-repeat;
+	background-position: center;
+	background-size:     cover;
+}
+
+#side_images {
+	display:  block;
+	overflow: hidden;
+}
+
+.wiki_row_image {
+	display:             block;
+	margin:              0;
+	padding:             0;
+	border:              0;
+	float:               left;
+	background-repeat:   no-repeat;
+	background-position: center;
+	background-size:     cover;
+}
+
+#wiki_images {
+	margin:   0;
+	padding:  0;
+	border:   0;
+	width:    392px;
+	height:   180px;
+	overflow: hidden;
+	float:    left;
+}
+
+#wiki_text {
+	margin:   0;
+	padding:  0;
+	border:   0;
+	width:    392px;
+	height:   180px;
+	overflow: hidden;
+	float:    right;
+}
+
+#wiki_title {
+	font-size:   16px;
+	font-weight: normal;
+	margin:      18px 0px 0px;
+}
+
+#wiki_content {
+	font-family: "Arial Unicode MS", Tahoma;
+	font-size:   12px;
+	line-height: 16px;
+	height:      auto;
+	max-height:  80px;
+	margin:      12px 0px;
+	overflow:    hidden;
+	word-wrap:   break-word;
+	max-width:   392px;
+}

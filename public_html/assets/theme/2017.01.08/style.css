@@ -1,0 +1,24 @@
+#front-row{
+	background:  url(bg.jpg) center no-repeat;
+}
+
+#logo{
+	background:  url(logo.png) center no-repeat;
+}
+
+#front-content #buttons {
+	cursor: pointer;
+	width: 51px;
+	height: 7px;
+	margin: 0 auto;
+	background: url(tt-1.png) no-repeat center;
+}
+
+#front-content #buttons:hover{
+background: url(tt-2.png) no-repeat center;
+}
+
+#front-content #front_copyright,
+#front-content #front_slogan{
+	color: #ffffff;
+}

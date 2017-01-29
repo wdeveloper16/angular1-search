@@ -1,0 +1,673 @@
+html,body{
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	width: 100%;
+  	height: 100%;
+}
+
+.container{
+	/*width: 906px;*/
+}
+
+#social_place{
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*
+Logo
+*/
+#logo{
+	margin: 20px 0 10px -10px;
+}
+
+/*
+Main Menu
+*/
+
+/*#menu-container{*/
+	/*position: relative;*/
+/*}*/
+
+#menu{
+	margin: 29px 0px 0px 0px;
+}
+	#menu_container{
+		display:none;
+		position: absolute;
+    	z-index: 999;
+    	right: 0;
+    	top: 50px;
+    	width: 180px;
+	}
+
+/*
+Tab Menu
+*/
+#tab_menu{
+	height: inherit;
+	margin: 10px 0;
+}
+	#tab_menu_items{
+		margin:0;
+	}
+
+/*Search*/
+#search{
+	float:none;
+	width:initial;
+	margin: 20px 0 0 0px;
+}
+
+/*Wiki Section*/
+#wiki_place{
+	height:initial;
+	margin: 0;
+	border-bottom: 0;
+}
+	#wiki_inside {
+		margin: 0 auto;
+	}
+	#wiki_text{
+		width:100%;
+		float:none;
+		height: inherit;
+	}
+
+	#wiki_content{
+		font-family: inherit;
+		max-width: inherit;
+	}
+
+/*Copyright footer*/
+#copyright{
+	width: inherit;
+}
+
+/*---------------------------------
+Content
+---------------------------------*/
+#out_web_place{
+	width: 100%;
+}
+
+/*---------------------------------
+Misc
+---------------------------------*/
+/*Divider*/
+.c{
+	width: inherit;
+}
+
+/*---------------------------------
+Slideout
+---------------------------------*/
+
+#button-slideout{
+	float:right;
+	margin: 29px 0px 0px 0px;
+	width: 23px;
+    height: 14px;
+    background-image: url("../img/m.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    display: block;	
+}
+
+#panel-slideout{
+	background: #FFFFFF; 
+}
+
+#menu-slideout{
+	background: #003366;
+	/* IE */
+	filter: alpha(opacity=90);
+	/* Mozilla */
+	-moz-opacity: 0.9;
+	/* CSS3 */
+	opacity: 0.9;
+}
+	#menu-slideout #menu_items{
+		background-color: transparent;
+		border: 0;
+		margin: 40px 0 0 30px;
+	}
+		#menu-slideout #menu_items .fa{
+			margin-right: 10px;
+		}
+
+		#menu-slideout #menu_items li{
+			margin: 30px 12px;
+		}
+
+		#menu-slideout #menu_items a{
+			color: #FFFFFF;
+			background-image: none;
+			padding: 0;
+		}
+
+
+.slideout-menu {
+	position: fixed;
+	left: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	width: 256px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	display: none;
+}
+
+.slideout-panel {
+	position:relative;
+	z-index: 1;
+	/*will-change: transform;*/
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
+
+/*---------------------------------
+Web Items
+---------------------------------*/
+.searchItem .itemDispUrl{
+	/*word-wrap: break-word;*/
+
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;	
+	
+}
+
+/*---------------------------------
+Sticky
+---------------------------------*/
+.box-affix {    
+    height:200px;
+    width:200px;
+    color:#fff;
+    background-color:blue;
+}
+
+.affix-top {
+    /* Initial items */
+}
+
+.affix {
+    position:fixed;
+    z-index: 999;
+}
+
+#wiki_text{
+	background-color: #FFFFFF; 
+}
+
+	#wiki_text.affix #wiki_text_inside{
+		/*width: 75%;*/
+	}
+
+/*---------------------------------
+images
+---------------------------------*/
+#images_place{
+	width: initial;
+}
+	/*
+	#images_place .imagesItem .itemTitle{
+		height: initial;
+	}
+	*/
+	#images_place h1{
+		font-size: 15px;
+		margin: 0;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    text-overflow: ellipsis;		
+	    overflow: hidden;
+	    margin-bottom: 5px;
+	}
+
+/*---------------------------------
+Pager
+---------------------------------*/
+
+#listPager{
+	display:none;
+	
+	z-index: 1000;
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	    text-align: center;
+}
+	#listPager ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	#listPager ul li{
+		display: inline;
+		/*margin: 3px;*/
+	}
+
+	#listPager ul li a{
+		/*background-color: blue;*/
+        font-size: 0;
+        background-color:#cdcdcd;
+        border: 0;
+        margin-left:3px;
+        padding: 2px 7px;		
+	}
+
+		#listPager ul li a:hover{
+			background-color: #349aff;
+		}
+
+	.listPagerActive{
+		background-color: #349aff;
+	}
+
+/*---------------------------------
+Video
+---------------------------------*/
+
+#video_place{
+	width: initial;
+}
+	#video_place h1{
+		font-size: 15px;
+		margin: 0;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    text-overflow: ellipsis;		
+	    overflow: hidden;
+	    margin-bottom: 5px;
+	}
+		#video_place h1 a{
+			color: hsla(240,92%,41%,1);
+			text-decoration: none;
+
+		}
+
+
+	#video_place .row{
+		margin-bottom: 15px;
+	}	
+
+	#video_place .col-video-image{
+	    width: 144px;
+	    height: 108px;
+		float:left;
+		overflow: hidden;
+		position: relative;		
+	}
+
+	#video_place .col-video-content{
+		margin-right: 10px;
+		overflow: hidden;
+		padding-left: 8px;
+		height: 106px;
+	}
+
+   	#video_place .itemDispUrl{
+	    white-space: nowrap;	
+	    width: 100%;
+	    color: #288A3D;
+	}
+
+	#video_place .itemBody{
+		margin-top: 5px;
+	}
+
+/*---------------------------------
+Front
+---------------------------------*/
+
+#front_image{background-image:url(http://sourcemoz.lc/assets/bgr/cd59c05e.jpg);}
+#front_query{color:#191919;background-color:#FFFFFF;}
+#front_slogan{color:#FFFFFF;}
+#front_copyright{color:#FFFFFF;}
+.drop_button{background-color:#FFFFFF;}
+.drop_button:hover{background-color:#003366;color:#FFFFFF;}
+#drop_content a{background-color:transparent;color:#FFFFFF;}
+#drop_content a:hover{background-color:#003366;color:#FFFFFF;}
+
+#front_image #front_logo{
+	overflow: visible;
+}
+
+#logo-front-page{
+	display:none;
+}
+
+
+/*---------------*/
+#front-row{
+	background: url(/assets/bgr/cd59c05e.jpg) center no-repeat;
+	height: 400px;
+	padding-top: 139px;
+	margin-top: 192px;
+}
+
+	#front-content{
+		text-align: center;
+	}
+
+		#front-content #logo{
+			margin: 10px auto;
+		}
+
+		#front-content #front-search{
+			position: relative;
+		}
+			#front-content #front-search input{
+
+			}
+			#front-content #front-search .fa-search { 
+			  position: absolute;
+			  top: 7px;
+			  right: 10px;
+			  color: #2BAAFF;
+			  font-size: 18px;
+			}			
+
+   	#front-content #search{
+   		margin: 0;
+   	}
+
+/*---------------------------------
+Swiper
+---------------------------------*/
+    .swiper-container {
+	    width: 100%;
+	    height: 150px;
+    }
+
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 60%;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide:nth-child(2n) {
+        width: 40%;
+    }
+    .swiper-slide:nth-child(3n) {
+        width: 20%;
+    }
+    .social_swiper{
+		display: none;
+		margin-top: 20px;
+    }
+    .social_swiper .swiper-slide{
+		text-align: left;
+    }
+    .custom{
+    	margin-left: 12px;
+    }
+
+    .div-swiper-social{
+    	margin: 1px 0px;
+    	box-shadow: 0px 0px 1px 0px #aaa;
+    }
+	.social_container_mobile{
+		background: #eee;
+	}
+/*---------------------------------
+Misc
+---------------------------------*/
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.size-img{
+	width: 80%!important;
+    height: 80%!important;
+}
+
+.socialItem .itemBody{
+	max-height: 100%;
+	font-size: 11px;
+    line-height: 13px;
+}
+
+.socialIcon{
+	margin-top:10px
+}
+/*---------------------------------
+Media Queries
+- https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries
+---------------------------------*/
+/* Tables, computers */
+@media only screen and (min-width : 768px) {
+	#button-slideout, #menu-slideout{
+		display:none;
+	}
+
+	/*
+	http://stackoverflow.com/questions/17394854/how-can-i-disable-bootstraps-affix-on-smaller-screens
+	*/
+    .affix {
+        position: static;
+    }
+
+    #listPager{
+    	display:none;
+    }
+
+	.swiper-container{
+		display:none;
+	}
+}
+
+/* Small Devices */ 
+@media only screen and (max-width : 768px) {
+	#tab_menu{
+		border-bottom: 0;
+		margin: 16px 0 12px 0;
+	}
+
+	.tab_item.tab_active{
+		border: 0;
+	}
+
+	.tab_item{
+		padding: 0;
+	}
+
+	#menu{
+		display:none;
+	}
+
+    .affix {
+        position: static;
+    }	
+
+    /* Video */
+	#video_place .col-video-image{
+		width: 120px;
+		height: 90px;	
+	}
+
+	#video_place .col-video-content{
+		height: 89px;
+	}	
+
+	/* Images*/
+
+	#images_place a.thumbView{
+		width: initial;
+	}
+
+	/* Front */
+
+	#front-row{
+		background: none;
+		margin-top: 0;
+	}
+
+		#front-content #logo-front-page{
+			display:block;
+			margin: auto;
+		}	
+
+		#front-content #logo{
+			display:none;
+		}	
+
+		#front-content #front_slogan, 
+		#front-content #front_copyright{
+			color: hsla(0,0%,60%,1);
+		}		
+
+	#front-row #front-search #q{
+		/*border: 1px solid #f2f2f2;*/
+		padding: 12px 2px;
+	}
+
+	#front-row #front_query{
+		height: initial;
+	}
+	
+	#goup{
+		padding: 15px;
+		border-bottom: 0px solid #eee;
+		bottom:10px;
+		width: 100%;
+	    right:0;
+	    left:0;
+	}
+
+	.wiki_images_container{
+		display:none;
+	}
+	.socialDesc{
+		opacity:1;
+	}
+	.socialItem .itemClick:link {
+    	color: hsla(240,92%,41%,1);
+	}
+	.searchItem .itemDispUrl {
+    	color: #288A3D!important;
+	}
+	.socialDesc .sIconView{
+		filter:none!important;
+	}
+	.socialItem .social_delicious{background-position:   0   0;}
+	.socialItem .social_digg{background-position: -28px 0;}
+	.socialItem .social_facebook{background-position: -56px 0;}
+	.socialItem .social_flickr{background-position: -84px 0;}
+	.socialItem .social_lastfm{background-position:-112px 0;}
+	.socialItem .social_linkedin{background-position:-140px 0;}
+	.socialItem .social_pinterest{background-position:-168px 0;}
+	.socialItem .social_google{background-position:-196px 0;}
+	.socialItem .social_reddit{background-position:-224px 0;}
+	.socialItem .social_stumble{background-position:-252px 0;}
+	.socialItem .social_tumblr{background-position:-280px 0;}
+	.socialItem .social_twitter{background-position:-308px 0;}
+	.socialItem .social_vine{background-position:-336px 0;}
+	.socialItem .social_yelp{background-position:-364px 0;}
+	.socialItem .social_quora{background-position:-392px 0;}
+	.socialItem .social_four{background-position:-420px 0;}
+	.socialItem .social_instagram{background-position:-448px 0;}
+
+	.socialIcon{
+		margin-top:25px
+	}
+
+	.socialItem{
+		margin: 0 10px 0 10px!important;
+	}
+	
+	#check_point_affix hr{
+		border-top: 1px solid #fff;
+	}
+
+}
+
+/* Small Devices */ 
+@media only screen and (max-width : 480px) {
+	#front-row{
+		background: none;
+		margin-top: 100px;
+		padding-top: 100px
+	}
+	#social_place{
+		display: none!important;
+	}
+	.social_swiper{
+		display:block;
+	}
+}
+
+@media only screen and (min-width : 1200px) {
+	.row_web_place{
+		width: 49.666667%;
+		margin-right: 70px;
+	}
+
+	.wiki_images_container{
+		width: 40%;
+	}
+
+	.wiki_details_container{
+		width: 39%;
+	}
+
+	.main_content{
+		margin-left: 120px;
+	}
+
+	#check_point_affix{
+		margin: 20px 0 20px 0;
+	}
+
+	.socialItem{
+		max-height:78px!important;
+	}
+}
+
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line {
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  max-width: 100%;
+}
+
+.ellip,
+.ellip-line {
+  position: relative;
+  overflow: hidden;
+}

@@ -1,0 +1,84 @@
+#logo {
+	width:      100%;
+	height:     auto;
+	background: url(/assets/logo/logo_desktop.png) center no-repeat;
+}
+
+#front-content {
+	#logo {
+		margin: 0 auto;
+		background-position: bottom;
+	}
+
+	#front_logo, #logo {
+		width:    234px;
+		height:   80px;
+		display:  block;
+		overflow: hidden;
+	}
+}
+
+#results-web {
+	#logo {
+		display:             block;
+		margin-top:          19px;
+		margin-left:         6px;
+		padding:             0;
+		width:               209px;
+		height:              21px;
+		overflow:            hidden;
+		background-repeat:   no-repeat;
+		background-position: 0;
+		background-image:    url('/assets/logo/logo_phone.png');
+
+		span {
+			display: none;
+		}
+	}
+
+	@media @tabletDesktop {
+		#logo {
+			background-image: url('/assets/img/sl.png');
+			margin:           25px 1px 1px;
+			float:            left;
+		}
+	}
+
+	@media @tabletVertical {
+		#logo {
+			margin: 34px 10px 1px 6px;
+		}
+	}
+
+	@media @tabletHorizontal {
+		#logo {
+			margin: 34px 10px 1px 26px;
+		}
+	}
+
+	@media @mobile {
+		#logo {
+			margin-left: 3px;
+		}
+	}
+}
+
+#about {
+	#logo {
+		display:             block;
+		margin:              0;
+		padding:             0;
+		width:               187px;
+		min-width:           187px;
+		height:              60px;
+		overflow:            hidden;
+		background-repeat:   no-repeat;
+		background-size: 	 contain;
+	}
+	@media @mobile {
+		#logo {
+			width: 156px;
+			min-width: 156px;
+		}
+	}
+}

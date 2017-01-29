@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/artjom/PhpstormProjects/tactic/vendor/composer/phpunit/phpunit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../../js/html5shiv.min.js"></script>
+  <script src="../../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../../index.html">/Users/artjom/PhpstormProjects/tactic/vendor/composer</a></li>
+        <li><a href="../index.html">phpunit</a></li>
+        <li><a href="index.html">phpunit</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/Util/Fileloader.php.html#22">PHPUnit_Util_Fileloader</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#148">PHPUnit_Util_Configuration</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Blacklist.php.html#22">PHPUnit_Util_Blacklist</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#25">PHPUnit_TextUI_TestRunner</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Filter.php.html#22">PHPUnit_Util_Filter</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Getopt.php.html#23">PHPUnit_Util_Getopt</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#22">PHPUnit_Util_XML</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#22">PHPUnit_Util_TestSuiteIterator</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#22">PHPUnit_Util_Printer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/AssertionFailedError.php.html#22">PHPUnit_Framework_AssertionFailedError</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#24">PHPUnit_TextUI_ResultPrinter</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#47">PHPUnit_Framework_TestSuite</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#22">PHPUnit_Framework_TestFailure</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/BaseTestRunner.php.html#22">PHPUnit_Runner_BaseTestRunner</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/Version.php.html#22">PHPUnit_Runner_Version</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#23">PHPUnit_TextUI_Command</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#22">PHPUnit_Framework_TestResult</a></td><td class="text-right">10%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#29">PHPUnit_Util_Test</a></td><td class="text-right">11%</td></tr>
+       <tr><td><a href="src/Framework/Constraint/IsEqual.php.html#30">PHPUnit_Framework_Constraint_IsEqual</a></td><td class="text-right">24%</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#30">PHPUnit_Util_ErrorHandler</a></td><td class="text-right">34%</td></tr>
+       <tr><td><a href="src/Framework/Constraint/StringContains.php.html#29">PHPUnit_Framework_Constraint_StringContains</a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="src/Framework/Exception.php.html#39">PHPUnit_Framework_Exception</a></td><td class="text-right">46%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#25">PHPUnit_TextUI_TestRunner</a></td><td class="text-right">52670</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#22">PHPUnit_Util_XML</a></td><td class="text-right">28392</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#23">PHPUnit_TextUI_Command</a></td><td class="text-right">23870</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#148">PHPUnit_Util_Configuration</a></td><td class="text-right">21170</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#47">PHPUnit_Framework_TestSuite</a></td><td class="text-right">20592</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#29">PHPUnit_Util_Test</a></td><td class="text-right">17360</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#22">PHPUnit_Framework_TestResult</a></td><td class="text-right">14580</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#24">PHPUnit_TextUI_ResultPrinter</a></td><td class="text-right">6320</td></tr>
+       <tr><td><a href="src/Util/Getopt.php.html#23">PHPUnit_Util_Getopt</a></td><td class="text-right">1482</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#22">PHPUnit_Util_Printer</a></td><td class="text-right">650</td></tr>
+       <tr><td><a href="src/Util/Filter.php.html#22">PHPUnit_Util_Filter</a></td><td class="text-right">506</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#22">PHPUnit_Framework_TestFailure</a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="src/Runner/BaseTestRunner.php.html#22">PHPUnit_Runner_BaseTestRunner</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#30">PHPUnit_Util_ErrorHandler</a></td><td class="text-right">133</td></tr>
+       <tr><td><a href="src/Util/Blacklist.php.html#22">PHPUnit_Util_Blacklist</a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#22">PHPUnit_Util_TestSuiteIterator</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="src/Framework/Constraint/IsEqual.php.html#30">PHPUnit_Framework_Constraint_IsEqual</a></td><td class="text-right">85</td></tr>
+       <tr><td><a href="src/Runner/Version.php.html#22">PHPUnit_Runner_Version</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/Util/Fileloader.php.html#22">PHPUnit_Util_Fileloader</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/Framework/Exception.php.html#39">PHPUnit_Framework_Exception</a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="src/Framework/Constraint/StringContains.php.html#29">PHPUnit_Framework_Constraint_StringContains</a></td><td class="text-right">9</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#932"><abbr title="PHPUnit_TextUI_TestRunner::showExtensionNotLoadedMessage">showExtensionNotLoadedMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#565"><abbr title="PHPUnit_TextUI_TestRunner::handleConfiguration">handleConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#956"><abbr title="PHPUnit_TextUI_TestRunner::showMessage">showMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#968"><abbr title="PHPUnit_TextUI_TestRunner::getCodeCoverageFilter">getCodeCoverageFilter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Blacklist.php.html#73"><abbr title="PHPUnit_Util_Blacklist::isBlacklisted">isBlacklisted</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Blacklist.php.html#62"><abbr title="PHPUnit_Util_Blacklist::getBlacklistedDirectories">getBlacklistedDirectories</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#552"><abbr title="PHPUnit_TextUI_TestRunner::getLoader">getLoader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#533"><abbr title="PHPUnit_TextUI_TestRunner::write">write</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#108"><abbr title="PHPUnit_TextUI_TestRunner::createTestResult">createTestResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#85"><abbr title="PHPUnit_TextUI_TestRunner::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#113"><abbr title="PHPUnit_TextUI_TestRunner::processSuiteFilters">processSuiteFilters</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#151"><abbr title="PHPUnit_TextUI_TestRunner::doRun">doRun</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#523"><abbr title="PHPUnit_TextUI_TestRunner::runFailed">runFailed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#512"><abbr title="PHPUnit_TextUI_TestRunner::setPrinter">setPrinter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Blacklist.php.html#90"><abbr title="PHPUnit_Util_Blacklist::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#161"><abbr title="PHPUnit_Util_Configuration::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#474"><abbr title="PHPUnit_Util_Configuration::handlePHPConfiguration">handlePHPConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#420"><abbr title="PHPUnit_Util_Configuration::getPHPConfiguration">getPHPConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#538"><abbr title="PHPUnit_Util_Configuration::getPHPUnitConfiguration">getPHPUnitConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#794"><abbr title="PHPUnit_Util_Configuration::getSeleniumBrowserConfiguration">getSeleniumBrowserConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#874"><abbr title="PHPUnit_Util_Configuration::getTestSuite">getTestSuite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#844"><abbr title="PHPUnit_Util_Configuration::getTestSuiteConfiguration">getTestSuiteConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#364"><abbr title="PHPUnit_Util_Configuration::getLoggingConfiguration">getLoggingConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#318"><abbr title="PHPUnit_Util_Configuration::getListenerConfiguration">getListenerConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#182"><abbr title="PHPUnit_Util_Configuration::getInstance">getInstance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#171"><abbr title="PHPUnit_Util_Configuration::__clone">__clone</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#208"><abbr title="PHPUnit_Util_Configuration::getFilename">getFilename</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#219"><abbr title="PHPUnit_Util_Configuration::getFilterConfiguration">getFilterConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#294"><abbr title="PHPUnit_Util_Configuration::getGroupConfiguration">getGroupConfiguration</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#66"><abbr title="PHPUnit_TextUI_TestRunner::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#619"><abbr title="PHPUnit_TextUI_ResultPrinter::writeCountString">writeCountString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#292"><abbr title="PHPUnit_TextUI_ResultPrinter::printIncompletes">printIncompletes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#284"><abbr title="PHPUnit_TextUI_ResultPrinter::printFailures">printFailures</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#301"><abbr title="PHPUnit_TextUI_ResultPrinter::printRisky">printRisky</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#310"><abbr title="PHPUnit_TextUI_ResultPrinter::printSkipped">printSkipped</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#323"><abbr title="PHPUnit_TextUI_ResultPrinter::printFooter">printFooter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#315"><abbr title="PHPUnit_TextUI_ResultPrinter::printHeader">printHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#276"><abbr title="PHPUnit_TextUI_ResultPrinter::printErrors">printErrors</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#263"><abbr title="PHPUnit_TextUI_ResultPrinter::printDefectTrace">printDefectTrace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#163"><abbr title="PHPUnit_TextUI_ResultPrinter::printResult">printResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#117"><abbr title="PHPUnit_TextUI_ResultPrinter::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/AssertionFailedError.php.html#29"><abbr title="PHPUnit_Framework_AssertionFailedError::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#239"><abbr title="PHPUnit_TextUI_ResultPrinter::printDefect">printDefect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#249"><abbr title="PHPUnit_TextUI_ResultPrinter::printDefectHeader">printDefectHeader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#376"><abbr title="PHPUnit_TextUI_ResultPrinter::printWaitPrompt">printWaitPrompt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#388"><abbr title="PHPUnit_TextUI_ResultPrinter::addError">addError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#520"><abbr title="PHPUnit_TextUI_ResultPrinter::writeProgress">writeProgress</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#496"><abbr title="PHPUnit_TextUI_ResultPrinter::endTest">endTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#541"><abbr title="PHPUnit_TextUI_ResultPrinter::writeNewLine">writeNewLine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#556"><abbr title="PHPUnit_TextUI_ResultPrinter::formatWithColor">formatWithColor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#606"><abbr title="PHPUnit_TextUI_ResultPrinter::writeProgressWithColor">writeProgressWithColor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#590"><abbr title="PHPUnit_TextUI_ResultPrinter::writeWithColor">writeWithColor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#478"><abbr title="PHPUnit_TextUI_ResultPrinter::startTest">startTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#469"><abbr title="PHPUnit_TextUI_ResultPrinter::endTestSuite">endTestSuite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#414"><abbr title="PHPUnit_TextUI_ResultPrinter::addIncompleteTest">addIncompleteTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#401"><abbr title="PHPUnit_TextUI_ResultPrinter::addFailure">addFailure</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#428"><abbr title="PHPUnit_TextUI_ResultPrinter::addRiskyTest">addRiskyTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#442"><abbr title="PHPUnit_TextUI_ResultPrinter::addSkippedTest">addSkippedTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#454"><abbr title="PHPUnit_TextUI_ResultPrinter::startTestSuite">startTestSuite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#993"><abbr title="PHPUnit_Util_Configuration::getBoolean">getBoolean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#1010"><abbr title="PHPUnit_Util_Configuration::getInteger">getInteger</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#46"><abbr title="PHPUnit_Util_TestSuiteIterator::rewind">rewind</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#37"><abbr title="PHPUnit_Util_TestSuiteIterator::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#56"><abbr title="PHPUnit_Util_TestSuiteIterator::valid">valid</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#66"><abbr title="PHPUnit_Util_TestSuiteIterator::key">key</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#85"><abbr title="PHPUnit_Util_TestSuiteIterator::next">next</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#76"><abbr title="PHPUnit_Util_TestSuiteIterator::current">current</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#954"><abbr title="PHPUnit_Util_Test::isAfterMethod">isAfterMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#944"><abbr title="PHPUnit_Util_Test::isAfterClassMethod">isAfterClassMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#733"><abbr title="PHPUnit_Util_Test::emptyHookMethodsArray">emptyHookMethodsArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#675"><abbr title="PHPUnit_Util_Test::getPreserveGlobalStateSettings">getPreserveGlobalStateSettings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#750"><abbr title="PHPUnit_Util_Test::getBooleanAnnotationSetting">getBooleanAnnotationSetting</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#784"><abbr title="PHPUnit_Util_Test::resolveElementToReflectionObjects">resolveElementToReflectionObjects</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#934"><abbr title="PHPUnit_Util_Test::isBeforeMethod">isBeforeMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#924"><abbr title="PHPUnit_Util_Test::isBeforeClassMethod">isBeforeClassMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#95"><abbr title="PHPUnit_Util_TestSuiteIterator::getChildren">getChildren</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#107"><abbr title="PHPUnit_Util_TestSuiteIterator::hasChildren">hasChildren</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#464"><abbr title="PHPUnit_Util_XML::cssSelect">cssSelect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#325"><abbr title="PHPUnit_Util_XML::convertSelectToTag">convertSelectToTag</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#485"><abbr title="PHPUnit_Util_XML::findNodes">findNodes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#865"><abbr title="PHPUnit_Util_XML::getDescendants">getDescendants</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#911"><abbr title="PHPUnit_Util_XML::getNodeText">getNodeText</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#891"><abbr title="PHPUnit_Util_XML::getElementsByCaseInsensitiveTagName">getElementsByCaseInsensitiveTagName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#279"><abbr title="PHPUnit_Util_XML::assertValidKeys">assertValidKeys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#209"><abbr title="PHPUnit_Util_XML::xmlToVariable">xmlToVariable</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#58"><abbr title="PHPUnit_Util_XML::loadFile">loadFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#35"><abbr title="PHPUnit_Util_XML::prepareString">prepareString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#101"><abbr title="PHPUnit_Util_XML::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#169"><abbr title="PHPUnit_Util_XML::nodeToText">nodeToText</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#191"><abbr title="PHPUnit_Util_XML::removeCharacterDataNodes">removeCharacterDataNodes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#652"><abbr title="PHPUnit_Util_Test::getProcessIsolationSettings">getProcessIsolationSettings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#624"><abbr title="PHPUnit_Util_Test::getTickets">getTickets</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Filter.php.html#31"><abbr title="PHPUnit_Util_Filter::getFilteredStacktrace">getFilteredStacktrace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Fileloader.php.html#54"><abbr title="PHPUnit_Util_Fileloader::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Filter.php.html#99"><abbr title="PHPUnit_Util_Filter::frameExists">frameExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Getopt.php.html#25"><abbr title="PHPUnit_Util_Getopt::getopt">getopt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Getopt.php.html#117"><abbr title="PHPUnit_Util_Getopt::parseLongOption">parseLongOption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Getopt.php.html#79"><abbr title="PHPUnit_Util_Getopt::parseShortOption">parseShortOption</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Fileloader.php.html#32"><abbr title="PHPUnit_Util_Fileloader::checkAndLoad">checkAndLoad</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#111"><abbr title="PHPUnit_Util_ErrorHandler::anonymous function">anonymous function</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#1069"><abbr title="PHPUnit_Util_Configuration::readFilterFiles">readFilterFiles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#1024"><abbr title="PHPUnit_Util_Configuration::readFilterDirectories">readFilterDirectories</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#1089"><abbr title="PHPUnit_Util_Configuration::toAbsolutePath">toAbsolutePath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#39"><abbr title="PHPUnit_Util_ErrorHandler::getErrorStack">getErrorStack</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#100"><abbr title="PHPUnit_Util_ErrorHandler::handleErrorOnce">handleErrorOnce</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#52"><abbr title="PHPUnit_Util_Printer::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#83"><abbr title="PHPUnit_Util_Printer::flush">flush</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#474"><abbr title="PHPUnit_Util_Test::getBackupSettings">getBackupSettings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#449"><abbr title="PHPUnit_Util_Test::parseAnnotations">parseAnnotations</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#498"><abbr title="PHPUnit_Util_Test::getDependencies">getDependencies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#529"><abbr title="PHPUnit_Util_Test::getErrorHandlerSettings">getErrorHandlerSettings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#596"><abbr title="PHPUnit_Util_Test::getSize">getSize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#546"><abbr title="PHPUnit_Util_Test::getGroups">getGroups</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#353"><abbr title="PHPUnit_Util_Test::getProvidedData">getProvidedData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#331"><abbr title="PHPUnit_Util_Test::parseAnnotationContent">parseAnnotationContent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#126"><abbr title="PHPUnit_Util_Printer::write">write</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#114"><abbr title="PHPUnit_Util_Printer::incrementalFlush">incrementalFlush</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#153"><abbr title="PHPUnit_Util_Printer::getAutoFlush">getAutoFlush</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#167"><abbr title="PHPUnit_Util_Printer::setAutoFlush">setAutoFlush</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#50"><abbr title="PHPUnit_Util_Test::describe">describe</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#939"><abbr title="PHPUnit_TextUI_Command::showError">showError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#210"><abbr title="PHPUnit_TextUI_ResultPrinter::printDefects">printDefects</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#494"><abbr title="PHPUnit_Framework_TestResult::failures">failures</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#484"><abbr title="PHPUnit_Framework_TestResult::failureCount">failureCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#505"><abbr title="PHPUnit_Framework_TestResult::passed">passed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#516"><abbr title="PHPUnit_Framework_TestResult::topTestSuite">topTestSuite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#735"><abbr title="PHPUnit_Framework_TestResult::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#527"><abbr title="PHPUnit_Framework_TestResult::getCollectCodeCoverageInformation">getCollectCodeCoverageInformation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#474"><abbr title="PHPUnit_Framework_TestResult::errors">errors</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#464"><abbr title="PHPUnit_Framework_TestResult::errorCount">errorCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#421"><abbr title="PHPUnit_Framework_TestResult::notImplemented">notImplemented</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#411"><abbr title="PHPUnit_Framework_TestResult::risky">risky</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#432"><abbr title="PHPUnit_Framework_TestResult::noneSkipped">noneSkipped</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#443"><abbr title="PHPUnit_Framework_TestResult::skippedCount">skippedCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#454"><abbr title="PHPUnit_Framework_TestResult::skipped">skipped</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#745"><abbr title="PHPUnit_Framework_TestResult::shouldStop">shouldStop</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#754"><abbr title="PHPUnit_Framework_TestResult::stop">stop</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#868"><abbr title="PHPUnit_Framework_TestResult::beStrictAboutOutputDuringTests">beStrictAboutOutputDuringTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#858"><abbr title="PHPUnit_Framework_TestResult::isStrictAboutTestsThatDoNotTestAnything">isStrictAboutTestsThatDoNotTestAnything</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#926"><abbr title="PHPUnit_TextUI_Command::printVersionString">printVersionString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#891"><abbr title="PHPUnit_Framework_TestResult::beStrictAboutTestSize">beStrictAboutTestSize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#914"><abbr title="PHPUnit_Framework_TestResult::beStrictAboutTodoAnnotatedTests">beStrictAboutTodoAnnotatedTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#904"><abbr title="PHPUnit_Framework_TestResult::isStrictAboutTestSize">isStrictAboutTestSize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#845"><abbr title="PHPUnit_Framework_TestResult::beStrictAboutTestsThatDoNotTestAnything">beStrictAboutTestsThatDoNotTestAnything</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#831"><abbr title="PHPUnit_Framework_TestResult::stopOnFailure">stopOnFailure</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#776"><abbr title="PHPUnit_Framework_TestResult::setCodeCoverage">setCodeCoverage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#765"><abbr title="PHPUnit_Framework_TestResult::getCodeCoverage">getCodeCoverage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#788"><abbr title="PHPUnit_Framework_TestResult::convertErrorsToExceptions">convertErrorsToExceptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#803"><abbr title="PHPUnit_Framework_TestResult::getConvertErrorsToExceptions">getConvertErrorsToExceptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#815"><abbr title="PHPUnit_Framework_TestResult::stopOnError">stopOnError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#400"><abbr title="PHPUnit_Framework_TestResult::notImplementedCount">notImplementedCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#390"><abbr title="PHPUnit_Framework_TestResult::allCompletelyImplemented">allCompletelyImplemented</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#63"><abbr title="PHPUnit_Framework_TestFailure::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#45"><abbr title="PHPUnit_Framework_TestFailure::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#78"><abbr title="PHPUnit_Framework_TestFailure::getExceptionAsString">getExceptionAsString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#90"><abbr title="PHPUnit_Framework_TestFailure::exceptionToString">exceptionToString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#134"><abbr title="PHPUnit_Framework_TestFailure::failedTest">failedTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#119"><abbr title="PHPUnit_Framework_TestFailure::getTestName">getTestName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/ExpectationFailedException.php.html#43"><abbr title="PHPUnit_Framework_ExpectationFailedException::getComparisonFailure">getComparisonFailure</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/Exception.php.html#80"><abbr title="PHPUnit_Framework_Exception::__sleep">__sleep</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/Constraint/IsEqual.php.html#156"><abbr title="PHPUnit_Framework_Constraint_IsEqual::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/Constraint.php.html#76"><abbr title="PHPUnit_Framework_Constraint::matches">matches</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/Constraint/StringContains.php.html#74"><abbr title="PHPUnit_Framework_Constraint_StringContains::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/Exception.php.html#61"><abbr title="PHPUnit_Framework_Exception::getSerializableTrace">getSerializableTrace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/Exception.php.html#69"><abbr title="PHPUnit_Framework_Exception::__toString">__toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#144"><abbr title="PHPUnit_Framework_TestFailure::thrownException">thrownException</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#154"><abbr title="PHPUnit_Framework_TestFailure::exceptionMessage">exceptionMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#325"><abbr title="PHPUnit_Framework_TestResult::startTest">startTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#313"><abbr title="PHPUnit_Framework_TestResult::endTestSuite">endTestSuite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#341"><abbr title="PHPUnit_Framework_TestResult::endTest">endTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#369"><abbr title="PHPUnit_Framework_TestResult::allHarmless">allHarmless</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#380"><abbr title="PHPUnit_Framework_TestResult::riskyCount">riskyCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#296"><abbr title="PHPUnit_Framework_TestResult::startTestSuite">startTestSuite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#249"><abbr title="PHPUnit_Framework_TestResult::addFailure">addFailure</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#161"><abbr title="PHPUnit_Framework_TestResult::addListener">addListener</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#165"><abbr title="PHPUnit_Framework_TestFailure::isFailure">isFailure</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#171"><abbr title="PHPUnit_Framework_TestResult::removeListener">removeListener</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#185"><abbr title="PHPUnit_Framework_TestResult::flushListeners">flushListeners</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#201"><abbr title="PHPUnit_Framework_TestResult::addError">addError</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#927"><abbr title="PHPUnit_Framework_TestResult::isStrictAboutTodoAnnotatedTests">isStrictAboutTodoAnnotatedTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#881"><abbr title="PHPUnit_Framework_TestResult::isStrictAboutOutputDuringTests">isStrictAboutOutputDuringTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#954"><abbr title="PHPUnit_Framework_TestSuite::getIterator">getIterator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#940"><abbr title="PHPUnit_Framework_TestSuite::setBackupStaticAttributes">setBackupStaticAttributes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#929"><abbr title="PHPUnit_Framework_TestSuite::setBackupGlobals">setBackupGlobals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#965"><abbr title="PHPUnit_Framework_TestSuite::injectFilter">injectFilter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#981"><abbr title="PHPUnit_Framework_TestSuite::setUp">setUp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/BaseTestRunner.php.html#37"><abbr title="PHPUnit_Runner_BaseTestRunner::getLoader">getLoader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#991"><abbr title="PHPUnit_Framework_TestSuite::tearDown">tearDown</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#918"><abbr title="PHPUnit_Framework_TestSuite::setDisallowChangesToGlobalState">setDisallowChangesToGlobalState</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#909"><abbr title="PHPUnit_Framework_TestSuite::incompleteTest">incompleteTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#817"><abbr title="PHPUnit_Framework_TestSuite::markTestSuiteSkipped">markTestSuiteSkipped</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#939"><abbr title="PHPUnit_Framework_TestResult::stopOnRisky">stopOnRisky</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#826"><abbr title="PHPUnit_Framework_TestSuite::addTestMethod">addTestMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#867"><abbr title="PHPUnit_Framework_TestSuite::isTestMethod">isTestMethod</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#897"><abbr title="PHPUnit_Framework_TestSuite::skipTest">skipTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#885"><abbr title="PHPUnit_Framework_TestSuite::warning">warning</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/BaseTestRunner.php.html#52"><abbr title="PHPUnit_Runner_BaseTestRunner::getTest">getTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/BaseTestRunner.php.html#123"><abbr title="PHPUnit_Runner_BaseTestRunner::loadSuiteClass">loadSuiteClass</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#703"><abbr title="PHPUnit_TextUI_Command::handlePrinter">handlePrinter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#659"><abbr title="PHPUnit_TextUI_Command::handleLoader">handleLoader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#748"><abbr title="PHPUnit_TextUI_Command::handleBootstrap">handleBootstrap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#760"><abbr title="PHPUnit_TextUI_Command::handleSelfUpdate">handleSelfUpdate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#922"><abbr title="PHPUnit_TextUI_Command::handleCustomTestSuite">handleCustomTestSuite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#832"><abbr title="PHPUnit_TextUI_Command::showHelp">showHelp</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#229"><abbr title="PHPUnit_TextUI_Command::handleArguments">handleArguments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#179"><abbr title="PHPUnit_TextUI_Command::createRunner">createRunner</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/Version.php.html#32"><abbr title="PHPUnit_Runner_Version::id">id</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/BaseTestRunner.php.html#134"><abbr title="PHPUnit_Runner_BaseTestRunner::clearStatus">clearStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/Version.php.html#49"><abbr title="PHPUnit_Runner_Version::getVersionString">getVersionString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Runner/Version.php.html#58"><abbr title="PHPUnit_Runner_Version::getReleaseChannel">getReleaseChannel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#113"><abbr title="PHPUnit_TextUI_Command::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#101"><abbr title="PHPUnit_TextUI_Command::main">main</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#794"><abbr title="PHPUnit_Framework_TestSuite::tests">tests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#805"><abbr title="PHPUnit_Framework_TestSuite::setTests">setTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#226"><abbr title="PHPUnit_Framework_TestSuite::addTest">addTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#215"><abbr title="PHPUnit_Framework_TestSuite::toString">toString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#137"><abbr title="PHPUnit_Framework_TestSuite::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#259"><abbr title="PHPUnit_Framework_TestSuite::addTestSuite">addTestSuite</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#317"><abbr title="PHPUnit_Framework_TestSuite::addTestFile">addTestFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#414"><abbr title="PHPUnit_Framework_TestSuite::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#394"><abbr title="PHPUnit_Framework_TestSuite::addTestFiles">addTestFiles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#1055"><abbr title="PHPUnit_Framework_TestResult::getHierarchy">getHierarchy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#1039"><abbr title="PHPUnit_Framework_TestResult::setTimeoutForLargeTests">setTimeoutForLargeTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#971"><abbr title="PHPUnit_Framework_TestResult::stopOnSkipped">stopOnSkipped</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#955"><abbr title="PHPUnit_Framework_TestResult::stopOnIncomplete">stopOnIncomplete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#985"><abbr title="PHPUnit_Framework_TestResult::time">time</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#995"><abbr title="PHPUnit_Framework_TestResult::wasSuccessful">wasSuccessful</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#1023"><abbr title="PHPUnit_Framework_TestResult::setTimeoutForMediumTests">setTimeoutForMediumTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#1007"><abbr title="PHPUnit_Framework_TestResult::setTimeoutForSmallTests">setTimeoutForSmallTests</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#780"><abbr title="PHPUnit_Framework_TestSuite::testAt">testAt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#431"><abbr title="PHPUnit_Framework_TestSuite::createTest">createTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#743"><abbr title="PHPUnit_Framework_TestSuite::setRunTestInSeparateProcess">setRunTestInSeparateProcess</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#653"><abbr title="PHPUnit_Framework_TestSuite::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#642"><abbr title="PHPUnit_Framework_TestSuite::setGroupDetails">setGroupDetails</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#769"><abbr title="PHPUnit_Framework_TestSuite::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#631"><abbr title="PHPUnit_Framework_TestSuite::getGroupDetails">getGroupDetails</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#605"><abbr title="PHPUnit_Framework_TestSuite::createResult">createResult</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#615"><abbr title="PHPUnit_Framework_TestSuite::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#626"><abbr title="PHPUnit_Framework_TestSuite::getGroups">getGroups</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="src/Framework/Constraint/IsEqual.php.html#113"><abbr title="PHPUnit_Framework_Constraint_IsEqual::evaluate">evaluate</abbr></a></td><td class="text-right">10%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#689"><abbr title="PHPUnit_Util_Test::getHookMethods">getHookMethods</abbr></a></td><td class="text-right">12%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#268"><abbr title="PHPUnit_Util_Test::getExpectedException">getExpectedException</abbr></a></td><td class="text-right">13%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#216"><abbr title="PHPUnit_Util_Test::getMissingRequirements">getMissingRequirements</abbr></a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#537"><abbr title="PHPUnit_Framework_TestResult::run">run</abbr></a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#897"><abbr title="PHPUnit_Util_Test::resolveReflectionObjectsToLines">resolveReflectionObjectsToLines</abbr></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#421"><abbr title="PHPUnit_Util_Test::parseTestMethodAnnotations">parseTestMethodAnnotations</abbr></a></td><td class="text-right">35%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#113"><abbr title="PHPUnit_Util_Test::getLinesToBeCoveredOrUsed">getLinesToBeCoveredOrUsed</abbr></a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#172"><abbr title="PHPUnit_Util_Test::getRequirements">getRequirements</abbr></a></td><td class="text-right">37%</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#51"><abbr title="PHPUnit_Util_ErrorHandler::handleError">handleError</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="src/Framework/Constraint/StringContains.php.html#60"><abbr title="PHPUnit_Framework_Constraint_StringContains::matches">matches</abbr></a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#565"><abbr title="PHPUnit_TextUI_TestRunner::handleConfiguration">handleConfiguration</abbr></a></td><td class="text-right">20592</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#229"><abbr title="PHPUnit_TextUI_Command::handleArguments">handleArguments</abbr></a></td><td class="text-right">11990</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#485"><abbr title="PHPUnit_Util_XML::findNodes">findNodes</abbr></a></td><td class="text-right">7832</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#151"><abbr title="PHPUnit_TextUI_TestRunner::doRun">doRun</abbr></a></td><td class="text-right">3422</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#538"><abbr title="PHPUnit_Util_Configuration::getPHPUnitConfiguration">getPHPUnitConfiguration</abbr></a></td><td class="text-right">1332</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#784"><abbr title="PHPUnit_Util_Test::resolveElementToReflectionObjects">resolveElementToReflectionObjects</abbr></a></td><td class="text-right">870</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#431"><abbr title="PHPUnit_Framework_TestSuite::createTest">createTest</abbr></a></td><td class="text-right">812</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#537"><abbr title="PHPUnit_Framework_TestResult::run">run</abbr></a></td><td class="text-right">786</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#874"><abbr title="PHPUnit_Util_Configuration::getTestSuite">getTestSuite</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#325"><abbr title="PHPUnit_Util_XML::convertSelectToTag">convertSelectToTag</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#653"><abbr title="PHPUnit_Framework_TestSuite::run">run</abbr></a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="src/Util/Filter.php.html#31"><abbr title="PHPUnit_Util_Filter::getFilteredStacktrace">getFilteredStacktrace</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#137"><abbr title="PHPUnit_Framework_TestSuite::__construct">__construct</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#101"><abbr title="PHPUnit_Util_XML::load">load</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="src/Util/Getopt.php.html#25"><abbr title="PHPUnit_Util_Getopt::getopt">getopt</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="src/Util/Getopt.php.html#117"><abbr title="PHPUnit_Util_Getopt::parseLongOption">parseLongOption</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#317"><abbr title="PHPUnit_Framework_TestSuite::addTestFile">addTestFile</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#209"><abbr title="PHPUnit_Util_XML::xmlToVariable">xmlToVariable</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#163"><abbr title="PHPUnit_TextUI_ResultPrinter::printResult">printResult</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#474"><abbr title="PHPUnit_Util_Configuration::handlePHPConfiguration">handlePHPConfiguration</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#113"><abbr title="PHPUnit_TextUI_Command::run">run</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#353"><abbr title="PHPUnit_Util_Test::getProvidedData">getProvidedData</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#364"><abbr title="PHPUnit_Util_Configuration::getLoggingConfiguration">getLoggingConfiguration</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="src/Util/Getopt.php.html#79"><abbr title="PHPUnit_Util_Getopt::parseShortOption">parseShortOption</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#259"><abbr title="PHPUnit_Framework_TestSuite::addTestSuite">addTestSuite</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#323"><abbr title="PHPUnit_TextUI_ResultPrinter::printFooter">printFooter</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#1089"><abbr title="PHPUnit_Util_Configuration::toAbsolutePath">toAbsolutePath</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#318"><abbr title="PHPUnit_Util_Configuration::getListenerConfiguration">getListenerConfiguration</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#546"><abbr title="PHPUnit_Util_Test::getGroups">getGroups</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#249"><abbr title="PHPUnit_Framework_TestResult::addFailure">addFailure</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#703"><abbr title="PHPUnit_TextUI_Command::handlePrinter">handlePrinter</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#201"><abbr title="PHPUnit_Framework_TestResult::addError">addError</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#117"><abbr title="PHPUnit_TextUI_ResultPrinter::__construct">__construct</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#216"><abbr title="PHPUnit_Util_Test::getMissingRequirements">getMissingRequirements</abbr></a></td><td class="text-right">109</td></tr>
+       <tr><td><a href="src/Runner/BaseTestRunner.php.html#52"><abbr title="PHPUnit_Runner_BaseTestRunner::getTest">getTest</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#689"><abbr title="PHPUnit_Util_Test::getHookMethods">getHookMethods</abbr></a></td><td class="text-right">76</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#268"><abbr title="PHPUnit_Util_Test::getExpectedException">getExpectedException</abbr></a></td><td class="text-right">75</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#83"><abbr title="PHPUnit_Util_Printer::flush">flush</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#659"><abbr title="PHPUnit_TextUI_Command::handleLoader">handleLoader</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#279"><abbr title="PHPUnit_Util_XML::assertValidKeys">assertValidKeys</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#420"><abbr title="PHPUnit_Util_Configuration::getPHPConfiguration">getPHPConfiguration</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#52"><abbr title="PHPUnit_Util_Printer::__construct">__construct</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#90"><abbr title="PHPUnit_Framework_TestFailure::exceptionToString">exceptionToString</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#750"><abbr title="PHPUnit_Util_Test::getBooleanAnnotationSetting">getBooleanAnnotationSetting</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#113"><abbr title="PHPUnit_TextUI_TestRunner::processSuiteFilters">processSuiteFilters</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#226"><abbr title="PHPUnit_Framework_TestSuite::addTest">addTest</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#596"><abbr title="PHPUnit_Util_Test::getSize">getSize</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="src/Util/Filter.php.html#99"><abbr title="PHPUnit_Util_Filter::frameExists">frameExists</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#1024"><abbr title="PHPUnit_Util_Configuration::readFilterDirectories">readFilterDirectories</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#865"><abbr title="PHPUnit_Util_XML::getDescendants">getDescendants</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/Util/Blacklist.php.html#90"><abbr title="PHPUnit_Util_Blacklist::initialize">initialize</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#1055"><abbr title="PHPUnit_Framework_TestResult::getHierarchy">getHierarchy</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#496"><abbr title="PHPUnit_TextUI_ResultPrinter::endTest">endTest</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#51"><abbr title="PHPUnit_Util_ErrorHandler::handleError">handleError</abbr></a></td><td class="text-right">38</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#794"><abbr title="PHPUnit_Util_Configuration::getSeleniumBrowserConfiguration">getSeleniumBrowserConfiguration</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#844"><abbr title="PHPUnit_Util_Configuration::getTestSuiteConfiguration">getTestSuiteConfiguration</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#210"><abbr title="PHPUnit_TextUI_ResultPrinter::printDefects">printDefects</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#50"><abbr title="PHPUnit_Util_Test::describe">describe</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#826"><abbr title="PHPUnit_Framework_TestSuite::addTestMethod">addTestMethod</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#394"><abbr title="PHPUnit_Framework_TestSuite::addTestFiles">addTestFiles</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#126"><abbr title="PHPUnit_Util_Printer::write">write</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#911"><abbr title="PHPUnit_Util_XML::getNodeText">getNodeText</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#760"><abbr title="PHPUnit_TextUI_Command::handleSelfUpdate">handleSelfUpdate</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#113"><abbr title="PHPUnit_Util_Test::getLinesToBeCoveredOrUsed">getLinesToBeCoveredOrUsed</abbr></a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#619"><abbr title="PHPUnit_TextUI_ResultPrinter::writeCountString">writeCountString</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/Framework/TestFailure.php.html#45"><abbr title="PHPUnit_Framework_TestFailure::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#191"><abbr title="PHPUnit_Util_XML::removeCharacterDataNodes">removeCharacterDataNodes</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#219"><abbr title="PHPUnit_Util_Configuration::getFilterConfiguration">getFilterConfiguration</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/Util/Blacklist.php.html#73"><abbr title="PHPUnit_Util_Blacklist::isBlacklisted">isBlacklisted</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#331"><abbr title="PHPUnit_Util_Test::parseAnnotationContent">parseAnnotationContent</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#556"><abbr title="PHPUnit_TextUI_ResultPrinter::formatWithColor">formatWithColor</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#341"><abbr title="PHPUnit_Framework_TestResult::endTest">endTest</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/Framework/Constraint/IsEqual.php.html#156"><abbr title="PHPUnit_Framework_Constraint_IsEqual::toString">toString</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#172"><abbr title="PHPUnit_Util_Test::getRequirements">getRequirements</abbr></a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="src/Framework/Constraint/IsEqual.php.html#113"><abbr title="PHPUnit_Framework_Constraint_IsEqual::evaluate">evaluate</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#421"><abbr title="PHPUnit_Util_Test::parseTestMethodAnnotations">parseTestMethodAnnotations</abbr></a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#169"><abbr title="PHPUnit_Util_XML::nodeToText">nodeToText</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#993"><abbr title="PHPUnit_Util_Configuration::getBoolean">getBoolean</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#1069"><abbr title="PHPUnit_Util_Configuration::readFilterFiles">readFilterFiles</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#100"><abbr title="PHPUnit_Util_ErrorHandler::handleErrorOnce">handleErrorOnce</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Fileloader.php.html#54"><abbr title="PHPUnit_Util_Fileloader::load">load</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Fileloader.php.html#32"><abbr title="PHPUnit_Util_Fileloader::checkAndLoad">checkAndLoad</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#449"><abbr title="PHPUnit_Util_Test::parseAnnotations">parseAnnotations</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#624"><abbr title="PHPUnit_Util_Test::getTickets">getTickets</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#498"><abbr title="PHPUnit_Util_Test::getDependencies">getDependencies</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#652"><abbr title="PHPUnit_Util_Test::getProcessIsolationSettings">getProcessIsolationSettings</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#85"><abbr title="PHPUnit_TextUI_TestRunner::run">run</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#296"><abbr title="PHPUnit_Framework_TestResult::startTestSuite">startTestSuite</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#185"><abbr title="PHPUnit_Framework_TestResult::flushListeners">flushListeners</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#965"><abbr title="PHPUnit_Framework_TestSuite::injectFilter">injectFilter</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Runner/Version.php.html#32"><abbr title="PHPUnit_Runner_Version::id">id</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Runner/Version.php.html#58"><abbr title="PHPUnit_Runner_Version::getReleaseChannel">getReleaseChannel</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#294"><abbr title="PHPUnit_Util_Configuration::getGroupConfiguration">getGroupConfiguration</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#171"><abbr title="PHPUnit_Framework_TestResult::removeListener">removeListener</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#918"><abbr title="PHPUnit_Framework_TestSuite::setDisallowChangesToGlobalState">setDisallowChangesToGlobalState</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#968"><abbr title="PHPUnit_TextUI_TestRunner::getCodeCoverageFilter">getCodeCoverageFilter</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#182"><abbr title="PHPUnit_Util_Configuration::getInstance">getInstance</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#929"><abbr title="PHPUnit_Framework_TestSuite::setBackupGlobals">setBackupGlobals</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#932"><abbr title="PHPUnit_TextUI_TestRunner::showExtensionNotLoadedMessage">showExtensionNotLoadedMessage</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#533"><abbr title="PHPUnit_TextUI_TestRunner::write">write</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#940"><abbr title="PHPUnit_Framework_TestSuite::setBackupStaticAttributes">setBackupStaticAttributes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#867"><abbr title="PHPUnit_Framework_TestSuite::isTestMethod">isTestMethod</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#897"><abbr title="PHPUnit_Util_Test::resolveReflectionObjectsToLines">resolveReflectionObjectsToLines</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#891"><abbr title="PHPUnit_Framework_TestResult::beStrictAboutTestSize">beStrictAboutTestSize</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#939"><abbr title="PHPUnit_Framework_TestResult::stopOnRisky">stopOnRisky</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#955"><abbr title="PHPUnit_Framework_TestResult::stopOnIncomplete">stopOnIncomplete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#914"><abbr title="PHPUnit_Framework_TestResult::beStrictAboutTodoAnnotatedTests">beStrictAboutTodoAnnotatedTests</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#815"><abbr title="PHPUnit_Framework_TestResult::stopOnError">stopOnError</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#845"><abbr title="PHPUnit_Framework_TestResult::beStrictAboutTestsThatDoNotTestAnything">beStrictAboutTestsThatDoNotTestAnything</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#868"><abbr title="PHPUnit_Framework_TestResult::beStrictAboutOutputDuringTests">beStrictAboutOutputDuringTests</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#831"><abbr title="PHPUnit_Framework_TestResult::stopOnFailure">stopOnFailure</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#924"><abbr title="PHPUnit_Util_Test::isBeforeClassMethod">isBeforeClassMethod</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#313"><abbr title="PHPUnit_Framework_TestResult::endTestSuite">endTestSuite</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/Exception.php.html#69"><abbr title="PHPUnit_Framework_Exception::__toString">__toString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/Constraint/StringContains.php.html#74"><abbr title="PHPUnit_Framework_Constraint_StringContains::toString">toString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#891"><abbr title="PHPUnit_Util_XML::getElementsByCaseInsensitiveTagName">getElementsByCaseInsensitiveTagName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#325"><abbr title="PHPUnit_Framework_TestResult::startTest">startTest</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#788"><abbr title="PHPUnit_Framework_TestResult::convertErrorsToExceptions">convertErrorsToExceptions</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/Test.php.html#944"><abbr title="PHPUnit_Util_Test::isAfterClassMethod">isAfterClassMethod</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/TestSuiteIterator.php.html#76"><abbr title="PHPUnit_Util_TestSuiteIterator::current">current</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/XML.php.html#58"><abbr title="PHPUnit_Util_XML::loadFile">loadFile</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#971"><abbr title="PHPUnit_Framework_TestResult::stopOnSkipped">stopOnSkipped</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#743"><abbr title="PHPUnit_Framework_TestSuite::setRunTestInSeparateProcess">setRunTestInSeparateProcess</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#478"><abbr title="PHPUnit_TextUI_ResultPrinter::startTest">startTest</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#454"><abbr title="PHPUnit_TextUI_ResultPrinter::startTestSuite">startTestSuite</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#263"><abbr title="PHPUnit_TextUI_ResultPrinter::printDefectTrace">printDefectTrace</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/ErrorHandler.php.html#111"><abbr title="PHPUnit_Util_ErrorHandler::anonymous function">anonymous function</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#520"><abbr title="PHPUnit_TextUI_ResultPrinter::writeProgress">writeProgress</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/ResultPrinter.php.html#590"><abbr title="PHPUnit_TextUI_ResultPrinter::writeWithColor">writeWithColor</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#956"><abbr title="PHPUnit_TextUI_TestRunner::showMessage">showMessage</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#552"><abbr title="PHPUnit_TextUI_TestRunner::getLoader">getLoader</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/TestRunner.php.html#66"><abbr title="PHPUnit_TextUI_TestRunner::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/Configuration.php.html#1010"><abbr title="PHPUnit_Util_Configuration::getInteger">getInteger</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#995"><abbr title="PHPUnit_Framework_TestResult::wasSuccessful">wasSuccessful</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#926"><abbr title="PHPUnit_TextUI_Command::printVersionString">printVersionString</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#414"><abbr title="PHPUnit_Framework_TestSuite::count">count</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#1039"><abbr title="PHPUnit_Framework_TestResult::setTimeoutForLargeTests">setTimeoutForLargeTests</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#1023"><abbr title="PHPUnit_Framework_TestResult::setTimeoutForMediumTests">setTimeoutForMediumTests</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestResult.php.html#1007"><abbr title="PHPUnit_Framework_TestResult::setTimeoutForSmallTests">setTimeoutForSmallTests</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#832"><abbr title="PHPUnit_TextUI_Command::showHelp">showHelp</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#780"><abbr title="PHPUnit_Framework_TestSuite::testAt">testAt</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/TextUI/Command.php.html#748"><abbr title="PHPUnit_TextUI_Command::handleBootstrap">handleBootstrap</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#167"><abbr title="PHPUnit_Util_Printer::setAutoFlush">setAutoFlush</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/TestSuite.php.html#954"><abbr title="PHPUnit_Framework_TestSuite::getIterator">getIterator</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Util/Printer.php.html#114"><abbr title="PHPUnit_Util_Printer::incrementalFlush">incrementalFlush</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="src/Framework/Constraint/StringContains.php.html#60"><abbr title="PHPUnit_Framework_Constraint_StringContains::matches">matches</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.4</a> using <a href="http://php.net/" target="_top">PHP 5.6.15</a> and <a href="http://phpunit.de/">PHPUnit 4.6.10</a> at Sun Nov 13 21:00:22 GMT 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../../js/holder.min.js" type="text/javascript"></script>
+  <script src="../../js/d3.min.js" type="text/javascript"></script>
+  <script src="../../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([16,0,2,1,1,2,0,0,2,0,0,2], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([239,0,3,3,3,0,1,1,2,2,0,13], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"src\/Framework\/AssertionFailedError.php.html#22\">PHPUnit_Framework_AssertionFailedError<\/a>"],[76.666666666667,12,"<a href=\"src\/Framework\/Constraint.php.html#25\">PHPUnit_Framework_Constraint<\/a>"],[24.528301886792,13,"<a href=\"src\/Framework\/Constraint\/IsEqual.php.html#30\">PHPUnit_Framework_Constraint_IsEqual<\/a>"],[100,2,"<a href=\"src\/Framework\/Constraint\/IsTrue.php.html#23\">PHPUnit_Framework_Constraint_IsTrue<\/a>"],[42.857142857143,5,"<a href=\"src\/Framework\/Constraint\/StringContains.php.html#29\">PHPUnit_Framework_Constraint_StringContains<\/a>"],[100,1,"<a href=\"src\/Framework\/Error.php.html#22\">PHPUnit_Framework_Error<\/a>"],[46.153846153846,6,"<a href=\"src\/Framework\/Exception.php.html#39\">PHPUnit_Framework_Exception<\/a>"],[75,2,"<a href=\"src\/Framework\/ExpectationFailedException.php.html#26\">PHPUnit_Framework_ExpectationFailedException<\/a>"],[0,18,"<a href=\"src\/Framework\/TestFailure.php.html#22\">PHPUnit_Framework_TestFailure<\/a>"],[10.112359550562,141,"<a href=\"src\/Framework\/TestResult.php.html#22\">PHPUnit_Framework_TestResult<\/a>"],[0,143,"<a href=\"src\/Framework\/TestSuite.php.html#47\">PHPUnit_Framework_TestSuite<\/a>"],[0,13,"<a href=\"src\/Runner\/BaseTestRunner.php.html#22\">PHPUnit_Runner_BaseTestRunner<\/a>"],[0,7,"<a href=\"src\/Runner\/Version.php.html#22\">PHPUnit_Runner_Version<\/a>"],[0,154,"<a href=\"src\/TextUI\/Command.php.html#23\">PHPUnit_TextUI_Command<\/a>"],[0,79,"<a href=\"src\/TextUI\/ResultPrinter.php.html#24\">PHPUnit_TextUI_ResultPrinter<\/a>"],[0,229,"<a href=\"src\/TextUI\/TestRunner.php.html#25\">PHPUnit_TextUI_TestRunner<\/a>"],[0,11,"<a href=\"src\/Util\/Blacklist.php.html#22\">PHPUnit_Util_Blacklist<\/a>"],[0,145,"<a href=\"src\/Util\/Configuration.php.html#148\">PHPUnit_Util_Configuration<\/a>"],[34.285714285714,20,"<a href=\"src\/Util\/ErrorHandler.php.html#30\">PHPUnit_Util_ErrorHandler<\/a>"],[0,6,"<a href=\"src\/Util\/Fileloader.php.html#22\">PHPUnit_Util_Fileloader<\/a>"],[0,22,"<a href=\"src\/Util\/Filter.php.html#22\">PHPUnit_Util_Filter<\/a>"],[0,38,"<a href=\"src\/Util\/Getopt.php.html#23\">PHPUnit_Util_Getopt<\/a>"],[0,25,"<a href=\"src\/Util\/Printer.php.html#22\">PHPUnit_Util_Printer<\/a>"],[11.674008810573,158,"<a href=\"src\/Util\/Test.php.html#29\">PHPUnit_Util_Test<\/a>"],[0,9,"<a href=\"src\/Util\/TestSuiteIterator.php.html#22\">PHPUnit_Util_TestSuiteIterator<\/a>"],[0,168,"<a href=\"src\/Util\/XML.php.html#22\">PHPUnit_Util_XML<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"src\/Framework\/AssertionFailedError.php.html#29\">PHPUnit_Framework_AssertionFailedError::toString<\/a>"],[100,1,"<a href=\"src\/Framework\/Constraint.php.html#29\">PHPUnit_Framework_Constraint::__construct<\/a>"],[80,4,"<a href=\"src\/Framework\/Constraint.php.html#50\">PHPUnit_Framework_Constraint::evaluate<\/a>"],[0,1,"<a href=\"src\/Framework\/Constraint.php.html#76\">PHPUnit_Framework_Constraint::matches<\/a>"],[100,1,"<a href=\"src\/Framework\/Constraint.php.html#87\">PHPUnit_Framework_Constraint::count<\/a>"],[71.428571428571,3,"<a href=\"src\/Framework\/Constraint.php.html#100\">PHPUnit_Framework_Constraint::fail<\/a>"],[100,1,"<a href=\"src\/Framework\/Constraint.php.html#132\">PHPUnit_Framework_Constraint::additionalFailureDescription<\/a>"],[100,1,"<a href=\"src\/Framework\/Constraint.php.html#149\">PHPUnit_Framework_Constraint::failureDescription<\/a>"],[73.333333333333,5,"<a href=\"src\/Framework\/Constraint\/IsEqual.php.html#70\">PHPUnit_Framework_Constraint_IsEqual::__construct<\/a>"],[10,4,"<a href=\"src\/Framework\/Constraint\/IsEqual.php.html#113\">PHPUnit_Framework_Constraint_IsEqual::evaluate<\/a>"],[0,4,"<a href=\"src\/Framework\/Constraint\/IsEqual.php.html#156\">PHPUnit_Framework_Constraint_IsEqual::toString<\/a>"],[100,1,"<a href=\"src\/Framework\/Constraint\/IsTrue.php.html#32\">PHPUnit_Framework_Constraint_IsTrue::matches<\/a>"],[100,1,"<a href=\"src\/Framework\/Constraint\/IsTrue.php.html#42\">PHPUnit_Framework_Constraint_IsTrue::toString<\/a>"],[100,1,"<a href=\"src\/Framework\/Constraint\/StringContains.php.html#45\">PHPUnit_Framework_Constraint_StringContains::__construct<\/a>"],[66.666666666667,2,"<a href=\"src\/Framework\/Constraint\/StringContains.php.html#60\">PHPUnit_Framework_Constraint_StringContains::matches<\/a>"],[0,2,"<a href=\"src\/Framework\/Constraint\/StringContains.php.html#74\">PHPUnit_Framework_Constraint_StringContains::toString<\/a>"],[100,1,"<a href=\"src\/Framework\/Error.php.html#33\">PHPUnit_Framework_Error::__construct<\/a>"],[100,2,"<a href=\"src\/Framework\/Exception.php.html#46\">PHPUnit_Framework_Exception::__construct<\/a>"],[0,1,"<a href=\"src\/Framework\/Exception.php.html#61\">PHPUnit_Framework_Exception::getSerializableTrace<\/a>"],[0,2,"<a href=\"src\/Framework\/Exception.php.html#69\">PHPUnit_Framework_Exception::__toString<\/a>"],[0,1,"<a href=\"src\/Framework\/Exception.php.html#80\">PHPUnit_Framework_Exception::__sleep<\/a>"],[100,1,"<a href=\"src\/Framework\/ExpectationFailedException.php.html#33\">PHPUnit_Framework_ExpectationFailedException::__construct<\/a>"],[0,1,"<a href=\"src\/Framework\/ExpectationFailedException.php.html#43\">PHPUnit_Framework_ExpectationFailedException::getComparisonFailure<\/a>"],[0,4,"<a href=\"src\/Framework\/TestFailure.php.html#45\">PHPUnit_Framework_TestFailure::__construct<\/a>"],[0,1,"<a href=\"src\/Framework\/TestFailure.php.html#63\">PHPUnit_Framework_TestFailure::toString<\/a>"],[0,1,"<a href=\"src\/Framework\/TestFailure.php.html#78\">PHPUnit_Framework_TestFailure::getExceptionAsString<\/a>"],[0,7,"<a href=\"src\/Framework\/TestFailure.php.html#90\">PHPUnit_Framework_TestFailure::exceptionToString<\/a>"],[0,1,"<a href=\"src\/Framework\/TestFailure.php.html#119\">PHPUnit_Framework_TestFailure::getTestName<\/a>"],[0,1,"<a href=\"src\/Framework\/TestFailure.php.html#134\">PHPUnit_Framework_TestFailure::failedTest<\/a>"],[0,1,"<a href=\"src\/Framework\/TestFailure.php.html#144\">PHPUnit_Framework_TestFailure::thrownException<\/a>"],[0,1,"<a href=\"src\/Framework\/TestFailure.php.html#154\">PHPUnit_Framework_TestFailure::exceptionMessage<\/a>"],[0,1,"<a href=\"src\/Framework\/TestFailure.php.html#165\">PHPUnit_Framework_TestFailure::isFailure<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#161\">PHPUnit_Framework_TestResult::addListener<\/a>"],[0,3,"<a href=\"src\/Framework\/TestResult.php.html#171\">PHPUnit_Framework_TestResult::removeListener<\/a>"],[0,3,"<a href=\"src\/Framework\/TestResult.php.html#185\">PHPUnit_Framework_TestResult::flushListeners<\/a>"],[0,10,"<a href=\"src\/Framework\/TestResult.php.html#201\">PHPUnit_Framework_TestResult::addError<\/a>"],[0,10,"<a href=\"src\/Framework\/TestResult.php.html#249\">PHPUnit_Framework_TestResult::addFailure<\/a>"],[0,3,"<a href=\"src\/Framework\/TestResult.php.html#296\">PHPUnit_Framework_TestResult::startTestSuite<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#313\">PHPUnit_Framework_TestResult::endTestSuite<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#325\">PHPUnit_Framework_TestResult::startTest<\/a>"],[0,4,"<a href=\"src\/Framework\/TestResult.php.html#341\">PHPUnit_Framework_TestResult::endTest<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#369\">PHPUnit_Framework_TestResult::allHarmless<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#380\">PHPUnit_Framework_TestResult::riskyCount<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#390\">PHPUnit_Framework_TestResult::allCompletelyImplemented<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#400\">PHPUnit_Framework_TestResult::notImplementedCount<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#411\">PHPUnit_Framework_TestResult::risky<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#421\">PHPUnit_Framework_TestResult::notImplemented<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#432\">PHPUnit_Framework_TestResult::noneSkipped<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#443\">PHPUnit_Framework_TestResult::skippedCount<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#454\">PHPUnit_Framework_TestResult::skipped<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#464\">PHPUnit_Framework_TestResult::errorCount<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#474\">PHPUnit_Framework_TestResult::errors<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#484\">PHPUnit_Framework_TestResult::failureCount<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#494\">PHPUnit_Framework_TestResult::failures<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#505\">PHPUnit_Framework_TestResult::passed<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#516\">PHPUnit_Framework_TestResult::topTestSuite<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#527\">PHPUnit_Framework_TestResult::getCollectCodeCoverageInformation<\/a>"],[25,42,"<a href=\"src\/Framework\/TestResult.php.html#537\">PHPUnit_Framework_TestResult::run<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#735\">PHPUnit_Framework_TestResult::count<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#745\">PHPUnit_Framework_TestResult::shouldStop<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#754\">PHPUnit_Framework_TestResult::stop<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#765\">PHPUnit_Framework_TestResult::getCodeCoverage<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#776\">PHPUnit_Framework_TestResult::setCodeCoverage<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#788\">PHPUnit_Framework_TestResult::convertErrorsToExceptions<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#803\">PHPUnit_Framework_TestResult::getConvertErrorsToExceptions<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#815\">PHPUnit_Framework_TestResult::stopOnError<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#831\">PHPUnit_Framework_TestResult::stopOnFailure<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#845\">PHPUnit_Framework_TestResult::beStrictAboutTestsThatDoNotTestAnything<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#858\">PHPUnit_Framework_TestResult::isStrictAboutTestsThatDoNotTestAnything<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#868\">PHPUnit_Framework_TestResult::beStrictAboutOutputDuringTests<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#881\">PHPUnit_Framework_TestResult::isStrictAboutOutputDuringTests<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#891\">PHPUnit_Framework_TestResult::beStrictAboutTestSize<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#904\">PHPUnit_Framework_TestResult::isStrictAboutTestSize<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#914\">PHPUnit_Framework_TestResult::beStrictAboutTodoAnnotatedTests<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#927\">PHPUnit_Framework_TestResult::isStrictAboutTodoAnnotatedTests<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#939\">PHPUnit_Framework_TestResult::stopOnRisky<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#955\">PHPUnit_Framework_TestResult::stopOnIncomplete<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#971\">PHPUnit_Framework_TestResult::stopOnSkipped<\/a>"],[0,1,"<a href=\"src\/Framework\/TestResult.php.html#985\">PHPUnit_Framework_TestResult::time<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#995\">PHPUnit_Framework_TestResult::wasSuccessful<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#1007\">PHPUnit_Framework_TestResult::setTimeoutForSmallTests<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#1023\">PHPUnit_Framework_TestResult::setTimeoutForMediumTests<\/a>"],[0,2,"<a href=\"src\/Framework\/TestResult.php.html#1039\">PHPUnit_Framework_TestResult::setTimeoutForLargeTests<\/a>"],[0,6,"<a href=\"src\/Framework\/TestResult.php.html#1055\">PHPUnit_Framework_TestResult::getHierarchy<\/a>"],[0,15,"<a href=\"src\/Framework\/TestSuite.php.html#137\">PHPUnit_Framework_TestSuite::__construct<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#215\">PHPUnit_Framework_TestSuite::toString<\/a>"],[0,7,"<a href=\"src\/Framework\/TestSuite.php.html#226\">PHPUnit_Framework_TestSuite::addTest<\/a>"],[0,11,"<a href=\"src\/Framework\/TestSuite.php.html#259\">PHPUnit_Framework_TestSuite::addTestSuite<\/a>"],[0,13,"<a href=\"src\/Framework\/TestSuite.php.html#317\">PHPUnit_Framework_TestSuite::addTestFile<\/a>"],[0,5,"<a href=\"src\/Framework\/TestSuite.php.html#394\">PHPUnit_Framework_TestSuite::addTestFiles<\/a>"],[0,2,"<a href=\"src\/Framework\/TestSuite.php.html#414\">PHPUnit_Framework_TestSuite::count<\/a>"],[0,28,"<a href=\"src\/Framework\/TestSuite.php.html#431\">PHPUnit_Framework_TestSuite::createTest<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#605\">PHPUnit_Framework_TestSuite::createResult<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#615\">PHPUnit_Framework_TestSuite::getName<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#626\">PHPUnit_Framework_TestSuite::getGroups<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#631\">PHPUnit_Framework_TestSuite::getGroupDetails<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#642\">PHPUnit_Framework_TestSuite::setGroupDetails<\/a>"],[0,20,"<a href=\"src\/Framework\/TestSuite.php.html#653\">PHPUnit_Framework_TestSuite::run<\/a>"],[0,2,"<a href=\"src\/Framework\/TestSuite.php.html#743\">PHPUnit_Framework_TestSuite::setRunTestInSeparateProcess<\/a>"],[100,1,"<a href=\"src\/Framework\/TestSuite.php.html#759\">PHPUnit_Framework_TestSuite::runTest<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#769\">PHPUnit_Framework_TestSuite::setName<\/a>"],[0,2,"<a href=\"src\/Framework\/TestSuite.php.html#780\">PHPUnit_Framework_TestSuite::testAt<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#794\">PHPUnit_Framework_TestSuite::tests<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#805\">PHPUnit_Framework_TestSuite::setTests<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#817\">PHPUnit_Framework_TestSuite::markTestSuiteSkipped<\/a>"],[0,5,"<a href=\"src\/Framework\/TestSuite.php.html#826\">PHPUnit_Framework_TestSuite::addTestMethod<\/a>"],[0,3,"<a href=\"src\/Framework\/TestSuite.php.html#867\">PHPUnit_Framework_TestSuite::isTestMethod<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#885\">PHPUnit_Framework_TestSuite::warning<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#897\">PHPUnit_Framework_TestSuite::skipTest<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#909\">PHPUnit_Framework_TestSuite::incompleteTest<\/a>"],[0,3,"<a href=\"src\/Framework\/TestSuite.php.html#918\">PHPUnit_Framework_TestSuite::setDisallowChangesToGlobalState<\/a>"],[0,3,"<a href=\"src\/Framework\/TestSuite.php.html#929\">PHPUnit_Framework_TestSuite::setBackupGlobals<\/a>"],[0,3,"<a href=\"src\/Framework\/TestSuite.php.html#940\">PHPUnit_Framework_TestSuite::setBackupStaticAttributes<\/a>"],[0,2,"<a href=\"src\/Framework\/TestSuite.php.html#954\">PHPUnit_Framework_TestSuite::getIterator<\/a>"],[0,3,"<a href=\"src\/Framework\/TestSuite.php.html#965\">PHPUnit_Framework_TestSuite::injectFilter<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#981\">PHPUnit_Framework_TestSuite::setUp<\/a>"],[0,1,"<a href=\"src\/Framework\/TestSuite.php.html#991\">PHPUnit_Framework_TestSuite::tearDown<\/a>"],[0,1,"<a href=\"src\/Runner\/BaseTestRunner.php.html#37\">PHPUnit_Runner_BaseTestRunner::getLoader<\/a>"],[0,9,"<a href=\"src\/Runner\/BaseTestRunner.php.html#52\">PHPUnit_Runner_BaseTestRunner::getTest<\/a>"],[0,1,"<a href=\"src\/Runner\/BaseTestRunner.php.html#123\">PHPUnit_Runner_BaseTestRunner::loadSuiteClass<\/a>"],[0,1,"<a href=\"src\/Runner\/BaseTestRunner.php.html#134\">PHPUnit_Runner_BaseTestRunner::clearStatus<\/a>"],[100,1,"<a href=\"src\/Runner\/BaseTestRunner.php.html#144\">PHPUnit_Runner_BaseTestRunner::runFailed<\/a>"],[0,3,"<a href=\"src\/Runner\/Version.php.html#32\">PHPUnit_Runner_Version::id<\/a>"],[0,1,"<a href=\"src\/Runner\/Version.php.html#49\">PHPUnit_Runner_Version::getVersionString<\/a>"],[0,3,"<a href=\"src\/Runner\/Version.php.html#58\">PHPUnit_Runner_Version::getReleaseChannel<\/a>"],[0,1,"<a href=\"src\/TextUI\/Command.php.html#101\">PHPUnit_TextUI_Command::main<\/a>"],[0,12,"<a href=\"src\/TextUI\/Command.php.html#113\">PHPUnit_TextUI_Command::run<\/a>"],[0,1,"<a href=\"src\/TextUI\/Command.php.html#179\">PHPUnit_TextUI_Command::createRunner<\/a>"],[0,109,"<a href=\"src\/TextUI\/Command.php.html#229\">PHPUnit_TextUI_Command::handleArguments<\/a>"],[0,8,"<a href=\"src\/TextUI\/Command.php.html#659\">PHPUnit_TextUI_Command::handleLoader<\/a>"],[0,10,"<a href=\"src\/TextUI\/Command.php.html#703\">PHPUnit_TextUI_Command::handlePrinter<\/a>"],[0,2,"<a href=\"src\/TextUI\/Command.php.html#748\">PHPUnit_TextUI_Command::handleBootstrap<\/a>"],[0,5,"<a href=\"src\/TextUI\/Command.php.html#760\">PHPUnit_TextUI_Command::handleSelfUpdate<\/a>"],[0,2,"<a href=\"src\/TextUI\/Command.php.html#832\">PHPUnit_TextUI_Command::showHelp<\/a>"],[0,1,"<a href=\"src\/TextUI\/Command.php.html#922\">PHPUnit_TextUI_Command::handleCustomTestSuite<\/a>"],[0,2,"<a href=\"src\/TextUI\/Command.php.html#926\">PHPUnit_TextUI_Command::printVersionString<\/a>"],[0,1,"<a href=\"src\/TextUI\/Command.php.html#939\">PHPUnit_TextUI_Command::showError<\/a>"],[0,10,"<a href=\"src\/TextUI\/ResultPrinter.php.html#117\">PHPUnit_TextUI_ResultPrinter::__construct<\/a>"],[0,13,"<a href=\"src\/TextUI\/ResultPrinter.php.html#163\">PHPUnit_TextUI_ResultPrinter::printResult<\/a>"],[0,5,"<a href=\"src\/TextUI\/ResultPrinter.php.html#210\">PHPUnit_TextUI_ResultPrinter::printDefects<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#239\">PHPUnit_TextUI_ResultPrinter::printDefect<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#249\">PHPUnit_TextUI_ResultPrinter::printDefectHeader<\/a>"],[0,2,"<a href=\"src\/TextUI\/ResultPrinter.php.html#263\">PHPUnit_TextUI_ResultPrinter::printDefectTrace<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#276\">PHPUnit_TextUI_ResultPrinter::printErrors<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#284\">PHPUnit_TextUI_ResultPrinter::printFailures<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#292\">PHPUnit_TextUI_ResultPrinter::printIncompletes<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#301\">PHPUnit_TextUI_ResultPrinter::printRisky<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#310\">PHPUnit_TextUI_ResultPrinter::printSkipped<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#315\">PHPUnit_TextUI_ResultPrinter::printHeader<\/a>"],[0,10,"<a href=\"src\/TextUI\/ResultPrinter.php.html#323\">PHPUnit_TextUI_ResultPrinter::printFooter<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#376\">PHPUnit_TextUI_ResultPrinter::printWaitPrompt<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#388\">PHPUnit_TextUI_ResultPrinter::addError<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#401\">PHPUnit_TextUI_ResultPrinter::addFailure<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#414\">PHPUnit_TextUI_ResultPrinter::addIncompleteTest<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#428\">PHPUnit_TextUI_ResultPrinter::addRiskyTest<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#442\">PHPUnit_TextUI_ResultPrinter::addSkippedTest<\/a>"],[0,2,"<a href=\"src\/TextUI\/ResultPrinter.php.html#454\">PHPUnit_TextUI_ResultPrinter::startTestSuite<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#469\">PHPUnit_TextUI_ResultPrinter::endTestSuite<\/a>"],[0,2,"<a href=\"src\/TextUI\/ResultPrinter.php.html#478\">PHPUnit_TextUI_ResultPrinter::startTest<\/a>"],[0,6,"<a href=\"src\/TextUI\/ResultPrinter.php.html#496\">PHPUnit_TextUI_ResultPrinter::endTest<\/a>"],[0,2,"<a href=\"src\/TextUI\/ResultPrinter.php.html#520\">PHPUnit_TextUI_ResultPrinter::writeProgress<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#541\">PHPUnit_TextUI_ResultPrinter::writeNewLine<\/a>"],[0,4,"<a href=\"src\/TextUI\/ResultPrinter.php.html#556\">PHPUnit_TextUI_ResultPrinter::formatWithColor<\/a>"],[0,2,"<a href=\"src\/TextUI\/ResultPrinter.php.html#590\">PHPUnit_TextUI_ResultPrinter::writeWithColor<\/a>"],[0,1,"<a href=\"src\/TextUI\/ResultPrinter.php.html#606\">PHPUnit_TextUI_ResultPrinter::writeProgressWithColor<\/a>"],[0,4,"<a href=\"src\/TextUI\/ResultPrinter.php.html#619\">PHPUnit_TextUI_ResultPrinter::writeCountString<\/a>"],[0,2,"<a href=\"src\/TextUI\/TestRunner.php.html#66\">PHPUnit_TextUI_TestRunner::__construct<\/a>"],[0,3,"<a href=\"src\/TextUI\/TestRunner.php.html#85\">PHPUnit_TextUI_TestRunner::run<\/a>"],[0,1,"<a href=\"src\/TextUI\/TestRunner.php.html#108\">PHPUnit_TextUI_TestRunner::createTestResult<\/a>"],[0,7,"<a href=\"src\/TextUI\/TestRunner.php.html#113\">PHPUnit_TextUI_TestRunner::processSuiteFilters<\/a>"],[0,58,"<a href=\"src\/TextUI\/TestRunner.php.html#151\">PHPUnit_TextUI_TestRunner::doRun<\/a>"],[0,1,"<a href=\"src\/TextUI\/TestRunner.php.html#512\">PHPUnit_TextUI_TestRunner::setPrinter<\/a>"],[0,1,"<a href=\"src\/TextUI\/TestRunner.php.html#523\">PHPUnit_TextUI_TestRunner::runFailed<\/a>"],[0,3,"<a href=\"src\/TextUI\/TestRunner.php.html#533\">PHPUnit_TextUI_TestRunner::write<\/a>"],[0,2,"<a href=\"src\/TextUI\/TestRunner.php.html#552\">PHPUnit_TextUI_TestRunner::getLoader<\/a>"],[0,143,"<a href=\"src\/TextUI\/TestRunner.php.html#565\">PHPUnit_TextUI_TestRunner::handleConfiguration<\/a>"],[0,3,"<a href=\"src\/TextUI\/TestRunner.php.html#932\">PHPUnit_TextUI_TestRunner::showExtensionNotLoadedMessage<\/a>"],[0,2,"<a href=\"src\/TextUI\/TestRunner.php.html#956\">PHPUnit_TextUI_TestRunner::showMessage<\/a>"],[0,3,"<a href=\"src\/TextUI\/TestRunner.php.html#968\">PHPUnit_TextUI_TestRunner::getCodeCoverageFilter<\/a>"],[0,1,"<a href=\"src\/Util\/Blacklist.php.html#62\">PHPUnit_Util_Blacklist::getBlacklistedDirectories<\/a>"],[0,4,"<a href=\"src\/Util\/Blacklist.php.html#73\">PHPUnit_Util_Blacklist::isBlacklisted<\/a>"],[0,6,"<a href=\"src\/Util\/Blacklist.php.html#90\">PHPUnit_Util_Blacklist::initialize<\/a>"],[0,1,"<a href=\"src\/Util\/Configuration.php.html#161\">PHPUnit_Util_Configuration::__construct<\/a>"],[0,1,"<a href=\"src\/Util\/Configuration.php.html#171\">PHPUnit_Util_Configuration::__clone<\/a>"],[0,3,"<a href=\"src\/Util\/Configuration.php.html#182\">PHPUnit_Util_Configuration::getInstance<\/a>"],[0,1,"<a href=\"src\/Util\/Configuration.php.html#208\">PHPUnit_Util_Configuration::getFilename<\/a>"],[0,4,"<a href=\"src\/Util\/Configuration.php.html#219\">PHPUnit_Util_Configuration::getFilterConfiguration<\/a>"],[0,3,"<a href=\"src\/Util\/Configuration.php.html#294\">PHPUnit_Util_Configuration::getGroupConfiguration<\/a>"],[0,10,"<a href=\"src\/Util\/Configuration.php.html#318\">PHPUnit_Util_Configuration::getListenerConfiguration<\/a>"],[0,11,"<a href=\"src\/Util\/Configuration.php.html#364\">PHPUnit_Util_Configuration::getLoggingConfiguration<\/a>"],[0,7,"<a href=\"src\/Util\/Configuration.php.html#420\">PHPUnit_Util_Configuration::getPHPConfiguration<\/a>"],[0,13,"<a href=\"src\/Util\/Configuration.php.html#474\">PHPUnit_Util_Configuration::handlePHPConfiguration<\/a>"],[0,36,"<a href=\"src\/Util\/Configuration.php.html#538\">PHPUnit_Util_Configuration::getPHPUnitConfiguration<\/a>"],[0,5,"<a href=\"src\/Util\/Configuration.php.html#794\">PHPUnit_Util_Configuration::getSeleniumBrowserConfiguration<\/a>"],[0,5,"<a href=\"src\/Util\/Configuration.php.html#844\">PHPUnit_Util_Configuration::getTestSuiteConfiguration<\/a>"],[0,21,"<a href=\"src\/Util\/Configuration.php.html#874\">PHPUnit_Util_Configuration::getTestSuite<\/a>"],[0,3,"<a href=\"src\/Util\/Configuration.php.html#993\">PHPUnit_Util_Configuration::getBoolean<\/a>"],[0,2,"<a href=\"src\/Util\/Configuration.php.html#1010\">PHPUnit_Util_Configuration::getInteger<\/a>"],[0,6,"<a href=\"src\/Util\/Configuration.php.html#1024\">PHPUnit_Util_Configuration::readFilterDirectories<\/a>"],[0,3,"<a href=\"src\/Util\/Configuration.php.html#1069\">PHPUnit_Util_Configuration::readFilterFiles<\/a>"],[0,10,"<a href=\"src\/Util\/Configuration.php.html#1089\">PHPUnit_Util_Configuration::toAbsolutePath<\/a>"],[0,1,"<a href=\"src\/Util\/ErrorHandler.php.html#39\">PHPUnit_Util_ErrorHandler::getErrorStack<\/a>"],[50,14,"<a href=\"src\/Util\/ErrorHandler.php.html#51\">PHPUnit_Util_ErrorHandler::handleError<\/a>"],[0,3,"<a href=\"src\/Util\/ErrorHandler.php.html#100\">PHPUnit_Util_ErrorHandler::handleErrorOnce<\/a>"],[0,2,"<a href=\"src\/Util\/ErrorHandler.php.html#111\">PHPUnit_Util_ErrorHandler::anonymous function<\/a>"],[0,3,"<a href=\"src\/Util\/Fileloader.php.html#32\">PHPUnit_Util_Fileloader::checkAndLoad<\/a>"],[0,3,"<a href=\"src\/Util\/Fileloader.php.html#54\">PHPUnit_Util_Fileloader::load<\/a>"],[0,16,"<a href=\"src\/Util\/Filter.php.html#31\">PHPUnit_Util_Filter::getFilteredStacktrace<\/a>"],[0,6,"<a href=\"src\/Util\/Filter.php.html#99\">PHPUnit_Util_Filter::frameExists<\/a>"],[0,14,"<a href=\"src\/Util\/Getopt.php.html#25\">PHPUnit_Util_Getopt::getopt<\/a>"],[0,11,"<a href=\"src\/Util\/Getopt.php.html#79\">PHPUnit_Util_Getopt::parseShortOption<\/a>"],[0,13,"<a href=\"src\/Util\/Getopt.php.html#117\">PHPUnit_Util_Getopt::parseLongOption<\/a>"],[0,7,"<a href=\"src\/Util\/Printer.php.html#52\">PHPUnit_Util_Printer::__construct<\/a>"],[0,8,"<a href=\"src\/Util\/Printer.php.html#83\">PHPUnit_Util_Printer::flush<\/a>"],[0,2,"<a href=\"src\/Util\/Printer.php.html#114\">PHPUnit_Util_Printer::incrementalFlush<\/a>"],[0,5,"<a href=\"src\/Util\/Printer.php.html#126\">PHPUnit_Util_Printer::write<\/a>"],[0,1,"<a href=\"src\/Util\/Printer.php.html#153\">PHPUnit_Util_Printer::getAutoFlush<\/a>"],[0,2,"<a href=\"src\/Util\/Printer.php.html#167\">PHPUnit_Util_Printer::setAutoFlush<\/a>"],[0,5,"<a href=\"src\/Util\/Test.php.html#50\">PHPUnit_Util_Test::describe<\/a>"],[83.333333333333,3,"<a href=\"src\/Util\/Test.php.html#78\">PHPUnit_Util_Test::getLinesToBeCovered<\/a>"],[100,1,"<a href=\"src\/Util\/Test.php.html#100\">PHPUnit_Util_Test::getLinesToBeUsed<\/a>"],[36.363636363636,8,"<a href=\"src\/Util\/Test.php.html#113\">PHPUnit_Util_Test::getLinesToBeCoveredOrUsed<\/a>"],[37.037037037037,7,"<a href=\"src\/Util\/Test.php.html#172\">PHPUnit_Util_Test::getRequirements<\/a>"],[25,15,"<a href=\"src\/Util\/Test.php.html#216\">PHPUnit_Util_Test::getMissingRequirements<\/a>"],[13.157894736842,10,"<a href=\"src\/Util\/Test.php.html#268\">PHPUnit_Util_Test::getExpectedException<\/a>"],[0,4,"<a href=\"src\/Util\/Test.php.html#331\">PHPUnit_Util_Test::parseAnnotationContent<\/a>"],[0,11,"<a href=\"src\/Util\/Test.php.html#353\">PHPUnit_Util_Test::getProvidedData<\/a>"],[35.714285714286,6,"<a href=\"src\/Util\/Test.php.html#421\">PHPUnit_Util_Test::parseTestMethodAnnotations<\/a>"],[0,3,"<a href=\"src\/Util\/Test.php.html#449\">PHPUnit_Util_Test::parseAnnotations<\/a>"],[0,1,"<a href=\"src\/Util\/Test.php.html#474\">PHPUnit_Util_Test::getBackupSettings<\/a>"],[0,3,"<a href=\"src\/Util\/Test.php.html#498\">PHPUnit_Util_Test::getDependencies<\/a>"],[0,1,"<a href=\"src\/Util\/Test.php.html#529\">PHPUnit_Util_Test::getErrorHandlerSettings<\/a>"],[0,10,"<a href=\"src\/Util\/Test.php.html#546\">PHPUnit_Util_Test::getGroups<\/a>"],[0,7,"<a href=\"src\/Util\/Test.php.html#596\">PHPUnit_Util_Test::getSize<\/a>"],[0,3,"<a href=\"src\/Util\/Test.php.html#624\">PHPUnit_Util_Test::getTickets<\/a>"],[0,3,"<a href=\"src\/Util\/Test.php.html#652\">PHPUnit_Util_Test::getProcessIsolationSettings<\/a>"],[0,1,"<a href=\"src\/Util\/Test.php.html#675\">PHPUnit_Util_Test::getPreserveGlobalStateSettings<\/a>"],[12.5,10,"<a href=\"src\/Util\/Test.php.html#689\">PHPUnit_Util_Test::getHookMethods<\/a>"],[0,1,"<a href=\"src\/Util\/Test.php.html#733\">PHPUnit_Util_Test::emptyHookMethodsArray<\/a>"],[0,7,"<a href=\"src\/Util\/Test.php.html#750\">PHPUnit_Util_Test::getBooleanAnnotationSetting<\/a>"],[0,29,"<a href=\"src\/Util\/Test.php.html#784\">PHPUnit_Util_Test::resolveElementToReflectionObjects<\/a>"],[28.571428571429,3,"<a href=\"src\/Util\/Test.php.html#897\">PHPUnit_Util_Test::resolveReflectionObjectsToLines<\/a>"],[0,2,"<a href=\"src\/Util\/Test.php.html#924\">PHPUnit_Util_Test::isBeforeClassMethod<\/a>"],[0,1,"<a href=\"src\/Util\/Test.php.html#934\">PHPUnit_Util_Test::isBeforeMethod<\/a>"],[0,2,"<a href=\"src\/Util\/Test.php.html#944\">PHPUnit_Util_Test::isAfterClassMethod<\/a>"],[0,1,"<a href=\"src\/Util\/Test.php.html#954\">PHPUnit_Util_Test::isAfterMethod<\/a>"],[0,1,"<a href=\"src\/Util\/TestSuiteIterator.php.html#37\">PHPUnit_Util_TestSuiteIterator::__construct<\/a>"],[0,1,"<a href=\"src\/Util\/TestSuiteIterator.php.html#46\">PHPUnit_Util_TestSuiteIterator::rewind<\/a>"],[0,1,"<a href=\"src\/Util\/TestSuiteIterator.php.html#56\">PHPUnit_Util_TestSuiteIterator::valid<\/a>"],[0,1,"<a href=\"src\/Util\/TestSuiteIterator.php.html#66\">PHPUnit_Util_TestSuiteIterator::key<\/a>"],[0,2,"<a href=\"src\/Util\/TestSuiteIterator.php.html#76\">PHPUnit_Util_TestSuiteIterator::current<\/a>"],[0,1,"<a href=\"src\/Util\/TestSuiteIterator.php.html#85\">PHPUnit_Util_TestSuiteIterator::next<\/a>"],[0,1,"<a href=\"src\/Util\/TestSuiteIterator.php.html#95\">PHPUnit_Util_TestSuiteIterator::getChildren<\/a>"],[0,1,"<a href=\"src\/Util\/TestSuiteIterator.php.html#107\">PHPUnit_Util_TestSuiteIterator::hasChildren<\/a>"],[0,1,"<a href=\"src\/Util\/XML.php.html#35\">PHPUnit_Util_XML::prepareString<\/a>"],[0,2,"<a href=\"src\/Util\/XML.php.html#58\">PHPUnit_Util_XML::loadFile<\/a>"],[0,14,"<a href=\"src\/Util\/XML.php.html#101\">PHPUnit_Util_XML::load<\/a>"],[0,3,"<a href=\"src\/Util\/XML.php.html#169\">PHPUnit_Util_XML::nodeToText<\/a>"],[0,4,"<a href=\"src\/Util\/XML.php.html#191\">PHPUnit_Util_XML::removeCharacterDataNodes<\/a>"],[0,13,"<a href=\"src\/Util\/XML.php.html#209\">PHPUnit_Util_XML::xmlToVariable<\/a>"],[0,8,"<a href=\"src\/Util\/XML.php.html#279\">PHPUnit_Util_XML::assertValidKeys<\/a>"],[0,21,"<a href=\"src\/Util\/XML.php.html#325\">PHPUnit_Util_XML::convertSelectToTag<\/a>"],[0,1,"<a href=\"src\/Util\/XML.php.html#464\">PHPUnit_Util_XML::cssSelect<\/a>"],[0,88,"<a href=\"src\/Util\/XML.php.html#485\">PHPUnit_Util_XML::findNodes<\/a>"],[0,6,"<a href=\"src\/Util\/XML.php.html#865\">PHPUnit_Util_XML::getDescendants<\/a>"],[0,2,"<a href=\"src\/Util\/XML.php.html#891\">PHPUnit_Util_XML::getElementsByCaseInsensitiveTagName<\/a>"],[0,5,"<a href=\"src\/Util\/XML.php.html#911\">PHPUnit_Util_XML::getNodeText<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

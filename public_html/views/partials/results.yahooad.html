@@ -1,0 +1,58 @@
+<!--Yahoo ads -->
+<!--<div class="row">-->
+	<!--<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">-->
+		<style>#ypaAdWrapper-SM_Top_Center iframe {
+			width: 100%
+		}</style>
+		<div id='ypaAdWrapper-SM_Top_Center'></div>
+
+
+		<!--<style>#ypaAdWrapper-SM_Btm_Center iframe {-->
+			<!--width: 100%-->
+		<!--}</style>-->
+		<!--<div id='ypaAdWrapper-SM_Btm_Center'></div>-->
+
+
+		<!--<style>#ypaAdWrapper-SM_Algo iframe {-->
+			<!--width: 100%-->
+		<!--}</style>-->
+		<!--<div id='ypaAdWrapper-SM_Algo'></div>-->
+
+		<div id="scriptDiv">
+			<script type='text/javascript'>
+				window.ypaAds.insertMultiAd({
+					ypaAdConfig:   '000000773',
+					ypaAdTypeTag:  '',
+
+					ypaPubParams : {
+						query : $('#q').val(),
+//						location : "Burbank, CA",
+						inputCharEnc : "utf8",
+						outputCharEnc : "utf8"
+					},
+
+					ypaAdSlotInfo: [
+						{
+							ypaAdSlotId: 'SM_Top_Center',
+							ypaAdDivId:  'ypaAdWrapper-SM_Top_Center',
+							ypaAdWidth:  '600',
+							ypaAdHeight: '100'
+						}
+//						{
+//							ypaAdSlotId: 'SM_Btm_Center',
+//							ypaAdDivId:  'ypaAdWrapper-SM_Btm_Center',
+//							ypaAdWidth:  '600',
+//							ypaAdHeight: '757'
+//						},
+//						{
+//							ypaAdSlotId: 'SM_Algo',
+//							ypaAdDivId:  'ypaAdWrapper-SM_Algo',
+//							ypaAdWidth:  '600',
+//							ypaAdHeight: '827'
+//						}
+					]
+				});
+			</script>
+		</div>
+	<!--</div>-->
+<!--</div>-->

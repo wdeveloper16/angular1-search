@@ -1,0 +1,37 @@
+{
+  "name": "sourcemoz",
+  "description": "search engine",
+  "main": "",
+  "authors": [
+    "Artjom Kurapov <pilot@gratheon.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "lodash": "^4.14.1",
+    "angular": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "angular-ui-router": "^0.3.1",
+    "jquery.autoellipsis": "^1.0.10",
+    "angular-swiper-repeat": "^0.1.2",
+    "Swiper": "swiper#3.0.0",
+    "smoothTouchScroll": "tkahn/smoothTouchScroll",
+    "imagesloaded": "^4.1.1",
+    "angular-pageslide-directive": "^2.1.1",
+    "jQuery.dotdotdot": "FrDH/jQuery.dotdotdot#^1.8.3",
+    "angular-touch": "^1.5.8",
+    "allmighty-autocomplete": "tot-ra/allmighty-autocomplete"
+  },
+  "resolutions": {
+    "Swiper": "3.0.0"
+  }
+}

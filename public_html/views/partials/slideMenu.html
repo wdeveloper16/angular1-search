@@ -1,0 +1,20 @@
+<ul id="menu_items" ng-controller="slideMenuController">
+	<li><a ui-sref="about" target="_blank" ng-click="hidePopup()" id="share_about"><i></i>About</a></li>
+	<li><a ng-click="fbShare()"
+	       id="share_serp_facebook" style="cursor:pointer;">
+		<i></i>Share on Facebook</a></li>
+	<li><a
+		ng-click="twitterShare()"
+		id="share_serp_twitter"  style="cursor: pointer">
+		<i></i>Share on Twitter</a></li>
+	<li><a
+		href="mailto:?subject=Check%20this%20site%21&body=Hello%21%0D%0A%0D%0AI%20just%20want%20you%20to%20know%2C%20there%20is%20a%20brand%20new%20internet%20search%20application%2C%20called%20SourceMoz.%0D%0AThey%20don%27t%20save%20or%20track%20your%20activity%21%0D%0AAbsolutely%20must%20see%3A%0D%0Ahttp%3A%2F%2Fsourcemoz.com%2F%0D%0A%0D%0ACheers%21%20"
+		ng-click="hidePopup()"
+		id="share_serp_email">
+		<i></i>Share by Email</a></li>
+	<li><a
+		ng-click="hidePopup()"
+		href="mailto:mreisbeck@gmail.com?subject=Feedback%20on%20sourcemoz.com&body=Hello%21%0D%0A%0D%0AI%20got%20something%20to%20tell%20you%20about%20sourcemoz.com%21"
+		id="share_serp_feedback">
+		<i></i>Feedback</a></li>
+</ul>

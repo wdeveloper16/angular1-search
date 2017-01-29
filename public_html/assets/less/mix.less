@@ -1,0 +1,445 @@
+#wiki_text {
+	width:  100%;
+	float:  none;
+	height: inherit;
+}
+
+#wiki_content {
+	font-family: inherit;
+	max-width:   inherit;
+}
+
+/*Copyright footer*/
+#copyright {
+	width: inherit;
+}
+
+/*---------------------------------
+Misc
+---------------------------------*/
+/*Divider*/
+.c {
+	width: inherit;
+}
+
+.ddd {
+	display:           inline-block;
+	-ms-text-overflow: ellipsis;
+	text-overflow:     ellipsis;
+	white-space:       nowrap;
+	overflow:          hidden;
+	max-width:         100%;
+}
+
+/*---------------------------------
+Slideout
+---------------------------------*/
+
+#button-slideout {
+	float:               right;
+	margin:              29px 0px 0px 0px;
+	width:               24px;
+	height:              14px;
+	background-image:    url("../img/m.png");
+	background-repeat:   no-repeat;
+	background-position: 0px 0px;
+	display:             block;
+}
+
+#menu-slideout {
+	background:   #003366;
+	/* IE */
+	filter:       alpha(opacity=90);
+	/* Mozilla */
+	-moz-opacity: 0.9;
+	/* CSS3 */
+	opacity:      0.9;
+}
+
+#menu-slideout #menu_items {
+	background-color: transparent;
+	border:           0;
+	margin:           40px 0 0 30px;
+}
+
+#menu-slideout #menu_items .fa {
+	margin-right: 10px;
+}
+
+#menu-slideout #menu_items li {
+	margin: 30px 12px;
+}
+
+#menu-slideout #menu_items a {
+	color:            #FFFFFF;
+	background-image: none;
+	padding:          0;
+}
+
+.slideout-menu {
+	position:                   fixed;
+	left:                       auto;
+	top:                        0;
+	bottom:                     0;
+	right:                      0;
+	z-index:                    0;
+	width:                      256px;
+	overflow-y:                 auto;
+	-webkit-overflow-scrolling: touch;
+	display:                    none;
+}
+
+.slideout-panel {
+	position: relative;
+	z-index:  1;
+	/*will-change: transform;*/
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
+
+/*---------------------------------
+Sticky
+---------------------------------*/
+.box-affix {
+	height:           200px;
+	width:            200px;
+	color:            #fff;
+	background-color: blue;
+}
+
+.affix-top {
+	/* Initial items */
+}
+
+.affix {
+	position: fixed;
+	z-index:  999;
+}
+
+#wiki_text {
+	background-color: #FFFFFF;
+}
+
+#wiki_text.affix #wiki_text_inside {
+	/*width: 75%;*/
+}
+
+/*---------------------------------
+images
+---------------------------------*/
+#images_place {
+	width: initial;
+}
+
+/*
+#images_place .imagesItem .itemTitle{
+	height: initial;
+}
+*/
+#images_place h1 {
+	font-size:          15px;
+	margin:             0;
+	display:            -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	text-overflow:      ellipsis;
+	overflow:           hidden;
+	margin-bottom:      5px;
+}
+
+/*---------------------------------
+Pager
+---------------------------------*/
+
+#listPager {
+	display:    none;
+
+	z-index:    1000;
+	position:   fixed;
+	bottom:     10px;
+	width:      100%;
+	text-align: center;
+}
+
+#listPager ul {
+	margin:  0;
+	padding: 0;
+}
+
+#listPager ul li {
+	display: inline;
+	/*margin: 3px;*/
+}
+
+#listPager ul li a {
+	/*background-color: blue;*/
+	font-size:        0;
+	background-color: #cdcdcd;
+	border:           0;
+	margin-left:      3px;
+	padding:          2px 7px;
+}
+
+#listPager ul li a:hover {
+	background-color: #349aff;
+}
+
+.listPagerActive {
+	background-color: #349aff;
+}
+
+.custom {
+	margin-left: 12px;
+}
+
+.div-swiper-social {
+	margin:     1px 0px;
+	box-shadow: 0px 0px 1px 0px #aaa;
+}
+
+/*---------------------------------
+Misc
+---------------------------------*/
+.col-centered {
+	float:  none;
+	margin: 0 auto;
+}
+
+.size-img {
+	width:  80% !important;
+	height: 80% !important;
+}
+
+.socialItem .itemBody {
+	max-height:  100%;
+	font-size:   11px;
+	line-height: 13px;
+}
+
+/*---------------------------------
+Media Queries
+- https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries
+---------------------------------*/
+/* Tables, computers */
+@media only screen and (min-width: 768px) {
+	#button-slideout, #menu-slideout {
+		display: none;
+	}
+
+	/*
+	http://stackoverflow.com/questions/17394854/how-can-i-disable-bootstraps-affix-on-smaller-screens
+	*/
+	.affix {
+		position: static;
+	}
+
+	#listPager {
+		display: none;
+	}
+
+	.swiper-container {
+		display: none;
+	}
+}
+
+#goup {
+	padding:       20px 0 35px 0;
+	border-bottom: 0 solid #eee;
+	bottom:        10px;
+	width:         100%;
+	right:         0;
+	left:          0;
+}
+
+@media @tabletDesktop {
+	#goup {
+		padding: 150px 0 80px 0;
+	}
+}
+
+/* Small Devices */
+@media only screen and (max-width: 768px) {
+	.menu_toggler {
+		display: none;
+	}
+
+	.affix {
+		position: static;
+	}
+
+	/* Video */
+	#video_place .col-video-image {
+		width:  120px;
+		height: 90px;
+	}
+
+	#video_place .col-video-content {
+		height: 89px;
+	}
+
+	/* Images*/
+	#images_place a.thumbView {
+		width: initial;
+	}
+
+	#front-content #logo-front-page {
+		display: block;
+		margin:  auto;
+	}
+
+	//	#front-row #front-search #q {
+	/*border: 1px solid #f2f2f2;*/
+	//		padding: 12px 2px;
+	//	}
+	#front-row #front_query {
+		height: initial;
+	}
+
+
+	.wiki_images_container {
+		display: none;
+	}
+
+	//.socialDesc {
+	//	opacity: 1;
+	//}
+	.socialDesc .sIconView {
+		filter: none !important;
+	}
+
+	.socialItem .social_delicious {
+		background-position: 0 0;
+	}
+
+	.socialItem .social_digg {
+		background-position: -28px 0;
+	}
+
+	.socialItem .social_facebook {
+		background-position: -56px 0;
+	}
+
+	.socialItem .social_flickr {
+		background-position: -84px 0;
+	}
+
+	.socialItem .social_lastfm {
+		background-position: -112px 0;
+	}
+
+	.socialItem .social_linkedin {
+		background-position: -140px 0;
+	}
+
+	.socialItem .social_pinterest {
+		background-position: -168px 0;
+	}
+
+	.socialItem .social_google {
+		background-position: -196px 0;
+	}
+
+	.socialItem .social_reddit {
+		background-position: -224px 0;
+	}
+
+	.socialItem .social_stumble {
+		background-position: -252px 0;
+	}
+
+	.socialItem .social_tumblr {
+		background-position: -280px 0;
+	}
+
+	.socialItem .social_twitter {
+		background-position: -308px 0;
+	}
+
+	.socialItem .social_vine {
+		background-position: -336px 0;
+	}
+
+	.socialItem .social_yelp {
+		background-position: -364px 0;
+	}
+
+	.socialItem .social_quora {
+		background-position: -392px 0;
+	}
+
+	.socialItem .social_four {
+		background-position: -420px 0;
+	}
+
+	.socialItem .social_instagram {
+		background-position: -448px 0;
+	}
+
+	#check_point_affix hr {
+		border-top: 1px solid #fff;
+	}
+}
+
+//@media only screen and (min-width: 1200px) {
+//	.wiki_images_container {
+//		width: 40%;
+//	}
+//
+//	.wiki_details_container {
+//		width: 39%;
+//	}
+//
+//	.row_wiki {
+//		margin-top: 28px;
+//	}
+//
+//	#check_point_affix {
+//		margin: 20px 0 20px 0;
+//	}
+//
+////	.socialItem {
+////		max-height: 76px !important;
+////	}
+//}
+
+#images_tab,
+#news_tab,
+#videos_tab {
+	padding-top: 30px;
+	clear:       both;
+}
+
+@media @desktop {
+	#web_tab,
+	#news_tab,
+	#videos_tab {
+		margin-left: 130px;
+	}
+}
+
+.ellip {
+	display: block;
+	height:  100%;
+}
+
+.ellip-line {
+	display:       inline-block;
+	text-overflow: ellipsis;
+	white-space:   nowrap;
+	word-wrap:     normal;
+	max-width:     100%;
+}
+
+.ellip,
+.ellip-line {
+	position: relative;
+	overflow: hidden;
+}
