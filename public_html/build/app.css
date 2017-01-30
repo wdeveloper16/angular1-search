@@ -632,6 +632,12 @@ Media Queries
   padding: 0 10px 0 10px;
   width: 100%;
 }
+@media only screen and (max-width: 580px) {
+  #front-row {
+    top: -35px;
+    position: relative;
+  }
+}
 #front-content {
   text-align: center;
 }
@@ -710,7 +716,7 @@ Media Queries
   overflow: hidden;
 }
 #results-web #wikipedia_level1 #wikipedia_level2 #wikipedia_level3 {
-  min-width: "~calc(45% - 15px)";
+  min-width: calc(30%);
 }
 #results-web #wikipedia_level1 #wikipedia_level2 #wikipedia_level3 h3 {
   font-size: 13px;
@@ -774,7 +780,7 @@ Media Queries
 #results-web #wikipedia_level1 #wikipedia_level2 #preview_images.multiple {
   overflow-y: hidden;
   overflow-x: auto;
-  min-width: 55%;
+  min-width: 62%;
 }
 @media only screen and (min-width: 580px) and (max-width: 768px) {
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images.multiple {
@@ -835,20 +841,32 @@ Media Queries
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images {
     display: block;
     max-height: 184px;
-    min-width: 150px;
     overflow: hidden;
+    min-width: 30%;
+    text-align: center;
   }
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images.multiple {
     overflow: hidden;
     flex: 1;
   }
+  #results-web #wikipedia_level1 #wikipedia_level2 #preview_images .wiki-images {
+    display: inline-block;
+  }
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images .previewImage {
     height: 60px;
     float: left;
     margin-right: 0;
+    width: 23%;
+    object-fit: cover;
   }
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images .previewImage:first-child {
-    height: 184px;
+    height: 178px;
+    width: auto;
+    object-fit: cover;
+  }
+  #results-web #wikipedia_level1 #wikipedia_level2 #preview_images .wiki-images img:nth-child(4n+4) {
+    width: 21%;
+    object-fit: cover;
   }
 }
 @media only screen and (min-width: 580px) and (max-width: 768px) {

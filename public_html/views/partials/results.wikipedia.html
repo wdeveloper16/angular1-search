@@ -18,7 +18,7 @@
 		     ng-if="images.length"
 		     id="preview_images"
 		     ng-class="{multiple:images.length>1}">
-			<div style="cursor: pointer">
+			<div style="cursor: pointer" class="wiki-images">
 				<img ng-repeat="row in images | limitTo:10" src="{{row.thumbnailUrl}}"
 				     class="previewImage"/>
 
