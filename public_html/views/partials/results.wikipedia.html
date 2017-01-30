@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-		<div id="wikipedia_level3" ng-if="wikiLoading || wikipedia.extract">
+		<div id="wikipedia_level3" ng-if="wikiLoading || wikipedia.extract.toString().length > 100">
 			<div ng-if="wikiLoading" class="loader"></div>
 			<div ng-class="{
 						'loading':!wikipedia,
