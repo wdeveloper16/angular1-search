@@ -1698,6 +1698,9 @@ Video
   width: 100%;
   color: #288A3D;
   font-size: 11px;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  display: inline-block;
 }
 #video_place .itemBody {
   /* */
