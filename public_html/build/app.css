@@ -1050,7 +1050,7 @@ Media Queries
 #results-web #results-web2 #results-web3 .searchItem .itemTitle a {
   display: inline-block;
   max-height: 37px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 #results-web #results-web2 #results-web3 .searchItem .itemDispUrl {
   font-size: 14px;
