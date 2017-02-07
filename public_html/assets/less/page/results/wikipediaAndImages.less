@@ -6,7 +6,7 @@
 		overflow: hidden;
 
 		#wikipedia_level3 {
-			min-width: calc(45% - 15px);
+			min-width: "~calc(45% - 15px)";
 
 			h3 {
 				font-size:     13px;
@@ -63,7 +63,7 @@
 			&.multiple {
 				overflow-y: hidden;
 				overflow-x: auto;
-				min-width:  62%;
+				min-width:  55%;
 			}
 
 			@media @tabletVertical{
@@ -89,6 +89,10 @@
 @media @tabletDesktop {
 	#wikipedia_level1 {
 		border-bottom: 1px solid #E5E5E5;
+
+		.blockDisplay {
+			display: block !important;
+		}
 
 		#wikipedia_level2 {
 			.flex;
@@ -128,35 +132,26 @@
 
 			#preview_images {
 				display:    block;
+				float: left;
 				max-height: 184px;
+				min-width: 150px;
 				overflow: hidden; //if image is bigger by width, hide it
-				min-width: 30%;
-				text-align: center;
+				margin-right: 50px;
 
 				&.multiple {
 					overflow: hidden;
 					flex:     1;
 				}
-				.wiki-images{
-					display: inline-block;
-				}
+
 				.previewImage {
 					height:       60px;
 					float:        left;
 					margin-right: 0;
-					width:18%;
 					object-fit: cover;
 				}
 
 				.previewImage:first-child {
-					height: 178px;
-					width: auto;
-					object-fit: cover;
-				}
-
-				.wiki-images img:nth-child(4n+4) {
-					width:16%;
-					object-fit: cover;
+					height: 180px;
 				}
 			}
 		}

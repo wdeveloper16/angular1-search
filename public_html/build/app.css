@@ -716,7 +716,7 @@ Media Queries
   overflow: hidden;
 }
 #results-web #wikipedia_level1 #wikipedia_level2 #wikipedia_level3 {
-  min-width: calc(30%);
+  min-width: "~calc(45% - 15px)";
 }
 #results-web #wikipedia_level1 #wikipedia_level2 #wikipedia_level3 h3 {
   font-size: 13px;
@@ -780,7 +780,7 @@ Media Queries
 #results-web #wikipedia_level1 #wikipedia_level2 #preview_images.multiple {
   overflow-y: hidden;
   overflow-x: auto;
-  min-width: 62%;
+  min-width: 55%;
 }
 @media only screen and (min-width: 580px) and (max-width: 768px) {
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images.multiple {
@@ -799,6 +799,9 @@ Media Queries
 @media only screen and (min-width: 580px) {
   #results-web #wikipedia_level1 {
     border-bottom: 1px solid #E5E5E5;
+  }
+  #results-web #wikipedia_level1 .blockDisplay {
+    display: block !important;
   }
   #results-web #wikipedia_level1 #wikipedia_level2 {
     display: -webkit-box;
@@ -840,33 +843,24 @@ Media Queries
   }
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images {
     display: block;
+    float: left;
     max-height: 184px;
+    min-width: 150px;
     overflow: hidden;
-    min-width: 30%;
-    text-align: center;
+    margin-right: 50px;
   }
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images.multiple {
     overflow: hidden;
     flex: 1;
   }
-  #results-web #wikipedia_level1 #wikipedia_level2 #preview_images .wiki-images {
-    display: inline-block;
-  }
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images .previewImage {
     height: 60px;
     float: left;
     margin-right: 0;
-    width: 18%;
     object-fit: cover;
   }
   #results-web #wikipedia_level1 #wikipedia_level2 #preview_images .previewImage:first-child {
-    height: 178px;
-    width: auto;
-    object-fit: cover;
-  }
-  #results-web #wikipedia_level1 #wikipedia_level2 #preview_images .wiki-images img:nth-child(4n+4) {
-    width: 16%;
-    object-fit: cover;
+    height: 180px;
   }
 }
 @media only screen and (min-width: 580px) and (max-width: 768px) {
@@ -1026,6 +1020,9 @@ Media Queries
     padding: 0 5px 7px 5px;
     /* Firefox */
     margin: 0 25px 0 0;
+  }
+  #results-web #tab_menu {
+    margin-bottom: 0;
   }
 }
 #results-web .tab_item.tActive:hover {

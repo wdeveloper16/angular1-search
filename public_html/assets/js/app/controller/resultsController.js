@@ -1,16 +1,7 @@
 app.controller('resultsController', function ($scope, $state, Results, $http, $sce, $rootScope) {
 	$scope.q = $state.params.q;
 	$scope.$rootScope = $rootScope;
-	//img croper
-    $scope.cropper = {};
-    $scope.cropper.sourceImage = null;
-    $scope.cropper.croppedImage   = null;
-    $scope.bounds = {};
-    $scope.bounds.left = 0;
-    $scope.bounds.right = 0;
-    $scope.bounds.top = 0;
-    $scope.bounds.bottom = 0;
-	//end img croper
+
 	$scope.showGoToTop = false;
 	$scope.goToTop = function () {
 		$("html, body").animate({scrollTop: 0}, "2000", 'linear');
@@ -43,6 +34,124 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 		return false;
 	}
 
+	function arrangeImages(images) {
+		images = _.isUndefined(images) ? [] : images.value;
+		if (images.length) {
+
+			var screen_width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+			screen_width = Math.min(screen_width, 860);
+
+			var wiki_width = $('#wikipedia_level2').width();
+			if (!wiki_width) wiki_width = screen_width;
+			console.log(wiki_width);
+
+			var collimit = 1;
+			var rowLimit = 3;
+
+			if (!$scope.wikipedia) {
+				rowLimit = 2;
+			}
+
+			var widthPercent = $scope.wikipedia ? 0.55 : 1;
+			var wLimit = wiki_width * widthPercent;
+			var hMain = 180;
+			var hThumb = hMain / rowLimit;
+			var wMain = Math.round(images[0].thumbnail.width * hMain / images[0].thumbnail.height);
+			var wMax = wMain;
+			var xPos = wMain;
+			var yPos = 0;
+			var imgRow = 0;
+			var imgCol = 0;
+
+			var imgSectionWidth = 0;
+
+			var rightEdges = [];
+			var numImagesPerRow = [];
+
+			for (var i = 1; i < images.length; i ++) {
+
+				// calculate thumbnail width
+				var wThumb = Math.round(images[i].thumbnail.width * hThumb / images[i].thumbnail.height);
+
+				images[i].width = wThumb;
+				images[i].height = hThumb;
+
+				// if exceed limit
+				if (xPos + wThumb > wLimit) {
+
+					// thumbnail images should have at least 1 column
+					if (imgCol >= collimit) {
+
+						rightEdges[imgRow] = xPos;
+						numImagesPerRow[imgRow] = imgCol;
+
+						imgRow ++;
+						imgCol = 1;
+
+						xPos = wMain + wThumb;
+						yPos = imgRow * hThumb;
+
+						if (imgRow >= rowLimit) break;
+
+						continue;
+					}
+					else {
+						xPos += wThumb;
+						wLimit = xPos;
+					}
+				}
+				else
+					xPos += wThumb;
+
+				imgCol ++;
+			}
+
+			var offsetThres = 10;
+			var avgRight = 0;
+			for (var i = 0; i < rightEdges.length; i ++)
+				avgRight += rightEdges[i];
+			avgRight /= rightEdges.length;
+
+			var maxRightEdge = 0;
+
+			var startIx = 1;
+			for (var i = 0; i < rightEdges.length; i ++) {
+
+				var offset = Math.abs(rightEdges[i] - avgRight);
+				if (offset > offsetThres) {
+
+					offset = Math.random() * offsetThres;
+					var newRightEdge = (rightEdges[i] > avgRight) ? avgRight + offset : avgRight - offset;
+					var ratio = (newRightEdge - wMain) / (rightEdges[i] - wMain);
+					rightEdges[i] = newRightEdge;
+
+					for (var j = 0; j < numImagesPerRow[i]; j ++) {
+
+						var index = startIx + j;
+						images[index].width = Math.round(images[index].width * ratio);
+					}
+				}
+
+				maxRightEdge = Math.max(maxRightEdge, rightEdges[i]);
+				imgSectionWidth = Math.ceil(maxRightEdge);
+
+				startIx += numImagesPerRow[i];
+			}
+
+			images[0].width = wMain;
+			images[0].height = hMain;
+
+			$scope.wikiSectionStyle = "min-width: " + imgSectionWidth + "px; max-width: " + imgSectionWidth + "px;";
+			for (var i = 0; i < images.length; i ++) {
+				images[i].style = "width: " + images[i].width + "px; height: " + images[i].height + "px;"
+			}
+		}
+
+		$scope.hasBingImages = true;
+
+		return images;
+	}
+
 	$scope.loading     = true;
 	$scope.wikiLoading = false;
 	$scope.openImage = function(url){
@@ -56,7 +165,9 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 			//get web results
 			Results.get(term, 'web').then(function (data) {
 				$scope.results = _.isUndefined(data.webPages) ? [] : data.webPages.value;
-				$scope.images  = _.isUndefined(data.images) ? [] : data.images.value;
+				// $scope.images  = _.isUndefined(data.images) ? [] : data.images.value;
+				var imgData = data.images;
+				$scope.images  = arrangeImages(imgData);
 				$scope.loading = false;
 
 				$scope.showGoToTop = $scope.results.length > 0;
@@ -71,22 +182,34 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				});
 
 				if ($scope.wikiMatch) {
+					console.log('wiki');
 					$scope.wikiLoading = true;
 					Results.post(term, 'wikipedia', $scope.wikiMatch).then(function (data) {
-						$scope.wikiLoading = false;
-						data.extract       = $sce.trustAsHtml(data.extract);
-						$scope.wikipedia   = data;
+						var wikitextLimit = 100;
+						if (data && data.extract && data.extract.toString().length > wikitextLimit) {
+							$scope.wikiLoading = false;
+							data.extract       = $sce.trustAsHtml(data.extract);
+							$scope.wikipedia   = data;
 
-						Results.post(term, 'wikiimages', {
-							lang:   $scope.wikiMatch.lang,
-							pageid: data.pageid
-						}).then(function (data) {
-							_.each(data, function (v) {
-								$scope.images.push({
-									'thumbnailUrl': v
-								})
-							});
-						});
+							if ($scope.images.length == 0) {
+								Results.post(term, 'wikiimages', {
+									lang:   $scope.wikiMatch.lang,
+									pageid: data.pageid
+								}).then(function (data) {
+									console.log('wikiimage', data);
+									if (data.length > 0) {
+										var images = [{thumbnailUrl: data[0], style: "width: auto;"}];
+										$scope.images = images;
+										$scope.hasBingImages = false;
+										$scope.wikiSectionStyle = "min-width: 0";
+									}
+								});
+							}
+							else {
+								// rearrange images
+								$scope.images  = arrangeImages(imgData);
+							}
+						}
 					});
 				}
 			});
