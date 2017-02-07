@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>SourceMoz &mdash; Safe search - we don't save, track or share your activity.</title>
+	<title>SourceMoz</title>
 
 	<meta property="og:title" content="SourceMoz">
 	<!--<meta property="og:url" content="http://107.170.83.155/">-->
@@ -12,6 +12,31 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="HandheldFriendly" content="True" />
+
+	<!-- Desktop Browsers -->
+	<link rel="shortcut icon" type="image/x-icon" href="assets/icons/icons/favicon.ico" />
+
+	<!-- Android: Chrome M39 and up-->
+	<link rel="manifest" href="assets/icons/manifest.json">
+	<!-- Android: Chrome M31 and up, ignored if manifest is present-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="assets/icons/icons/icon-192x192.png">
+	<!-- iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icons/apple-touch-icon-180x180-precomposed.png">
+	<link href="assets/icons/icons/apple-touch-icon-152x152-precomposed.png" sizes="152x152" rel="apple-touch-icon">
+	<link href="assets/icons/icons/apple-touch-icon-144x144-precomposed.png" sizes="144x144" rel="apple-touch-icon">
+	<link href="assets/icons/icons/apple-touch-icon-120x120-precomposed.png" sizes="120x120" rel="apple-touch-icon">
+	<link href="assets/icons/icons/apple-touch-icon-114x114-precomposed.png" sizes="114x114" rel="apple-touch-icon">
+	<link href="assets/icons/icons/apple-touch-icon-76x76-precomposed.png" sizes="76x76" rel="apple-touch-icon">
+	<link href="assets/icons/icons/apple-touch-icon-72x72-precomposed.png" sizes="72x72" rel="apple-touch-icon">
+	<link href="assets/icons/icons/apple-touch-icon-60x60-precomposed.png" sizes="60x60" rel="apple-touch-icon">
+	<link href="assets/icons/icons/apple-touch-icon-57x57-precomposed.png" sizes="57x57" rel="apple-touch-icon">
+	<link href="assets/icons/icons/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
+
+	<!-- Windows 8 and IE 11 -->
+	<meta name="msapplication-config" content="assets/icons/browserconfig.xml" />
 
 	<!--[if lt IE 9]>
 	<script src="/assets/js/>html5shiv.min.js"></script>

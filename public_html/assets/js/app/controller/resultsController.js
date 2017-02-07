@@ -1,4 +1,7 @@
 app.controller('resultsController', function ($scope, $state, Results, $http, $sce, $rootScope) {
+
+	document.title=$state.params.q+" | SourceMoz";
+
 	$scope.q = $state.params.q;
 	$scope.$rootScope = $rootScope;
 

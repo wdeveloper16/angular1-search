@@ -1,5 +1,7 @@
 app.controller('aboutController', function ($scope, $state, $http) {
 
+	document.title="About SourceMoz";
+
 	$scope.q = '';
 
 	// gives another movie array on change
