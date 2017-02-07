@@ -1218,6 +1218,11 @@ Media Queries
 .socialItem .itemDispUrl:link,
 .socialItem .itemDispUrl:visited {
   color: #a1a3a3;
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
 }
 .socialItem:hover .itemClick:link {
   color: #003399;
@@ -1466,7 +1471,7 @@ Media Queries
   filter: none;
 }
 #social_place .socialItemHead {
-  float: left;
+  /*float: left;*/
   overflow: hidden;
   line-height: 1;
 }

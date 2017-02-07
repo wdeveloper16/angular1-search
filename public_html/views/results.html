@@ -76,7 +76,9 @@
 						</div>
 
 						<div style="width: calc(100% - 45px);">
-							<h1 class="itemTitle"><a href="{{item.url}}" class="itemClick" target="_blank">{{item.name}}</a></h1>
+							<!--<h1 class="itemTitle">-->
+								<a href="{{item.url}}" class="itemClick" target="_blank">{{item.name}}</a>
+							<!--</h1>-->
 							<a class="itemDispUrl ddd" href="{{item.url}}" target="_blank">{{item.displayUrl}}</a>
 						</div>
 					</div>
@@ -115,8 +117,10 @@
 							<div
 								ng-repeat="row in results"
 								id="webItem-{{row.pos}}" class="searchItem webItem">
-								<h1 class="itemTitle"><a href="{{row.url}}" class="itemClick">{{row.name}}</a></h1>
-								<a href="{{row.url}}" class="ddd itemDispUrl">{{row.displayUrl}}</a>
+								<!--<h1 class="itemTitle">-->
+									<a href="{{row.url}}" class="itemClick">{{row.name}}</a>
+								<!--</h1>-->
+								/<a href="{{row.url}}" class="ddd itemDispUrl">{{row.displayUrl}}</a>
 
 								<div class="itemBody">{{row.snippet}}</div>
 							</div>
@@ -156,7 +160,9 @@
 							</div>
 
 							<div class="descItem">
-								<h1 class="itemTitle"><a target="_blank" href="{{item.contentUrl}}" class="itemClick">{{item.name}}</a></h1>
+								<!--<h1 class="itemTitle">-->
+									<a target="_blank" href="{{item.contentUrl}}" class="itemClick">{{item.name}}</a>
+								<!--</h1>-->
 								<a class="itemDispUrl" target="_blank" href="{{item.hostPageUrl}}">{{item.hostPageDisplayUrl}}</a>
 
 								<div class="img_info">
