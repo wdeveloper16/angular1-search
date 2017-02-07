@@ -37,6 +37,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 // BEGIN public_html/assets/js/app/controller/aboutController.js
 app.controller('aboutController', function ($scope, $state, $http) {
 
+	document.title="About SourceMoz";
+
 	$scope.q = '';
 
 	// gives another movie array on change
@@ -67,6 +69,8 @@ app.controller('aboutController', function ($scope, $state, $http) {
 // BEGIN public_html/assets/js/app/controller/frontController.js
 app.controller('frontController', function ($scope, $state, $http) {
 
+	document.title="SourceMoz";
+
 	$scope.q = '';
 
 	// gives another movie array on change
@@ -96,6 +100,9 @@ app.controller('frontController', function ($scope, $state, $http) {
 
 // BEGIN public_html/assets/js/app/controller/resultsController.js
 app.controller('resultsController', function ($scope, $state, Results, $http, $sce, $rootScope) {
+
+	document.title=$state.params.q+" | SourceMoz";
+
 	$scope.q = $state.params.q;
 	$scope.$rootScope = $rootScope;
 
