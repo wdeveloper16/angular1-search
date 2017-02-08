@@ -99,7 +99,7 @@
 </head>
 <body ng-app="app">
 
-<div ui-view style="width: 100%;height: 100%;"></div>
+<div ui-view style="width: 100%;height: auto;min-height:100%;"></div>
 
 </body>
 </html>

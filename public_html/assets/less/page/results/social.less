@@ -127,7 +127,7 @@
 	.itemBody {
 		font-size:   12px;
 		line-height: 16px;
-		max-height:  46px;
+		max-height:  47px;
 		white-space: normal;
 		word-wrap:   break-word;
 	}
@@ -358,6 +358,37 @@
 @media @tablet {
 	#social_place {
 		width: 40%;
+	}
+	.socialItem {
+		.socialDesc {
+			width:100%;
+			.socialItemHead{
+				width:100%;
+				.itemTitle-and-itemDispUrl-area{
+					width: 100%!important;
+				}
+			}
+		}
+	}
+}
+
+@media @tabletVertical {
+	.socialItem {
+		.socialDesc {
+			.socialItemHead{
+				.itemTitle-and-itemDispUrl-area{
+					.itemTitle{
+						.itemClick{
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							display: inline-block;
+							max-width: 100%;
+							overflow: hidden;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 

@@ -1050,7 +1050,6 @@ Media Queries
 #results-web #results-web2 #results-web3 .searchItem .itemTitle a {
   display: inline-block;
   max-height: 37px;
-  /*overflow: hidden;*/
 }
 #results-web #results-web2 #results-web3 .searchItem .itemDispUrl {
   font-size: 14px;
@@ -1218,11 +1217,6 @@ Media Queries
 .socialItem .itemDispUrl:link,
 .socialItem .itemDispUrl:visited {
   color: #a1a3a3;
-  display: inline-block;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
 }
 .socialItem:hover .itemClick:link {
   color: #003399;
@@ -1311,7 +1305,7 @@ Media Queries
 .socialItem .itemBody {
   font-size: 12px;
   line-height: 16px;
-  max-height: 46px;
+  max-height: 47px;
   white-space: normal;
   word-wrap: break-word;
 }
@@ -1471,7 +1465,7 @@ Media Queries
   filter: none;
 }
 #social_place .socialItemHead {
-  /*float: left;*/
+  float: left;
   overflow: hidden;
   line-height: 1;
 }
@@ -1507,6 +1501,24 @@ Media Queries
 @media only screen and (min-width: 580px) and (max-width: 1024px) {
   #social_place {
     width: 40%;
+  }
+  .socialItem .socialDesc {
+    width: 100%;
+  }
+  .socialItem .socialDesc .socialItemHead {
+    width: 100%;
+  }
+  .socialItem .socialDesc .socialItemHead .itemTitle-and-itemDispUrl-area {
+    width: 100%!important;
+  }
+}
+@media only screen and (min-width: 580px) and (max-width: 768px) {
+  .socialItem .socialDesc .socialItemHead .itemTitle-and-itemDispUrl-area .itemTitle .itemClick {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
   }
 }
 @media only screen and (min-width: 580px) {
@@ -1703,9 +1715,6 @@ Video
   width: 100%;
   color: #288A3D;
   font-size: 11px;
-  overflow: hidden !important;
-  text-overflow: ellipsis;
-  display: inline-block;
 }
 #video_place .itemBody {
   /* */
@@ -1721,9 +1730,14 @@ Video
 #video_place .itemBody {
   font-size: 11px;
   line-height: 14px;
-  height: calc(14px * 4);
+  height: auto;
   margin-top: 3px;
   overflow: hidden;
+  width: auto;
+  display: block;
+  clear: both;
+  content: "";
+  max-height: 100%;
 }
 #video_place .videoItem .itemDispUrl {
   display: block;
@@ -1755,6 +1769,29 @@ Video
 @media only screen and (max-width: 580px) {
   #video_place .itemBody {
     color: #a1a3a3;
+    height: 56px!important;
+    max-height: inherit;
+  }
+  #video_place .itemDispUrl {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .videoArea {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    content: "";
+  }
+  .videoArea .video-area-block {
+    clear: both;
+    width: 100%;
+    display: inline-block;
+  }
+  .videoArea .video-area-block .col-video-content {
+    height: auto!important;
+    min-height: 100%!important;
   }
 }
 @media only screen and (min-width: 580px) {

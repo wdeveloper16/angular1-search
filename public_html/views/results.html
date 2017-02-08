@@ -75,10 +75,8 @@
 							</a>
 						</div>
 
-						<div style="width: calc(100% - 45px);">
-							<!--<h1 class="itemTitle">-->
-								<a href="{{item.url}}" class="itemClick" target="_blank">{{item.name}}</a>
-							<!--</h1>-->
+						<div class="itemTitle-and-itemDispUrl-area" style="width: calc(100% - 45px);">
+							<h1 class="itemTitle"><a href="{{item.url}}" class="itemClick" target="_blank">{{item.name}}</a></h1>
 							<a class="itemDispUrl ddd" href="{{item.url}}" target="_blank">{{item.displayUrl}}</a>
 						</div>
 					</div>
@@ -86,7 +84,7 @@
 				</div>
 				<div class="c"></div>
 			</div>
-			<div class="itemBody">{{item.snippet}}</div>
+			<responsive-text text-data="item.snippet" class="itemBody">{{item.snippet}}</responsive-text>
 		</div>
 	</script>
 
@@ -117,10 +115,8 @@
 							<div
 								ng-repeat="row in results"
 								id="webItem-{{row.pos}}" class="searchItem webItem">
-								<!--<h1 class="itemTitle">-->
-									<a href="{{row.url}}" class="itemClick">{{row.name}}</a>
-								<!--</h1>-->
-								/<a href="{{row.url}}" class="ddd itemDispUrl">{{row.displayUrl}}</a>
+								<h1 class="itemTitle"><a href="{{row.url}}" class="itemClick">{{row.name}}</a></h1>
+								<a href="{{row.url}}" class="ddd itemDispUrl">{{row.displayUrl}}</a>
 
 								<div class="itemBody">{{row.snippet}}</div>
 							</div>
@@ -160,9 +156,7 @@
 							</div>
 
 							<div class="descItem">
-								<!--<h1 class="itemTitle">-->
-									<a target="_blank" href="{{item.contentUrl}}" class="itemClick">{{item.name}}</a>
-								<!--</h1>-->
+								<h1 class="itemTitle"><a target="_blank" href="{{item.contentUrl}}" class="itemClick">{{item.name}}</a></h1>
 								<a class="itemDispUrl" target="_blank" href="{{item.hostPageUrl}}">{{item.hostPageDisplayUrl}}</a>
 
 								<div class="img_info">
@@ -188,8 +182,8 @@
 						'loaded':!loading
 						}">
 
-						<div ng-repeat="item in videos" class="row">
-							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div ng-repeat="item in videos" class="row videoArea">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 video-area-block">
 								<div class="col-video-image">
 									<a class="thumb_view" style="background:url('{{item.thumbnailUrl}}') center no-repeat;"
 									   href="{{item.hostPageUrl}}"></a>
@@ -198,7 +192,7 @@
 									<h1><a href="{{item.hostPageUrl}}" class="itemClick">{{item.name}}</a></h1>
 									<a class="itemDispUrl" href="{{item.hostPageUrl}}">{{item.hostPageDisplayUrl}}</a>
 
-									<div class="itemBody">{{item.description}}</div>
+									<responsive-text text-data="item.description" class="itemBody videoResponsive">{{item.description}}</responsive-text>
 								</div>
 							</div>
 						</div>

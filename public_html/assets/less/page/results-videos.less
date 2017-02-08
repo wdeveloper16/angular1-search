@@ -65,11 +65,16 @@ Video
 	}
 
 	.itemBody {
-		font-size:   11px;
+		font-size: 11px;
 		line-height: 14px;
-		height:      ~"calc(14px * 4)";
-		margin-top:3px;
-		overflow:    hidden;
+		height: auto;
+		margin-top: 3px;
+		overflow: hidden;
+		width: auto;
+		display: block;
+		clear: both;
+		content: "";
+		max-height: 100%;
 	}
 
 	.videoItem .itemDispUrl {
@@ -107,6 +112,31 @@ Video
 	#video_place {
 		.itemBody {
 			color: @colorGreySocials;
+			height: 56px!important;
+			max-height: inherit;
+		}
+	}
+	#video_place {
+		.itemDispUrl {
+			display: inline-block;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			max-width: 100%;
+		}
+	}
+	.videoArea{
+		display: inline-block;
+		width: 100%;
+		clear: both;
+		content: "";
+		.video-area-block{
+			clear: both;
+			width: 100%;
+			display: inline-block;
+			.col-video-content{
+				height: auto!important;
+				min-height: 100%!important;
+			}
 		}
 	}
 }
