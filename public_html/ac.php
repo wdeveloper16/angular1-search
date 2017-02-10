@@ -124,6 +124,7 @@ foreach($rs['suggestionGroups'] as $gr){
 		$list[]=$row['displayText'];
 	}
 }
+
 //echo $rs;
 
 
