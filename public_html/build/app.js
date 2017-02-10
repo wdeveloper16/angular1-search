@@ -380,18 +380,19 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 
 		// $scope.theme = Math.floor(day % 3);
 
-
+        var queryTimeoutVar;
 		function doRequest() {
-			if ($scope.q.length > 2) {
-				Results.getAutocomplete($scope.q).then(function (result) {
-				    console.log(result);
-                    $scope.suggestions = [];
-                    for(var i = 0; i < result.data.suggestionGroups[0].searchSuggestions.length; i++){
-                        $scope.suggestions.push(result.data.suggestionGroups[0].searchSuggestions[i].displayText);
-                    }
-                    console.log($scope.suggestions, " Suggestoins");
-				});
-			}
+            clearTimeout(queryTimeoutVar);
+            queryTimeoutVar = setTimeout(function(){
+                if ($scope.q.length > 2) {
+                    Results.getAutocomplete($scope.q).then(function (result) {
+                        $scope.suggestions = [];
+                        for(var i = 0; i < result.data.suggestionGroups[0].searchSuggestions.length; i++){
+                            $scope.suggestions.push(result.data.suggestionGroups[0].searchSuggestions[i].displayText);
+                        }
+                    });
+                }
+            },400);
 		}
 
 		$scope.updateSuggestions = _.throttle(doRequest, 500, {
