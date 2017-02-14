@@ -1465,7 +1465,7 @@ Media Queries
   filter: none;
 }
 #social_place .socialItemHead {
-  float: left;
+  /*float:       left;*/
   overflow: hidden;
   line-height: 1;
 }
