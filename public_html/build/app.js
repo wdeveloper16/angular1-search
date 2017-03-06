@@ -384,7 +384,7 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 		function doRequest() {
             clearTimeout(queryTimeoutVar);
             queryTimeoutVar = setTimeout(function(){
-                if ($scope.q.length > 2) {
+                if ($scope.q.length > 0) {
                     Results.getAutocomplete($scope.q).then(function (result) {
                         $scope.suggestions = [];
                         for(var i = 0; i < result.data.suggestionGroups[0].searchSuggestions.length; i++){
@@ -392,7 +392,7 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
                         }
                     });
                 }
-            },400);
+            }, 200);
 		}
 
 		$scope.updateSuggestions = _.throttle(doRequest, 500, {

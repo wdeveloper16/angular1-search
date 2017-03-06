@@ -42,7 +42,7 @@
 	<script src="/assets/js/>html5shiv.min.js"></script>
 	<![endif]-->
 	<script type="text/javascript">
-		var site_url = "http://45.33.50.87/";
+		var site_url = "http://sourcemoz.com/";
 		// var site_url = "http://localhost";
 	</script>
 

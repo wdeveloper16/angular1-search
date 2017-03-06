@@ -1,14 +1,14 @@
 <?php
-require_once 'Gratheon/Entity/Response.php';
-require_once 'Gratheon/Entity/SuccessResponse.php';
-require_once 'Gratheon/Entity/ErrorResponse.php';
+require_once 'gratheon/Entity/Response.php';
+require_once 'gratheon/Entity/SuccessResponse.php';
+require_once 'gratheon/Entity/ErrorResponse.php';
 
 return [
 	'DB'  => [
 		'Host'     => 'localhost',
-		'User'     => 'root',
-		'Password' => '',
-		'Name'     => 'usersmlu_ca',
+		'User'     => 'smzadmin_user',
+		'Password' => '?%1_}?.h&Z@{',
+		'Name'     => 'smzadmin_ca',
 		'Prefix'   => 'sm_',
 		'Charset'  => 'utf8',
 	],
