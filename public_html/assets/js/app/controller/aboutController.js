@@ -6,9 +6,9 @@ app.controller('aboutController', function ($scope, $state, $http) {
 
 	// gives another movie array on change
 	$scope.updateSuggestions = function (typed) {
-		return $http.get(site_url + 'ac.php?term=' + typed).then(function (results) {
-			$scope.suggestions = results.data.D;
-		});
+		// return $http.get(site_url + 'ac.php?term=' + typed).then(function (results) {
+		// 	$scope.suggestions = results.data.D;
+		// });
 	};
 
 	$scope.useSuggestion = function (q) {

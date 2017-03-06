@@ -6,8 +6,8 @@ require_once 'gratheon/Entity/ErrorResponse.php';
 return [
 	'DB'  => [
 		'Host'     => 'localhost',
-		'User'     => 'smzadmin_user',
-		'Password' => '?%1_}?.h&Z@{',
+		'User'     => 'root',
+		'Password' => '',
 		'Name'     => 'smzadmin_ca',
 		'Prefix'   => 'sm_',
 		'Charset'  => 'utf8',

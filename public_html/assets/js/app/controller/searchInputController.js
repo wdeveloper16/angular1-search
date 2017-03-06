@@ -4,7 +4,7 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 
 		$timeout(function(){
 			$('#q').focus();
-		},600);
+		}, 600);
 
 		// $scope.theme = Math.floor(Math.random() * 3) + 1;
 
@@ -15,7 +15,7 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 		// var day = Math.floor(diff / oneDay);
 
 		// $scope.theme = Math.floor(day % 3);
-
+/*
         var queryTimeoutVar;
 		function doRequest() {
             clearTimeout(queryTimeoutVar);
@@ -35,6 +35,10 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 			'leading':  false,
 			'trailing': true
 		});
+*/
+		$scope.updateSuggestions = function (typed) {
+			//
+		};
 
 		$scope.useSuggestion = function (q) {
 			//window.location = '?q=' + q;

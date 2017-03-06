@@ -43,9 +43,9 @@ app.controller('aboutController', function ($scope, $state, $http) {
 
 	// gives another movie array on change
 	$scope.updateSuggestions = function (typed) {
-		return $http.get(site_url + 'ac.php?term=' + typed).then(function (results) {
-			$scope.suggestions = results.data.D;
-		});
+		// return $http.get(site_url + 'ac.php?term=' + typed).then(function (results) {
+		// 	$scope.suggestions = results.data.D;
+		// });
 	};
 
 	$scope.useSuggestion = function (q) {
@@ -75,9 +75,9 @@ app.controller('frontController', function ($scope, $state, $http) {
 
 	// gives another movie array on change
 	$scope.updateSuggestions = function (typed) {
-		return $http.get(site_url + 'ac.php?term=' + typed).then(function (results) {
-			$scope.suggestions = results.data.D;
-		});
+		// return $http.get(site_url + 'ac.php?term=' + typed).then(function (results) {
+		// 	$scope.suggestions = results.data.D;
+		// });
 	};
 
 	$scope.useSuggestion = function (q) {
@@ -368,7 +368,7 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 
 		$timeout(function(){
 			$('#q').focus();
-		},600);
+		}, 600);
 
 		// $scope.theme = Math.floor(Math.random() * 3) + 1;
 
@@ -379,7 +379,7 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 		// var day = Math.floor(diff / oneDay);
 
 		// $scope.theme = Math.floor(day % 3);
-
+/*
         var queryTimeoutVar;
 		function doRequest() {
             clearTimeout(queryTimeoutVar);
@@ -399,6 +399,10 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 			'leading':  false,
 			'trailing': true
 		});
+*/
+		$scope.updateSuggestions = function (typed) {
+			//
+		};
 
 		$scope.useSuggestion = function (q) {
 			//window.location = '?q=' + q;
@@ -588,7 +592,7 @@ app.service('Results', function ($q, $http) {
                 return $q.when(data.data);
             }
         },
-
+/*
         getAutocomplete: function (term) {
             var key = 'autocomplete-' + term;
             var data = sessionStorage.getItem(key);
@@ -607,7 +611,7 @@ app.service('Results', function ($q, $http) {
                 return $q.when(data);
             }
         },
-
+*/
         getSocial: function (term) {
             return this.get(term, 'social').then(function (data) {
                 //resort results to show fb/twitter on top

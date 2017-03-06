@@ -17,7 +17,7 @@ app.service('Results', function ($q, $http) {
                 return $q.when(data.data);
             }
         },
-
+/*
         getAutocomplete: function (term) {
             var key = 'autocomplete-' + term;
             var data = sessionStorage.getItem(key);
@@ -36,7 +36,7 @@ app.service('Results', function ($q, $http) {
                 return $q.when(data);
             }
         },
-
+*/
         getSocial: function (term) {
             return this.get(term, 'social').then(function (data) {
                 //resort results to show fb/twitter on top
