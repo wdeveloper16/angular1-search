@@ -1092,7 +1092,7 @@ Media Queries
 #results-web #copyright {
   display: block;
   margin: 0;
-  padding: 0 0 30px 0;
+  padding: 0 0 20px 0;
   overflow: auto;
   text-align: center;
 }
@@ -1113,6 +1113,13 @@ Media Queries
 }
 #results-web #copyright a:hover {
   color: #1a1a1a;
+}
+#results-web #bing-attribution {
+  padding: 0 0 20px 0;
+}
+#results-web #bing-attribution img {
+  display: block;
+  margin: auto;
 }
 #results-web .ui-autocomplete {
   position: absolute;
