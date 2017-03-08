@@ -276,6 +276,12 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 
 				$scope.showGoToTop = $scope.results.length > 0;
 
+				// related searches
+				$scope.relatedSearches = _.isUndefined(data.relatedSearches) ? [] : data.relatedSearches.value;
+				_.each($scope.relatedSearches, function (v, i) {
+					v.url = 'http://localhost:8181/#/search/' + encodeURIComponent(v.text) + '/web';
+				});
+
 				//find wiki and get it
 				$scope.wikiMatch = false;
 				_.each($scope.results, function (v, i) {

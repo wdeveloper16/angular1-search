@@ -149,6 +149,14 @@
 								<div class="itemBody">{{row.snippet}}</div>
 							</div>
 						</div>
+						<div class="related-searches">
+							<h3>Related Searches</h3>
+							<div
+								ng-repeat="row in relatedSearches"
+								id="relatedSearch-{{row.pos}}" class="searchItem relatedSearchItem">
+								<a href="{{row.url}}" class="itemClick">{{row.displayText}}</a>
+							</div>
+						</div>
 					</div>
 				</div>
 

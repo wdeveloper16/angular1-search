@@ -195,7 +195,7 @@ class BingSearch {
 		$term,
 //		$accountKey = '691bea0ee910474dae5310545a9d0ebc',
 		$accountKey = '084679e7200f46cb9a900c3e870baceb',
-		$url = "https://api.cognitive.microsoft.com/bing/v5.0/search?responseFilter=webPages,images",
+		$url = "https://api.cognitive.microsoft.com/bing/v5.0/search?responseFilter=webPages,images,RelatedSearches",
 		$sites = false) {
 
 

@@ -1057,6 +1057,24 @@ Media Queries
 #results-web #results-web2 #results-web3 .searchItem .itemDispUrl {
   font-size: 14px;
 }
+#results-web #results-web2 #results-web3 .related-searches {
+  padding-top: 10px;
+}
+#results-web #results-web2 #results-web3 .related-searches h3 {
+  color: #999999;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+#results-web #results-web2 #results-web3 .related-searches .relatedSearchItem {
+  margin: 0 0 10px 0;
+}
+#results-web #results-web2 #results-web3 .related-searches .relatedSearchItem .itemClick {
+  font-size: 14px;
+}
+#results-web #results-web2 #results-web3 .related-searches .relatedSearchItem .itemClick:hover {
+  text-decoration: underline;
+}
 @media only screen and (min-width: 1025px) {
   #results-web #results-web2 #results-web3 {
     width: 525px;
