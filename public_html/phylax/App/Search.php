@@ -46,16 +46,18 @@ class Search {
 		$this->anything  = false;
 		$this->wiki_info = null;
 
+		$apikey_web = '084679e7200f46cb9a900c3e870baceb';
+		$apikey_social = 'fd8520aaab764ce5b0e52fc6bd711da1';
 		switch ($where) {
 			case 'web':
 				$s        = new BingSearch();
-				$response = $s->curlGetApi5($term, '084679e7200f46cb9a900c3e870baceb');
+				$response = $s->curlGetApi5($term, $apikey_web);
 				echo $this->cleanPagesURLsFromBing($response);
 				break;
 
 			case 'images':
 				$s        = new BingSearch();
-				$response = $s->curlGetApi5($term, '084679e7200f46cb9a900c3e870baceb', 'https://api.cognitive.microsoft.com/bing/v5.0/images/search?');
+				$response = $s->curlGetApi5($term, $apikey_web, 'https://api.cognitive.microsoft.com/bing/v5.0/images/search?');
 				$response = $this->cleanObjectsURLsFromBing($response, 'contentUrl');
 				$response = $this->cleanObjectsURLsFromBing($response, 'hostPageUrl');
 				echo $response;
@@ -63,13 +65,13 @@ class Search {
 
 			case 'videos':
 				$s        = new BingSearch();
-				$response = $s->curlGetApi5($term, '084679e7200f46cb9a900c3e870baceb', 'https://api.cognitive.microsoft.com/bing/v5.0/videos/search?');
+				$response = $s->curlGetApi5($term, $apikey_web, 'https://api.cognitive.microsoft.com/bing/v5.0/videos/search?');
 				echo $this->cleanObjectsURLsFromBing($response, 'hostPageUrl');
 				break;
 
 			case 'news':
 				$s        = new BingSearch();
-				$response = $s->curlGetApi5($term, '084679e7200f46cb9a900c3e870baceb', 'https://api.cognitive.microsoft.com/bing/v5.0/news/search?');
+				$response = $s->curlGetApi5($term, $apikey_web, 'https://api.cognitive.microsoft.com/bing/v5.0/news/search?');
 				echo $this->cleanObjectsURLsFromBing($response, 'url');
 				break;
 
@@ -77,7 +79,7 @@ class Search {
 				$s      = new BingSearch();
 				$titles = 'Facebook,Twitter,Google+,Pinterest,Instagram,Tumblr,Quora,Flickr,Linkedin,Last.fm,Reddit,Stumbleupon,Delicious,Digg,Foursquare,Vine';
 
-				$result = $s->curlGetApi5($term, 'fd8520aaab764ce5b0e52fc6bd711da1', 'https://api.cognitive.microsoft.com/bing/v5.0/search?', $titles);
+				$result = $s->curlGetApi5($term, $apikey_social, 'https://api.cognitive.microsoft.com/bing/v5.0/search?', $titles);
 
 				$result = $this->cleanPagesURLsFromBing($result);
 
