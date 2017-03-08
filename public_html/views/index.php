@@ -85,7 +85,7 @@
 	<script src="/build/app.js"></script>
 
 	<?php
-		if (file_exists('/var/www/html/public_html/assets/theme/' . date('Y.m.d') . '/style.css')) {
+		if (file_exists('assets/theme/' . date('Y.m.d') . '/style.css')) {
 			echo '<link rel="stylesheet" href="/assets/theme/' . date('Y.m.d') . '/style.css" />';
 		}
 		else{
