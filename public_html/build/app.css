@@ -1051,6 +1051,9 @@ Media Queries
   display: inline-block;
   max-height: 37px;
 }
+#results-web #results-web2 #results-web3 .searchItem .itemTitle a:hover {
+  text-decoration: underline;
+}
 #results-web #results-web2 #results-web3 .searchItem .itemDispUrl {
   font-size: 14px;
 }
