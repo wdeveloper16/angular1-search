@@ -1,6 +1,7 @@
-app.controller('searchInputController', function ($scope, $state, Results, $timeout) {
+app.controller('searchInputController', function ($scope, $state, $location, Results, $timeout) {
 
-		$scope.q = $state.params.q ? $state.params.q : '';
+		searchQuery = $location.search()['q'];
+		$scope.q = searchQuery ? searchQuery : '';
 
 		$timeout(function(){
 			$('#q').focus();
@@ -42,18 +43,19 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 
 		$scope.useSuggestion = function (q) {
 			//window.location = '?q=' + q;
-			$state.go('results', {
-				'q':   q,
-				'tab': 'web'
-			});
+			// $state.go('results', {
+			// 	'q':   q,
+			// 	'tab': 'web'
+			// });
 		};
 
 		$scope.submit = function () {
 			if (!_.isUndefined($scope.q) && $scope.q.length > 0) {
-				$state.go('results', {
-					'q':   $scope.q,
-					'tab': 'web'
-				});
+				window.location = '#/search/web?q=' + $scope.q;
+				// $state.go('results', {
+				// 	'q':   $scope.q,
+				// 	'tab': 'web'
+				// });
 			}
 			$('#q').blur();
 		};
