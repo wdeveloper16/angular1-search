@@ -16,7 +16,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			templateUrl: "/views/about.html"
 		})
 		.state('results', {
-			url:         "/search/:q/:tab",
+			url:         "/:tab?q",
 			templateUrl: "/views/results.html",
 			controller:  'resultsController'
 		});

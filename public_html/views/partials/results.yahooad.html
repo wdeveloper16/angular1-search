@@ -4,7 +4,7 @@
 		<style>#ypaAdWrapper-SM_Top_Center iframe {
 			width: 100%
 		}</style>
-		<div id='ypaAdWrapper-SM_Top_Center'></div>
+		<div id='ypaAdWrapper-SM_Top_Center' style="margin-bottom: 20px;"></div>
 
 
 		<!--<style>#ypaAdWrapper-SM_Btm_Center iframe {-->
@@ -18,26 +18,67 @@
 		<!--}</style>-->
 		<!--<div id='ypaAdWrapper-SM_Algo'></div>-->
 
-		<div id="scriptDiv">
-			<script type='text/javascript'>
-				window.ypaAds.insertMultiAd({
-					ypaAdConfig:   '000000773',
-					ypaAdTypeTag:  '',
+		<script type='text/javascript'>
+			window.ypaAds.insertMultiAd({
+				ypaAdConfig:   '000000773',
+				ypaAdTypeTag:  '',
 
-					ypaPubParams : {
-						query : $('#q').val(),
+				ypaPubParams : {
+					query : $('#q').val(),
 //						location : "Burbank, CA",
-						inputCharEnc : "utf8",
-						outputCharEnc : "utf8"
-					},
+					inputCharEnc : "utf8",
+					outputCharEnc : "utf8"
+				},
 
-					ypaAdSlotInfo: [
-						{
-							ypaAdSlotId: 'SM_Top_Center',
-							ypaAdDivId:  'ypaAdWrapper-SM_Top_Center',
-							ypaAdWidth:  '600',
-							ypaAdHeight: '100'
+				ypaAdSlotInfo: [
+					{
+						ypaAdSlotId: 'SM_Top_Center',
+						ypaAdDivId:  'ypaAdWrapper-SM_Top_Center',
+						ypaAdWidth:  '600',
+						ypaAdHeight: '100',
+						ypaSlotOptions : {
+							AdOptions: {
+								Mobile : {
+									AdRange : "1-2",
+									Lat : false,
+									Favicon : false,
+									LocalAds : false,
+									SiteLink : true,
+									MerchantRating : true,
+									ImageInAds : true,
+									EnhancedSiteLink : false,
+									SmartAnnotations : false,
+									OfficialSiteBadge : true,
+									CallExtension : false
+								},
+								DeskTop: {
+									AdRange : "1-3",
+									Lat : false,
+									Favicon : false,
+									LocalAds : false,
+									SiteLink : true,
+									MerchantRating : true,
+									ImageInAds : true,
+									EnhancedSiteLink : false,
+									SmartAnnotations : false,
+									OfficialSiteBadge : true,
+									CallExtension : false
+								}
+							},
+							TemplateOptions : {
+								Mobile : {
+									AdUnit : {
+										cssLink : "http://sourcemoz.com/assets/css/yahooad.css"
+									}
+								},
+								DeskTop: {
+									AdUnit : {
+										cssLink : "http://sourcemoz.com/assets/css/yahooad.css"
+									}
+								}
+							}
 						}
+					}
 //						{
 //							ypaAdSlotId: 'SM_Btm_Center',
 //							ypaAdDivId:  'ypaAdWrapper-SM_Btm_Center',
@@ -50,9 +91,8 @@
 //							ypaAdWidth:  '600',
 //							ypaAdHeight: '827'
 //						}
-					]
-				});
-			</script>
-		</div>
+				]
+			});
+		</script>
 	<!--</div>-->
 <!--</div>-->

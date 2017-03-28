@@ -96,8 +96,6 @@
 
 	<meta name="description" content="Safe search the Web with SourceMoz">
 	<meta name="keywords" content="Search, Web, Safe, Tracking, User, SourceMoz">
-
-	<script src='https://s.yimg.com/uv/dm/scripts/syndication.js'></script>
 </head>
 <body ng-app="app">
 

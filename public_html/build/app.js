@@ -27,7 +27,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			templateUrl: "/views/about.html"
 		})
 		.state('results', {
-			url:         "/search/:q/:tab",
+			url:         "/:tab?q",
 			templateUrl: "/views/results.html",
 			controller:  'resultsController'
 		});
@@ -279,7 +279,7 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				// related searches
 				$scope.relatedSearches = _.isUndefined(data.relatedSearches) ? [] : data.relatedSearches.value;
 				_.each($scope.relatedSearches, function (v, i) {
-					v.url = 'http://localhost:8181/#/search/' + encodeURIComponent(v.text) + '/web';
+					v.url = 'http://localhost:8181/#/web?q=' + encodeURIComponent(v.text);
 				});
 
 				//find wiki and get it

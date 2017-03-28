@@ -1,0 +1,45 @@
+.ypaAdBox {
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #EBEBEB;
+}
+.ypaAdBox a {
+    color: #003399;
+}
+.ypaAdLabel {
+    display: none;
+}
+.ypaAdTitle {
+    color: #003399;
+    font-size: 17px;
+}
+.ypaAdTitle:hover {
+    text-decoration: underline;
+}
+.ypaAdURL {
+    color: #288A3D;
+    font-size: 14px;
+}
+.ypaAdURLInner::before {
+    content: 'Ad';
+    position: relative;
+    bottom: 1px;
+    margin-right: 8px;
+    padding: 0 4px;
+    font-size: 11px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.ypaAdDesc {
+    color: #666666;
+    font-size: 13px;
+}
+/*.ypaAdLine2 {
+    margin: 3px 0 5px;
+}*/
+.ypaAdTextDiv {
+    padding-bottom: 42px;
+}
+.ypaAdElement:last-child .ypaAdTextDiv {
+    padding-bottom: 28px;
+}
