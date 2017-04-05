@@ -206,7 +206,8 @@ class BingSearch {
 //			// Gets the sites separated by comma
 			$sites = explode(",", $sites);
 			$sites = array_map(function ($val) {
-				return 'intitle:' . $val;
+				// return 'intitle:' . $val;
+				return 'domain:' . $val;
 			}, $sites);
 			$sites = '(' . implode(" OR ", $sites) . ')';
 //			$sites = " site:" . $sites;

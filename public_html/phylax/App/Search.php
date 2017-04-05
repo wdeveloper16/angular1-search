@@ -77,7 +77,8 @@ class Search {
 
 			case 'social':
 				$s      = new BingSearch();
-				$titles = 'Facebook,Twitter,Google+,Pinterest,Instagram,Tumblr,Quora,Flickr,Linkedin,Last.fm,Reddit,Stumbleupon,Delicious,Digg,Foursquare,Vine';
+				// $titles = 'Facebook,Twitter,Google+,Pinterest,Instagram,Tumblr,Quora,Flickr,Linkedin,Last.fm,Reddit,Stumbleupon,Delicious,Digg,Foursquare,Vine';
+				$titles = 'facebook.com,twitter.com,plus.google.com,pinterest.com,instagram.com,tumblr.com,quora.com,flickr.com,linkedin.com,last.fm,reddit.com,stumbleupon.com,delicious.com,digg.com';
 
 				$result = $s->curlGetApi5($term, $apikey_social, 'https://api.cognitive.microsoft.com/bing/v5.0/search?', $titles);
 
