@@ -47,7 +47,7 @@
 	#front_slogan {
 		padding:    0;
 		border:     0;
-		margin:     18px 0 0 0;
+		margin:     -3px 0 0 0;
 		text-align: center;
 		font-size:  15px;
 	}
@@ -86,10 +86,23 @@
 	}
 }
 
-@media @tabletDesktop {
+@media @desktop {
 	#front-content {
 		overflow:  hidden;
 		min-width: 600px;
+		#q {
+			margin: 8px 6px;
+		}
+		#front-search {
+			border: none;
+			background-color: #ffffff;
+		}
+		#front-search .fa-search {
+			top: 9px !important;
+		}
+		#front_query {
+			height:    100%;
+		}
 	}
 }
 

@@ -79,6 +79,11 @@
 				}
 			}
 
+			.main-searches {
+				padding-top: 41px;
+				border-top: 1px solid #EBEBEB;
+			}
+
 			.related-searches {
 				padding-top: 10px;
 				h3 {
@@ -144,26 +149,29 @@
 		overflow:   auto;
 		text-align: center;
 	}
-
 	#copyright > span {
 		display: inline-block;
 		margin:  0 .75em;
 	}
-
-	#copyright, #copyright a {
+	#copyright * {
 		color:           @colorGreyFooter;
-		text-decoration: none;
 		font-size:       12px;
 	}
-
 	#copyright a {
 		display:        inline-block;
-		vertical-align: top;
+		text-decoration: none;
 		margin:         0 .25em;
 	}
-
 	#copyright a:hover {
 		color: @colorGreyFooterHover;
+	}
+	@media @mobile {
+		#copyright * {
+			font-size: 11px !important;
+		}
+		#copyright > span {
+			margin: 0;
+		}
 	}
 
 	#bing-attribution {

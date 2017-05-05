@@ -17,26 +17,25 @@ app.service('Results', function ($q, $http) {
                 return $q.when(data.data);
             }
         },
-/*
-        getAutocomplete: function (term) {
-            var key = 'autocomplete-' + term;
-            var data = sessionStorage.getItem(key);
 
-            if (_.isUndefined(data) || _.isNull(data)) {
-                return $http.get("https://api.cognitive.microsoft.com/bing/v5.0/suggestions/?q=" + term, {
-                    data: "{body}",
-                    headers: {"Ocp-Apim-Subscription-Key": "ee2f8d5e08dd41939bfda956fbf3c00f"}
-                }).then(function (httpResponse) {
-                    window.sessionStorage.setItem(key, JSON.stringify(httpResponse));
-                    return httpResponse;
-                });
-            }
-            else {
-                data = JSON.parse(data);
-                return $q.when(data);
-            }
+        getAutocomplete: function (term) {
+            return $http.get("/autosuggestion.php?term=" + term).then(function (httpResponse) {
+                return httpResponse;
+            });
+            // var key = 'autocomplete-' + term;
+            // var data = sessionStorage.getItem(key);
+            // if (_.isUndefined(data) || _.isNull(data)) {
+            //     return $http.get("http://localhost:8181/autosuggestion.php?term=" + term).then(function (httpResponse) {
+            //         window.sessionStorage.setItem(key, JSON.stringify(httpResponse));
+            //         return httpResponse;
+            //     });
+            // }
+            // else {
+            //     data = JSON.parse(data);
+            //     return $q.when(data);
+            // }
         },
-*/
+
         getSocial: function (term) {
             return this.get(term, 'social').then(function (data) {
                 //resort results to show fb/twitter on top

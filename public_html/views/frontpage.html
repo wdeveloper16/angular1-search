@@ -22,12 +22,11 @@
 						<autocomplete
 							attr-placeholder=""
 							attr-input-id="q"
-							attr-name="search"
-							attr-input-type="search"
 							ng-model="q"
 							data="suggestions"
 							on-select="useSuggestion"
-							on-type="updateSuggestions"></autocomplete>
+							on-type="updateSuggestions"
+							no-auto-sort="true"></autocomplete>
 
 						<div style="clear: both"></div>
 					</div>

@@ -73,7 +73,7 @@
 	<link rel="stylesheet" href="/assets/css/font-awesome/css/font-awesome.min.css">
 	<!--<link rel="stylesheet" href="/assets/css/style.css">-->
 
-	<link rel="stylesheet" href="/assets/css/web.css">
+	<!--<link rel="stylesheet" href="/assets/css/web.css">-->
 	<!--<link rel="stylesheet" href="/assets/css/social.css">-->
 <!--	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">-->
 <!--	<link rel="stylesheet" href="/assets/css/bootstrap-theme.min.css">-->

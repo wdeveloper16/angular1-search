@@ -15,14 +15,13 @@
 		      ng-controller='searchInputController'>
 
 			<autocomplete
-				attr-name="search"
 				attr-placeholder=""
 				attr-input-id="q"
-				attr-input-type="search"
 				ng-model="q"
 				data="suggestions"
 				on-select="useSuggestion"
-				on-type="updateSuggestions"></autocomplete>
+				on-type="updateSuggestions"
+				no-auto-sort="true"></autocomplete>
 
 			<input id="qs" name="" type="submit" value="" title="Search with SourceMoz" ng-click="submit()">
 		</form>
@@ -110,7 +109,7 @@
 						'loading':!results,
 						'loaded':results
 						}">
-						<div>
+						<div class="main-searches">
 							<div
 								ng-repeat="row in results"
 								id="webItem-{{row.pos}}" class="searchItem webItem">
@@ -120,7 +119,7 @@
 								<div class="itemBody">{{row.snippet}}</div>
 							</div>
 						</div>
-						<div class="related-searches">
+						<div ng-if="relatedSearches.length > 0" class="related-searches">
 							<h3>Related Searches</h3>
 							<div
 								ng-repeat="row in relatedSearches"
@@ -248,9 +247,13 @@
 					</div>
 
 					<div id="copyright">
-						<span id="mfCopy">&copy;2018 SourceMoz</span><span id="mfLinks"><a ui-sref="frontpage">Home</a> | <a
-						ui-sref="about" target="_blank">About</a> | <a
-						href="mailto:mreisbeck@gmail.com?subject=Feedback%20on%20sourcemoz.com&body=Hello%21%0D%0A%0D%0AI%20got%20something%20to%20tell%20you%20about%20sourcemoz.com%21">Feedback</a></span>
+						<span id="mfCopy">&copy;2018 SourceMoz</span>
+						<span id="mfLinks">
+							<a ui-sref="frontpage">Home</a> | 
+							<a ui-sref="about">About</a> | 
+							<a href="mailto:mreisbeck@gmail.com?subject=Feedback%20on%20sourcemoz.com&body=Hello%21%0D%0A%0D%0AI%20got%20something%20to%20tell%20you%20about%20sourcemoz.com%21">Feedback</a> | 
+							<a ui-sref="privacy">Privacy</a>
+						</span>
 					</div>
 
 					<div id="bing-attribution">

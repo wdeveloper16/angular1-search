@@ -46,7 +46,6 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 
 			var wiki_width = $('#wikipedia_level2').width();
 			if (!wiki_width) wiki_width = screen_width;
-			console.log(wiki_width);
 
 			var collimit = 1;
 			var rowLimit = 3;
@@ -191,7 +190,6 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				});
 
 				if ($scope.wikiMatch) {
-					console.log('wiki');
 					$scope.wikiLoading = true;
 					Results.post(term, 'wikipedia', $scope.wikiMatch).then(function (data) {
 						var wikitextLimit = 100;
@@ -205,7 +203,6 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 									lang:   $scope.wikiMatch.lang,
 									pageid: data.pageid
 								}).then(function (data) {
-									console.log('wikiimage', data);
 									if (data.length > 0) {
 										var images = [{thumbnailUrl: data[0], style: "width: auto;"}];
 										$scope.images = images;
@@ -242,7 +239,6 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				//$scope.images = _.isUndefined(data.images) ? [] : data.images.value;
 				$scope.images  = _.isUndefined(data.value) ? [] : data.value;
 				$scope.showGoToTop = $scope.images.length > 0;
-				console.log($scope.showGoToTop);
 			});
 			break;
 

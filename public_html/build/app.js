@@ -26,6 +26,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			controller:  'aboutController',
 			templateUrl: "/views/about.html"
 		})
+		.state('privacy', {
+			url:         "/privacy",
+			controller:  'privacyController',
+			templateUrl: "/views/privacy.html"
+		})
 		.state('results', {
 			url:         "/:tab?q",
 			templateUrl: "/views/results.html",
@@ -98,6 +103,13 @@ app.controller('frontController', function ($scope, $state, $http) {
 });
 // END public_html/assets/js/app/controller/frontController.js
 
+// BEGIN public_html/assets/js/app/controller/privacyController.js
+app.controller('privacyController', function ($scope) {
+
+	document.title = "Privacy";
+});
+// END public_html/assets/js/app/controller/privacyController.js
+
 // BEGIN public_html/assets/js/app/controller/resultsController.js
 app.controller('resultsController', function ($scope, $state, Results, $http, $sce, $rootScope) {
 
@@ -147,7 +159,6 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 
 			var wiki_width = $('#wikipedia_level2').width();
 			if (!wiki_width) wiki_width = screen_width;
-			console.log(wiki_width);
 
 			var collimit = 1;
 			var rowLimit = 3;
@@ -292,7 +303,6 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				});
 
 				if ($scope.wikiMatch) {
-					console.log('wiki');
 					$scope.wikiLoading = true;
 					Results.post(term, 'wikipedia', $scope.wikiMatch).then(function (data) {
 						var wikitextLimit = 100;
@@ -306,7 +316,6 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 									lang:   $scope.wikiMatch.lang,
 									pageid: data.pageid
 								}).then(function (data) {
-									console.log('wikiimage', data);
 									if (data.length > 0) {
 										var images = [{thumbnailUrl: data[0], style: "width: auto;"}];
 										$scope.images = images;
@@ -343,7 +352,6 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				//$scope.images = _.isUndefined(data.images) ? [] : data.images.value;
 				$scope.images  = _.isUndefined(data.value) ? [] : data.value;
 				$scope.showGoToTop = $scope.images.length > 0;
-				console.log($scope.showGoToTop);
 			});
 			break;
 
@@ -376,42 +384,18 @@ app.controller('searchInputController', function ($scope, $state, Results, $time
 			$('#q').focus();
 		}, 600);
 
-		// $scope.theme = Math.floor(Math.random() * 3) + 1;
-
-		// var now = new Date();
-		// var start = new Date(now.getFullYear(), 0, 0);
-		// var diff = now - start;
-		// var oneDay = 1000 * 60 * 60 * 24;
-		// var day = Math.floor(diff / oneDay);
-
-		// $scope.theme = Math.floor(day % 3);
-/*
-        var queryTimeoutVar;
-		function doRequest() {
-            clearTimeout(queryTimeoutVar);
-            queryTimeoutVar = setTimeout(function(){
-                if ($scope.q.length > 0) {
-                    Results.getAutocomplete($scope.q).then(function (result) {
-                        $scope.suggestions = [];
-                        for(var i = 0; i < result.data.suggestionGroups[0].searchSuggestions.length; i++){
-                            $scope.suggestions.push(result.data.suggestionGroups[0].searchSuggestions[i].displayText);
-                        }
-                    });
-                }
-            }, 200);
-		}
-
-		$scope.updateSuggestions = _.throttle(doRequest, 500, {
-			'leading':  false,
-			'trailing': true
-		});
-*/
-		$scope.updateSuggestions = function (typed) {
-			//
+		$scope.updateSuggestions = function () {
+			if ($scope.q.length > 0) {
+				Results.getAutocomplete($scope.q).then(function (result) {
+					$scope.suggestions = result.data;
+				})
+			}
+			else {
+				$scope.suggestions = [];
+			}
 		};
 
 		$scope.useSuggestion = function (q) {
-			//window.location = '?q=' + q;
 			$state.go('results', {
 				'q':   q,
 				'tab': 'web'
@@ -446,7 +430,7 @@ app.controller('slideMenuController', function ($scope, $rootScope) {
 	};
 
 	$scope.twitterShare = function () {
-		window.open('http://twitter.com/share?text=Here%2C%20look%20at%20new%20search%20application%2C%20they%20don%27t%20save%20or%20track%20your%20activity%21&url=SM_URL', 'targetTwitterShare', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=450,height=400');
+		window.open('http://twitter.com/share?text=Check+out+SourceMoz.com&url=SM_URL', 'targetTwitterShare', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=450,height=400');
 		// $scope.hidePopup();
 	};
 });
@@ -508,7 +492,6 @@ app.directive('responsiveText', ['$window', function ($window) {
                 var lastWord = visibleText.lastIndexOf(" ");
                 visibleText = visibleText.substring(0, lastWord);
                 visibleText += '...';
-                console.log(visibleText);
                 $(element).html(visibleText);
             }
         }
@@ -598,26 +581,25 @@ app.service('Results', function ($q, $http) {
                 return $q.when(data.data);
             }
         },
-/*
-        getAutocomplete: function (term) {
-            var key = 'autocomplete-' + term;
-            var data = sessionStorage.getItem(key);
 
-            if (_.isUndefined(data) || _.isNull(data)) {
-                return $http.get("https://api.cognitive.microsoft.com/bing/v5.0/suggestions/?q=" + term, {
-                    data: "{body}",
-                    headers: {"Ocp-Apim-Subscription-Key": "ee2f8d5e08dd41939bfda956fbf3c00f"}
-                }).then(function (httpResponse) {
-                    window.sessionStorage.setItem(key, JSON.stringify(httpResponse));
-                    return httpResponse;
-                });
-            }
-            else {
-                data = JSON.parse(data);
-                return $q.when(data);
-            }
+        getAutocomplete: function (term) {
+            return $http.get("/autosuggestion.php?term=" + term).then(function (httpResponse) {
+                return httpResponse;
+            });
+            // var key = 'autocomplete-' + term;
+            // var data = sessionStorage.getItem(key);
+            // if (_.isUndefined(data) || _.isNull(data)) {
+            //     return $http.get("http://localhost:8181/autosuggestion.php?term=" + term).then(function (httpResponse) {
+            //         window.sessionStorage.setItem(key, JSON.stringify(httpResponse));
+            //         return httpResponse;
+            //     });
+            // }
+            // else {
+            //     data = JSON.parse(data);
+            //     return $q.when(data);
+            // }
         },
-*/
+
         getSocial: function (term) {
             return this.get(term, 'social').then(function (data) {
                 //resort results to show fb/twitter on top

@@ -1045,6 +1045,8 @@ app.directive('autocomplete', function() {
       // set new index
       $scope.setIndex = function(i){
         $scope.selectedIndex = parseInt(i);
+        if (i >= 0)
+          document.getElementById('q').value = $scope.suggestions[i];
       };
 
       this.setIndex = function(i){
@@ -1119,7 +1121,6 @@ app.directive('autocomplete', function() {
 
     }],
     link: function(scope, element, attrs){
-        console.log(scope.noAutoSort)
 
       setTimeout(function() {
         scope.initLock = false;
@@ -1302,16 +1303,16 @@ app.directive('autocomplete', function() {
 app.filter('highlight', ['$sce', function ($sce) {
   return function (input, searchParam) {
     if (typeof input === 'function') return '';
-    if (searchParam) {
-      var words = '(' +
-            searchParam.split(/\ /).join(' |') + '|' +
-            searchParam.split(/\ /).join('|') +
-          ')',
-          exp = new RegExp(words, 'gi');
-      if (words.length) {
-        input = input.replace(exp, "<span class=\"highlight\">$1</span>");
-      }
-    }
+    // if (searchParam) {
+    //   var words = '(' +
+    //         searchParam.split(/\ /).join(' |') + '|' +
+    //         searchParam.split(/\ /).join('|') +
+    //       ')',
+    //       exp = new RegExp(words, 'gi');
+    //   if (words.length) {
+    //     input = input.replace(exp, "<span class=\"highlight\">$1</span>");
+    //   }
+    // }
     return $sce.trustAsHtml(input);
   };
 }]);

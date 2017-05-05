@@ -9,9 +9,10 @@
 			ng-model="q"
 			data="suggestions"
 			on-select="useSuggestion"
-			on-type="updateSuggestions"></autocomplete>
+			on-type="updateSuggestions"
+			no-auto-sort="true"></autocomplete>
 
-		<!--<input id="q" name="q" type="text" value="tallinn" maxlength="160" data-autofocus="true">-->
+		<!--<input id="q" name="q" type="text" value="" maxlength="160" data-autofocus="true">-->
 		<input id="qs" name="" type="submit" value="" title="Search with SourceMoz" ng-click="submit()">
 	</form>
 	<!-- #search -->

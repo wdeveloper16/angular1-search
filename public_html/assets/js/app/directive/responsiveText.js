@@ -37,7 +37,6 @@ app.directive('responsiveText', ['$window', function ($window) {
                 var lastWord = visibleText.lastIndexOf(" ");
                 visibleText = visibleText.substring(0, lastWord);
                 visibleText += '...';
-                console.log(visibleText);
                 $(element).html(visibleText);
             }
         }

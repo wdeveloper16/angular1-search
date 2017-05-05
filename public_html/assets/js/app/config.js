@@ -15,6 +15,11 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			controller:  'aboutController',
 			templateUrl: "/views/about.html"
 		})
+		.state('privacy', {
+			url:         "/privacy",
+			controller:  'privacyController',
+			templateUrl: "/views/privacy.html"
+		})
 		.state('results', {
 			url:         "/:tab?q",
 			templateUrl: "/views/results.html",
