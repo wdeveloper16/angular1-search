@@ -1,7 +1,12 @@
 # Begin
 
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.sourcemoz.com$ [NC]
-RewriteRule ^(.*)$ http://sourcemoz.com/$1 [R=301,L]
+RewriteEngine On 
+Options FollowSymLinks
+
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /#/$1 [L]
 
 # End

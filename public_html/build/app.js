@@ -9,7 +9,7 @@ app.run([
 // END public_html/assets/js/app/app.js
 
 // BEGIN public_html/assets/js/app/config.js
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 	//
 	// For any unmatched url, redirect to /state1
 	$urlRouterProvider.otherwise("/");
@@ -36,6 +36,9 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			templateUrl: "/views/results.html",
 			controller:  'resultsController'
 		});
+
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
 });
 // END public_html/assets/js/app/config.js
 
@@ -112,7 +115,7 @@ app.controller('privacyController', function ($scope) {
 
 // BEGIN public_html/assets/js/app/controller/resultsController.js
 app.controller('resultsController', function ($scope, $state, Results, $http, $sce, $rootScope) {
-
+/*
 	document.title=$state.params.q+" | SourceMoz";
 
 	$scope.q = $state.params.q;
@@ -290,7 +293,7 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				// related searches
 				$scope.relatedSearches = _.isUndefined(data.relatedSearches) ? [] : data.relatedSearches.value;
 				_.each($scope.relatedSearches, function (v, i) {
-					v.url = 'http://localhost:8181/#/web?q=' + encodeURIComponent(v.text);
+					v.url = 'http://localhost:8181/web?q=' + encodeURIComponent(v.text);
 				});
 
 				//find wiki and get it
@@ -371,7 +374,7 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				$scope.showGoToTop = $scope.news.length > 0;
 			});
 			break;
-	}
+	}*/
 });
 // END public_html/assets/js/app/controller/resultsController.js
 

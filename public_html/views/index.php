@@ -96,6 +96,8 @@
 
 	<meta name="description" content="Safe search the Web with SourceMoz">
 	<meta name="keywords" content="Search, Web, Safe, Tracking, User, SourceMoz">
+
+    <base href="/">
 </head>
 <body ng-app="app">
 

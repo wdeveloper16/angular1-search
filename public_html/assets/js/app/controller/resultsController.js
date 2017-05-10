@@ -177,7 +177,7 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 				// related searches
 				$scope.relatedSearches = _.isUndefined(data.relatedSearches) ? [] : data.relatedSearches.value;
 				_.each($scope.relatedSearches, function (v, i) {
-					v.url = 'http://localhost:8181/#/web?q=' + encodeURIComponent(v.text);
+					v.url = 'http://localhost:8181/web?q=' + encodeURIComponent(v.text);
 				});
 
 				//find wiki and get it

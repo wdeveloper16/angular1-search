@@ -23,4 +23,8 @@
 	#front-content #front_slogan{
 		color: #ffffff;
 	}
+
+	#front-search {
+		border: none;
+	}
 }

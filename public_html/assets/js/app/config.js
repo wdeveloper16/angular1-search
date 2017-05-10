@@ -1,4 +1,4 @@
-app.config(function ($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 	//
 	// For any unmatched url, redirect to /state1
 	$urlRouterProvider.otherwise("/");
@@ -25,4 +25,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			templateUrl: "/views/results.html",
 			controller:  'resultsController'
 		});
+
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
 });
