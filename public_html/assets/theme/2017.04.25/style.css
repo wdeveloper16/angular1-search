@@ -27,4 +27,33 @@
 	#front-search {
 		border: none;
 	}
+
+	pageslide.front_slide {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: transparent;
+	}
+
+	pageslide.front_slide #menu_items li a {
+		background-image: url(/assets/img/slide_menu_white.png);
+		color: white;
+	}
+
+	pageslide.front_slide #menu_items li:hover a {
+		background-image: url(/assets/img/slide_menu_hover.png);
+		color: #999999;
+	}
+
+	pageslide.front_slide a.menu_toggler {
+		display: none;
+	}
+
+	pageslide.front_slide ul.menu_items {
+		margin: 0;
+	}
+
+	.front_slide #menu_items {
+		margin: 0 !important;
+	}
 }

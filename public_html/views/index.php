@@ -1,17 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SourceMoz</title>
 
-	<meta property="og:title" content="SourceMoz">
-	<!--<meta property="og:url" content="http://107.170.83.155/">-->
-	<meta property="og:description" content="We don't save, track or share your activity.">
-	<meta property="og:image" content="/assets/img/smf.png">
-
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="HandheldFriendly" content="True" />
+
+	<meta property="og:title" content="SourceMoz" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.sourcemoz.com" />
+	<meta property="og:image" content="https://www.sourcemoz.com/assets/img/smz3.png" />
+	<meta property="fb:app_id" content="1901150616789535"/>
+	<meta property="og:description" content="We don't save, track or share your activity." />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@SourceMoz" />
+	<meta name="twitter:title" content="SourceMoz" />
+	<meta name="twitter:description" content="We don't save, track or share your activity." />
+	<meta name="twitter:image" content="https://sourcemoz.com/assets/img/smz-144.png" />
+
+	<meta name="description" content="We don't save, track or share your activity.">
+	<meta name="keywords" content="SourceMoz, Search, Search Engine, Web">
 
 	<!-- Desktop Browsers -->
 	<link rel="shortcut icon" type="image/x-icon" href="assets/icons/icons/favicon.ico" />
@@ -49,7 +59,8 @@
 	<script>
 		window.fbAsyncInit = function() {
 			FB.init({
-				appId      : '103093080162711',
+				// appId      : '103093080162711',
+				appId      : '1901150616789535',
 				xfbml      : true,
 				version    : 'v2.8'
 			});
@@ -93,9 +104,6 @@
 		}
 
 	?>
-
-	<meta name="description" content="Safe search the Web with SourceMoz">
-	<meta name="keywords" content="Search, Web, Safe, Tracking, User, SourceMoz">
 
     <base href="/">
 </head>

@@ -1,5 +1,6 @@
 .ypaAdBox {
     padding: 0;
+    padding-bottom: 50px;
     border: none;
 }
 .ypaAdBox a {
@@ -41,4 +42,7 @@
 }
 .ypaAdTextDiv b {
     font-weight: normal !important;
+}
+li.ypaAdElement:last-child > div {
+    border-bottom: 1px solid #EBEBEB;
 }

@@ -1070,10 +1070,6 @@ Media Queries
 #results-web #results-web2 #results-web3 .searchItem .itemDispUrl {
   font-size: 14px;
 }
-#results-web #results-web2 #results-web3 .main-searches {
-  padding-top: 41px;
-  border-top: 1px solid #EBEBEB;
-}
 #results-web #results-web2 #results-web3 .related-searches {
   padding-top: 10px;
 }
@@ -2008,6 +2004,7 @@ Video
   /* NEW, Chrome 21?28, Safari 6.1+ */
   display: flex;
   margin: 0 auto;
+  width: 100%;
 }
 @media only screen and (max-width: 580px) {
   #about #content-wrapper {
@@ -2031,7 +2028,7 @@ Video
 #privacy #content-wrapper {
   margin: 0 auto;
   padding: 120px 0;
-  width: 555px;
+  width: 570px;
   position: relative;
 }
 #privacy #content {
@@ -2040,18 +2037,21 @@ Video
   color: #666666;
 }
 #privacy #content h1 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 #privacy #content h3 {
+  font-size: 14px;
+  font-weight: normal;
   margin-top: 36px;
   color: #0099ff;
 }
 #privacy #content p {
   line-height: 17px;
 }
-#privacy #content span {
-  color: #0099ff;
+#privacy #content p span {
+  display: block;
+  padding: 4px 0;
 }
 #privacy #copyright {
   position: absolute;
@@ -2355,6 +2355,9 @@ pageslide #menu_items li:hover a {
     margin: 19px 0 0 0;
     border-radius: 2px;
   }
+}
+#about #search {
+  width: calc(100% - 60px);
 }
 #results-web #search,
 #about #search {
