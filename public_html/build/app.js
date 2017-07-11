@@ -337,7 +337,7 @@ app.controller('resultsController', function ($scope, $state, Results, $http, $s
 			});
 
 			Results.getSocial(term).then(function (data) {
-				$scope.socialResults = data;
+				$rootScope.socialResults = data;
 				window.setTimeout(function () {
 					new Swiper('#social_swiper', {
 						// Optional parameters

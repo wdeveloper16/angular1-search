@@ -2117,6 +2117,14 @@ Video
     margin-top: 24px;
   }
 }
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  pageslide #menu_items li a {
+    background-image: url('/assets/img/slide_menu@2x.png') !important;
+  }
+  pageslide #menu_items li:hover a {
+    background-image: url('/assets/img/slide_menu_hover@2x.png') !important;
+  }
+}
 pageslide {
   background-color: rgba(13, 61, 110, 0.9);
 }
@@ -2149,6 +2157,7 @@ pageslide #menu_items li a {
   text-decoration: none;
   background-image: url('/assets/img/slide_menu.png');
   background-repeat: no-repeat;
+  background-size: 18px auto;
 }
 pageslide #menu_items li a#share_about {
   background-position: 0 3px;
